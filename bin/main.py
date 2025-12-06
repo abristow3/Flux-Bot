@@ -25,9 +25,7 @@ console_handler.setFormatter(formatter)
 logger.addHandler(console_handler)
 
 
-# TOKEN = os.getenv("DISCORD_TOKEN")
-TOKEN = "MTQ0Njk4NzU5NTgxMTkxNzg2Ng.GCuMzP.hMAfUboHKhKno2Sg22HgW-OGYZGzVR-UjMghlM"
-
+TOKEN = os.getenv("DISCORD_TOKEN")
 if not TOKEN:
     logger.error("[Main Task Loop] No Discord API token found.")
     exit()
