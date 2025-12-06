@@ -5,6 +5,8 @@ from discord.ext import commands, tasks
 import logging
 import os
 
+from commands.role_commands import register_role_commands
+
 logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)  # Capture all logs
 
@@ -14,24 +16,17 @@ formatter = logging.Formatter(
     datefmt='%Y-%m-%d %H:%M:%S'
 )
 
-# Debug handler (everything goes here)
-debug_handler = logging.FileHandler('debug.log')
-debug_handler.setLevel(logging.DEBUG)
-debug_handler.setFormatter(formatter)
+# Console handler (prints to terminal)
+console_handler = logging.StreamHandler()
+console_handler.setLevel(logging.INFO)  # Change to DEBUG if you want more verbose logs
+console_handler.setFormatter(formatter)
 
-# Info handler (INFO and up)
-info_handler = logging.FileHandler('app.log')
-info_handler.setLevel(logging.INFO)
-info_handler.setFormatter(formatter)
+# Add console handler to the root logger
+logger.addHandler(console_handler)
 
-# Add handlers to root logger
-logger.addHandler(debug_handler)
-logger.addHandler(info_handler)
 
-# Optional: Get logger for current module
-logger = logging.getLogger(__name__)
-
-TOKEN = os.getenv("DISCORD_TOKEN")
+# TOKEN = os.getenv("DISCORD_TOKEN")
+TOKEN = "MTQ0Njk4NzU5NTgxMTkxNzg2Ng.GCuMzP.hMAfUboHKhKno2Sg22HgW-OGYZGzVR-UjMghlM"
 
 if not TOKEN:
     logger.error("[Main Task Loop] No Discord API token found.")
@@ -41,6 +36,9 @@ logger.info("[Main Task Loop] Discord API token found successfully.")
 
 intents = discord.Intents.default()
 intents.message_content = True
+intents.guilds = True
+intents.members = True
+
 bot = commands.Bot(command_prefix='!', intents=intents)
 
 async def sync_commands(test: bool = False):
@@ -74,15 +72,17 @@ async def on_ready():
 
     logger.info("[Main Task Loop] Assets Loaded")
 
-    # register_main_commands(bot.tree, gdoc, hunt_bot, state, bot)
+    register_role_commands(tree=bot.tree, discord_bot=bot)
+    
     # Sync and List all commands
     await sync_commands(test=True)
     await list_commands()
-
-    logger.info(f"[Main Task Loop] Logged in as {bot.user}")
 
 async def main():
     await bot.start(TOKEN)
 
 def run():
     asyncio.run(main())
+
+if __name__ == "__main__":
+    run()
