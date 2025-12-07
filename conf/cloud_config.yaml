@@ -1,0 +1,20 @@
+#cloud-config
+write_files:
+  - path: /etc/environment
+    content: |
+      DISCORD_TOKEN="discordtoken"
+runcmd:
+  - source /etc/environment
+  - export DISCORD_TOKEN
+  - echo "Secrets injected successfully"
+  - apt-get update -y
+  - apt-get install git -y
+  - apt-get install python3-pip -y
+  - apt install python3.13-venv -y
+  - mkdir -p /opt/bots
+  - cd /opt/bots
+  - echo "Cloning Flux-Bot Repository"
+  - git clone https://github.com/abristow3/Flux-Bot.git
+  - cd Flux-Bot
+  - python3 -m venv .venv
+  - chmod +x startup.sh
