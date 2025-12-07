@@ -10,7 +10,7 @@ runcmd:
   - apt-get update -y
   - apt-get install git -y
   - apt-get install python3-pip -y
-  - apt install python3.13-venv -y
+  - apt install python3.12-venv -y
   - mkdir -p /opt/bots
   - cd /opt/bots
   - echo "Cloning Flux-Bot Repository"

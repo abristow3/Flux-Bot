@@ -6,6 +6,7 @@ import logging
 import os
 
 from commands.role_commands import register_role_commands
+from commands.message_commands import register_message_commands
 
 logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)  # Capture all logs
@@ -24,7 +25,6 @@ console_handler.setFormatter(formatter)
 # Add console handler to the root logger
 logger.addHandler(console_handler)
 
-
 TOKEN = os.getenv("DISCORD_TOKEN")
 if not TOKEN:
     logger.error("[Main Task Loop] No Discord API token found.")
@@ -38,6 +38,7 @@ intents.guilds = True
 intents.members = True
 
 bot = commands.Bot(command_prefix='!', intents=intents)
+
 
 async def sync_commands(test: bool = False):
     try:
@@ -60,6 +61,7 @@ async def list_commands():
     for command in bot.tree.get_commands():
         logger.info(f"[Main Task Loop] Command Name: {command.name}, Description: {command.description}")
 
+
 @bot.event
 async def on_ready():
     logger.info("[Main Task Loop] Loading Assets...")
@@ -71,16 +73,20 @@ async def on_ready():
     logger.info("[Main Task Loop] Assets Loaded")
 
     register_role_commands(tree=bot.tree, discord_bot=bot)
-    
+    register_message_commands(tree=bot.tree, discord_bot=bot)
+
     # Sync and List all commands
     await sync_commands(test=True)
     await list_commands()
 
+
 async def main():
     await bot.start(TOKEN)
 
+
 def run():
     asyncio.run(main())
+
 
 if __name__ == "__main__":
     run()
