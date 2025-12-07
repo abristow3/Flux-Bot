@@ -63,7 +63,7 @@ async def list_commands():
 @bot.event
 async def on_ready():
     logger.info("[Main Task Loop] Loading Assets...")
-    with open("assets/Clay_golem_chathead.png", "rb") as avatar_file:
+    with open("assets/avatar.png", "rb") as avatar_file:
         # Update the bot's avatar
         image = avatar_file.read()
         await bot.user.edit(avatar=image)
