@@ -1,0 +1,2047 @@
+{
+    "startsAt": "2025-08-08T15:04:26.893Z",
+    "endsAt": "2025-08-17T13:06:51.426Z",
+    "data": {
+        "skills": {
+            "overall": {
+                "metric": "overall",
+                "experience": {
+                    "gained": 2820351,
+                    "start": 368731978,
+                    "end": 371552329
+                },
+                "ehp": {
+                    "gained": 12.41483,
+                    "start": 685.1886099999999,
+                    "end": 697.6034400000001
+                },
+                "rank": {
+                    "gained": 176,
+                    "start": 193282,
+                    "end": 193458
+                },
+                "level": {
+                    "gained": 1,
+                    "start": 2131,
+                    "end": 2132
+                }
+            },
+            "attack": {
+                "metric": "attack",
+                "experience": {
+                    "gained": 300,
+                    "start": 22703601,
+                    "end": 22703901
+                },
+                "ehp": {
+                    "gained": 0,
+                    "start": 0,
+                    "end": 0
+                },
+                "rank": {
+                    "gained": 448,
+                    "start": 75276,
+                    "end": 75724
+                },
+                "level": {
+                    "gained": 0,
+                    "start": 99,
+                    "end": 99
+                }
+            },
+            "defence": {
+                "metric": "defence",
+                "experience": {
+                    "gained": 171845,
+                    "start": 17911789,
+                    "end": 18083634
+                },
+                "ehp": {
+                    "gained": 0.21542,
+                    "start": 22.453,
+                    "end": 22.66842
+                },
+                "rank": {
+                    "gained": -2315,
+                    "start": 91697,
+                    "end": 89382
+                },
+                "level": {
+                    "gained": 0,
+                    "start": 99,
+                    "end": 99
+                }
+            },
+            "strength": {
+                "metric": "strength",
+                "experience": {
+                    "gained": 634,
+                    "start": 41129204,
+                    "end": 41129838
+                },
+                "ehp": {
+                    "gained": 0,
+                    "start": 0,
+                    "end": 0
+                },
+                "rank": {
+                    "gained": 717,
+                    "start": 65145,
+                    "end": 65862
+                },
+                "level": {
+                    "gained": 0,
+                    "start": 99,
+                    "end": 99
+                }
+            },
+            "hitpoints": {
+                "metric": "hitpoints",
+                "experience": {
+                    "gained": 418619,
+                    "start": 62953454,
+                    "end": 63372073
+                },
+                "ehp": {
+                    "gained": 0.00209,
+                    "start": 0.31477,
+                    "end": 0.31686
+                },
+                "rank": {
+                    "gained": -124,
+                    "start": 46121,
+                    "end": 45997
+                },
+                "level": {
+                    "gained": 0,
+                    "start": 99,
+                    "end": 99
+                }
+            },
+            "ranged": {
+                "metric": "ranged",
+                "experience": {
+                    "gained": 380651,
+                    "start": 47484382,
+                    "end": 47865033
+                },
+                "ehp": {
+                    "gained": 0.31988,
+                    "start": 39.90284,
+                    "end": 40.22272
+                },
+                "rank": {
+                    "gained": -151,
+                    "start": 79183,
+                    "end": 79032
+                },
+                "level": {
+                    "gained": 0,
+                    "start": 99,
+                    "end": 99
+                }
+            },
+            "prayer": {
+                "metric": "prayer",
+                "experience": {
+                    "gained": 339,
+                    "start": 13084419,
+                    "end": 13084758
+                },
+                "ehp": {
+                    "gained": 0.00017,
+                    "start": 6.54221,
+                    "end": 6.54238
+                },
+                "rank": {
+                    "gained": 761,
+                    "start": 116377,
+                    "end": 117138
+                },
+                "level": {
+                    "gained": 0,
+                    "start": 99,
+                    "end": 99
+                }
+            },
+            "magic": {
+                "metric": "magic",
+                "experience": {
+                    "gained": 415491,
+                    "start": 51315516,
+                    "end": 51731007
+                },
+                "ehp": {
+                    "gained": 0.00208,
+                    "start": 0.25658,
+                    "end": 0.25866
+                },
+                "rank": {
+                    "gained": -267,
+                    "start": 13736,
+                    "end": 13469
+                },
+                "level": {
+                    "gained": 0,
+                    "start": 99,
+                    "end": 99
+                }
+            },
+            "cooking": {
+                "metric": "cooking",
+                "experience": {
+                    "gained": 0,
+                    "start": 2821944,
+                    "end": 2821944
+                },
+                "ehp": {
+                    "gained": 0,
+                    "start": 3.65377,
+                    "end": 3.65377
+                },
+                "rank": {
+                    "gained": 3327,
+                    "start": 802416,
+                    "end": 805743
+                },
+                "level": {
+                    "gained": 0,
+                    "start": 83,
+                    "end": 83
+                }
+            },
+            "woodcutting": {
+                "metric": "woodcutting",
+                "experience": {
+                    "gained": 0,
+                    "start": 13036160,
+                    "end": 13036160
+                },
+                "ehp": {
+                    "gained": 0,
+                    "start": 62.58622,
+                    "end": 62.58622
+                },
+                "rank": {
+                    "gained": 1238,
+                    "start": 214700,
+                    "end": 215938
+                },
+                "level": {
+                    "gained": 0,
+                    "start": 99,
+                    "end": 99
+                }
+            },
+            "fletching": {
+                "metric": "fletching",
+                "experience": {
+                    "gained": 730,
+                    "start": 3129638,
+                    "end": 3130368
+                },
+                "ehp": {
+                    "gained": 0,
+                    "start": 0.01565,
+                    "end": 0.01565
+                },
+                "rank": {
+                    "gained": 3463,
+                    "start": 609750,
+                    "end": 613213
+                },
+                "level": {
+                    "gained": 0,
+                    "start": 84,
+                    "end": 84
+                }
+            },
+            "fishing": {
+                "metric": "fishing",
+                "experience": {
+                    "gained": 110,
+                    "start": 13048202,
+                    "end": 13048312
+                },
+                "ehp": {
+                    "gained": 0.00082,
+                    "start": 100.28921,
+                    "end": 100.29003
+                },
+                "rank": {
+                    "gained": 886,
+                    "start": 134276,
+                    "end": 135162
+                },
+                "level": {
+                    "gained": 0,
+                    "start": 99,
+                    "end": 99
+                }
+            },
+            "firemaking": {
+                "metric": "firemaking",
+                "experience": {
+                    "gained": 202,
+                    "start": 3279744,
+                    "end": 3279946
+                },
+                "ehp": {
+                    "gained": 0.00025,
+                    "start": 5.43371,
+                    "end": 5.43396
+                },
+                "rank": {
+                    "gained": 4183,
+                    "start": 765400,
+                    "end": 769583
+                },
+                "level": {
+                    "gained": 0,
+                    "start": 85,
+                    "end": 85
+                }
+            },
+            "crafting": {
+                "metric": "crafting",
+                "experience": {
+                    "gained": 0,
+                    "start": 2707009,
+                    "end": 2707009
+                },
+                "ehp": {
+                    "gained": 0,
+                    "start": 7.56104,
+                    "end": 7.56104
+                },
+                "rank": {
+                    "gained": 3275,
+                    "start": 525605,
+                    "end": 528880
+                },
+                "level": {
+                    "gained": 0,
+                    "start": 83,
+                    "end": 83
+                }
+            },
+            "smithing": {
+                "metric": "smithing",
+                "experience": {
+                    "gained": 0,
+                    "start": 3279518,
+                    "end": 3279518
+                },
+                "ehp": {
+                    "gained": 0,
+                    "start": 9.33287,
+                    "end": 9.33287
+                },
+                "rank": {
+                    "gained": 2362,
+                    "start": 389787,
+                    "end": 392149
+                },
+                "level": {
+                    "gained": 0,
+                    "start": 85,
+                    "end": 85
+                }
+            },
+            "mining": {
+                "metric": "mining",
+                "experience": {
+                    "gained": 1428122,
+                    "start": 11092138,
+                    "end": 12520260
+                },
+                "ehp": {
+                    "gained": 11.84647,
+                    "start": 103.92042,
+                    "end": 115.76689
+                },
+                "rank": {
+                    "gained": -9948,
+                    "start": 175103,
+                    "end": 165155
+                },
+                "level": {
+                    "gained": 1,
+                    "start": 97,
+                    "end": 98
+                }
+            },
+            "herblore": {
+                "metric": "herblore",
+                "experience": {
+                    "gained": 54,
+                    "start": 2757969,
+                    "end": 2758023
+                },
+                "ehp": {
+                    "gained": 0.0001,
+                    "start": 7.24136,
+                    "end": 7.24146
+                },
+                "rank": {
+                    "gained": 2541,
+                    "start": 427888,
+                    "end": 430429
+                },
+                "level": {
+                    "gained": 0,
+                    "start": 83,
+                    "end": 83
+                }
+            },
+            "agility": {
+                "metric": "agility",
+                "experience": {
+                    "gained": 906,
+                    "start": 5217713,
+                    "end": 5218619
+                },
+                "ehp": {
+                    "gained": 0.01192,
+                    "start": 80.70937,
+                    "end": 80.72129
+                },
+                "rank": {
+                    "gained": 1302,
+                    "start": 187768,
+                    "end": 189070
+                },
+                "level": {
+                    "gained": 0,
+                    "start": 89,
+                    "end": 89
+                }
+            },
+            "thieving": {
+                "metric": "thieving",
+                "experience": {
+                    "gained": 550,
+                    "start": 5859572,
+                    "end": 5860122
+                },
+                "ehp": {
+                    "gained": 0.00146,
+                    "start": 21.92946,
+                    "end": 21.93092
+                },
+                "rank": {
+                    "gained": 1986,
+                    "start": 300783,
+                    "end": 302769
+                },
+                "level": {
+                    "gained": 0,
+                    "start": 90,
+                    "end": 90
+                }
+            },
+            "slayer": {
+                "metric": "slayer",
+                "experience": {
+                    "gained": 1485,
+                    "start": 13175588,
+                    "end": 13177073
+                },
+                "ehp": {
+                    "gained": 0.0133,
+                    "start": 156.51396,
+                    "end": 156.52726
+                },
+                "rank": {
+                    "gained": 1028,
+                    "start": 182813,
+                    "end": 183841
+                },
+                "level": {
+                    "gained": 0,
+                    "start": 99,
+                    "end": 99
+                }
+            },
+            "farming": {
+                "metric": "farming",
+                "experience": {
+                    "gained": 0,
+                    "start": 13242940,
+                    "end": 13242940
+                },
+                "ehp": {
+                    "gained": 0,
+                    "start": 8.25779,
+                    "end": 8.25779
+                },
+                "rank": {
+                    "gained": 1653,
+                    "start": 254140,
+                    "end": 255793
+                },
+                "level": {
+                    "gained": 0,
+                    "start": 99,
+                    "end": 99
+                }
+            },
+            "runecrafting": {
+                "metric": "runecrafting",
+                "experience": {
+                    "gained": 13,
+                    "start": 1041972,
+                    "end": 1041985
+                },
+                "ehp": {
+                    "gained": 5e-05,
+                    "start": 6.04463,
+                    "end": 6.04468
+                },
+                "rank": {
+                    "gained": 4265,
+                    "start": 502655,
+                    "end": 506920
+                },
+                "level": {
+                    "gained": 0,
+                    "start": 73,
+                    "end": 73
+                }
+            },
+            "hunter": {
+                "metric": "hunter",
+                "experience": {
+                    "gained": 300,
+                    "start": 13109790,
+                    "end": 13110090
+                },
+                "ehp": {
+                    "gained": 0.00082,
+                    "start": 36.54919,
+                    "end": 36.55001
+                },
+                "rank": {
+                    "gained": 75,
+                    "start": 97709,
+                    "end": 97784
+                },
+                "level": {
+                    "gained": 0,
+                    "start": 99,
+                    "end": 99
+                }
+            },
+            "construction": {
+                "metric": "construction",
+                "experience": {
+                    "gained": 0,
+                    "start": 5349716,
+                    "end": 5349716
+                },
+                "ehp": {
+                    "gained": 0,
+                    "start": 5.68056,
+                    "end": 5.68056
+                },
+                "rank": {
+                    "gained": 1436,
+                    "start": 186671,
+                    "end": 188107
+                },
+                "level": {
+                    "gained": 0,
+                    "start": 90,
+                    "end": 90
+                }
+            },
+            "sailing": {
+                "metric": "sailing",
+                "experience": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                },
+                "ehp": {
+                    "gained": 0,
+                    "start": 0,
+                    "end": 0
+                },
+                "rank": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                },
+                "level": {
+                    "gained": 0,
+                    "start": 1,
+                    "end": 1
+                }
+            }
+        },
+        "bosses": {
+            "abyssal_sire": {
+                "metric": "abyssal_sire",
+                "ehb": {
+                    "gained": 0,
+                    "start": 0,
+                    "end": 0
+                },
+                "rank": {
+                    "gained": -1,
+                    "start": -1,
+                    "end": -1
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                }
+            },
+            "alchemical_hydra": {
+                "metric": "alchemical_hydra",
+                "ehb": {
+                    "gained": 0,
+                    "start": 0,
+                    "end": 0
+                },
+                "rank": {
+                    "gained": -1,
+                    "start": -1,
+                    "end": -1
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                }
+            },
+            "amoxliatl": {
+                "metric": "amoxliatl",
+                "ehb": {
+                    "gained": 0,
+                    "start": 0,
+                    "end": 0
+                },
+                "rank": {
+                    "gained": -1,
+                    "start": -1,
+                    "end": -1
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                }
+            },
+            "araxxor": {
+                "metric": "araxxor",
+                "ehb": {
+                    "gained": 0,
+                    "start": 51.27027,
+                    "end": 51.27027
+                },
+                "rank": {
+                    "gained": 216,
+                    "start": 7714,
+                    "end": 7930
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": 1897,
+                    "end": 1897
+                }
+            },
+            "artio": {
+                "metric": "artio",
+                "ehb": {
+                    "gained": 0,
+                    "start": 88.6,
+                    "end": 88.6
+                },
+                "rank": {
+                    "gained": 31,
+                    "start": 566,
+                    "end": 597
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": 5316,
+                    "end": 5316
+                }
+            },
+            "barrows_chests": {
+                "metric": "barrows_chests",
+                "ehb": {
+                    "gained": 0,
+                    "start": 0,
+                    "end": 0
+                },
+                "rank": {
+                    "gained": -1,
+                    "start": -1,
+                    "end": -1
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                }
+            },
+            "bryophyta": {
+                "metric": "bryophyta",
+                "ehb": {
+                    "gained": 0,
+                    "start": 0,
+                    "end": 0
+                },
+                "rank": {
+                    "gained": -1,
+                    "start": -1,
+                    "end": -1
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                }
+            },
+            "callisto": {
+                "metric": "callisto",
+                "ehb": {
+                    "gained": 0,
+                    "start": 3.4,
+                    "end": 3.4
+                },
+                "rank": {
+                    "gained": 576,
+                    "start": 62894,
+                    "end": 63470
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": 289,
+                    "end": 289
+                }
+            },
+            "calvarion": {
+                "metric": "calvarion",
+                "ehb": {
+                    "gained": 0,
+                    "start": 0,
+                    "end": 0
+                },
+                "rank": {
+                    "gained": -1,
+                    "start": -1,
+                    "end": -1
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                }
+            },
+            "cerberus": {
+                "metric": "cerberus",
+                "ehb": {
+                    "gained": 0,
+                    "start": 0,
+                    "end": 0
+                },
+                "rank": {
+                    "gained": -1,
+                    "start": -1,
+                    "end": -1
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                }
+            },
+            "chambers_of_xeric": {
+                "metric": "chambers_of_xeric",
+                "ehb": {
+                    "gained": 0,
+                    "start": 196.28571,
+                    "end": 196.28571
+                },
+                "rank": {
+                    "gained": 56,
+                    "start": 29746,
+                    "end": 29802
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": 687,
+                    "end": 687
+                }
+            },
+            "chambers_of_xeric_challenge_mode": {
+                "metric": "chambers_of_xeric_challenge_mode",
+                "ehb": {
+                    "gained": 0,
+                    "start": 0,
+                    "end": 0
+                },
+                "rank": {
+                    "gained": -1,
+                    "start": -1,
+                    "end": -1
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                }
+            },
+            "chaos_elemental": {
+                "metric": "chaos_elemental",
+                "ehb": {
+                    "gained": 0,
+                    "start": 0.075,
+                    "end": 0.075
+                },
+                "rank": {
+                    "gained": 1233,
+                    "start": 252878,
+                    "end": 254111
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": 9,
+                    "end": 9
+                }
+            },
+            "chaos_fanatic": {
+                "metric": "chaos_fanatic",
+                "ehb": {
+                    "gained": 0,
+                    "start": 0.16,
+                    "end": 0.16
+                },
+                "rank": {
+                    "gained": 1520,
+                    "start": 273202,
+                    "end": 274722
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": 16,
+                    "end": 16
+                }
+            },
+            "commander_zilyana": {
+                "metric": "commander_zilyana",
+                "ehb": {
+                    "gained": 0,
+                    "start": 60.34483,
+                    "end": 60.34483
+                },
+                "rank": {
+                    "gained": 26,
+                    "start": 1161,
+                    "end": 1187
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": 3500,
+                    "end": 3500
+                }
+            },
+            "corporeal_beast": {
+                "metric": "corporeal_beast",
+                "ehb": {
+                    "gained": 0,
+                    "start": 10.75,
+                    "end": 10.75
+                },
+                "rank": {
+                    "gained": 187,
+                    "start": 14339,
+                    "end": 14526
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": 645,
+                    "end": 645
+                }
+            },
+            "crazy_archaeologist": {
+                "metric": "crazy_archaeologist",
+                "ehb": {
+                    "gained": 0,
+                    "start": 0,
+                    "end": 0
+                },
+                "rank": {
+                    "gained": -1,
+                    "start": -1,
+                    "end": -1
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                }
+            },
+            "dagannoth_prime": {
+                "metric": "dagannoth_prime",
+                "ehb": {
+                    "gained": 0,
+                    "start": 1.21905,
+                    "end": 1.21905
+                },
+                "rank": {
+                    "gained": 787,
+                    "start": 200523,
+                    "end": 201310
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": 128,
+                    "end": 128
+                }
+            },
+            "dagannoth_rex": {
+                "metric": "dagannoth_rex",
+                "ehb": {
+                    "gained": 0,
+                    "start": 1.19048,
+                    "end": 1.19048
+                },
+                "rank": {
+                    "gained": 1925,
+                    "start": 320083,
+                    "end": 322008
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": 125,
+                    "end": 125
+                }
+            },
+            "dagannoth_supreme": {
+                "metric": "dagannoth_supreme",
+                "ehb": {
+                    "gained": 0,
+                    "start": 1.31429,
+                    "end": 1.31429
+                },
+                "rank": {
+                    "gained": 714,
+                    "start": 189653,
+                    "end": 190367
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": 138,
+                    "end": 138
+                }
+            },
+            "deranged_archaeologist": {
+                "metric": "deranged_archaeologist",
+                "ehb": {
+                    "gained": 0,
+                    "start": 0,
+                    "end": 0
+                },
+                "rank": {
+                    "gained": -1,
+                    "start": -1,
+                    "end": -1
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                }
+            },
+            "doom_of_mokhaiotl": {
+                "metric": "doom_of_mokhaiotl",
+                "ehb": {
+                    "gained": 0,
+                    "start": 0,
+                    "end": 0
+                },
+                "rank": {
+                    "gained": -1,
+                    "start": -1,
+                    "end": -1
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                }
+            },
+            "duke_sucellus": {
+                "metric": "duke_sucellus",
+                "ehb": {
+                    "gained": 0,
+                    "start": 43.26667,
+                    "end": 43.26667
+                },
+                "rank": {
+                    "gained": 174,
+                    "start": 10755,
+                    "end": 10929
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": 1298,
+                    "end": 1298
+                }
+            },
+            "general_graardor": {
+                "metric": "general_graardor",
+                "ehb": {
+                    "gained": 0,
+                    "start": 6.60345,
+                    "end": 6.60345
+                },
+                "rank": {
+                    "gained": 350,
+                    "start": 117896,
+                    "end": 118246
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": 383,
+                    "end": 383
+                }
+            },
+            "giant_mole": {
+                "metric": "giant_mole",
+                "ehb": {
+                    "gained": 6.336,
+                    "start": 53.032,
+                    "end": 59.368
+                },
+                "rank": {
+                    "gained": -465,
+                    "start": 1725,
+                    "end": 1260
+                },
+                "kills": {
+                    "gained": 792,
+                    "start": 6629,
+                    "end": 7421
+                }
+            },
+            "grotesque_guardians": {
+                "metric": "grotesque_guardians",
+                "ehb": {
+                    "gained": 0,
+                    "start": 0,
+                    "end": 0
+                },
+                "rank": {
+                    "gained": -1,
+                    "start": -1,
+                    "end": -1
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                }
+            },
+            "hespori": {
+                "metric": "hespori",
+                "ehb": {
+                    "gained": 0,
+                    "start": 0.53333,
+                    "end": 0.53333
+                },
+                "rank": {
+                    "gained": 1877,
+                    "start": 351148,
+                    "end": 353025
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": 32,
+                    "end": 32
+                }
+            },
+            "kalphite_queen": {
+                "metric": "kalphite_queen",
+                "ehb": {
+                    "gained": 0,
+                    "start": 7.69091,
+                    "end": 7.69091
+                },
+                "rank": {
+                    "gained": 101,
+                    "start": 30035,
+                    "end": 30136
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": 423,
+                    "end": 423
+                }
+            },
+            "king_black_dragon": {
+                "metric": "king_black_dragon",
+                "ehb": {
+                    "gained": 0,
+                    "start": 3.47692,
+                    "end": 3.47692
+                },
+                "rank": {
+                    "gained": 276,
+                    "start": 79549,
+                    "end": 79825
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": 452,
+                    "end": 452
+                }
+            },
+            "kraken": {
+                "metric": "kraken",
+                "ehb": {
+                    "gained": 0,
+                    "start": 0.27,
+                    "end": 0.27
+                },
+                "rank": {
+                    "gained": 2122,
+                    "start": 528680,
+                    "end": 530802
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": 27,
+                    "end": 27
+                }
+            },
+            "kreearra": {
+                "metric": "kreearra",
+                "ehb": {
+                    "gained": 0,
+                    "start": 1.4,
+                    "end": 1.4
+                },
+                "rank": {
+                    "gained": 581,
+                    "start": 146168,
+                    "end": 146749
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": 56,
+                    "end": 56
+                }
+            },
+            "kril_tsutsaroth": {
+                "metric": "kril_tsutsaroth",
+                "ehb": {
+                    "gained": 2.61538,
+                    "start": 1.06154,
+                    "end": 3.67692
+                },
+                "rank": {
+                    "gained": -106070,
+                    "start": 169227,
+                    "end": 63157
+                },
+                "kills": {
+                    "gained": 170,
+                    "start": 69,
+                    "end": 239
+                }
+            },
+            "lunar_chests": {
+                "metric": "lunar_chests",
+                "ehb": {
+                    "gained": 0,
+                    "start": 0,
+                    "end": 0
+                },
+                "rank": {
+                    "gained": -1,
+                    "start": -1,
+                    "end": -1
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                }
+            },
+            "mimic": {
+                "metric": "mimic",
+                "ehb": {
+                    "gained": 0,
+                    "start": 0.26667,
+                    "end": 0.26667
+                },
+                "rank": {
+                    "gained": 75,
+                    "start": 11936,
+                    "end": 12011
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": 16,
+                    "end": 16
+                }
+            },
+            "nex": {
+                "metric": "nex",
+                "ehb": {
+                    "gained": 0,
+                    "start": 44.93617,
+                    "end": 44.93617
+                },
+                "rank": {
+                    "gained": 112,
+                    "start": 26029,
+                    "end": 26141
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": 1056,
+                    "end": 1056
+                }
+            },
+            "nightmare": {
+                "metric": "nightmare",
+                "ehb": {
+                    "gained": 0,
+                    "start": 0,
+                    "end": 0
+                },
+                "rank": {
+                    "gained": -1,
+                    "start": -1,
+                    "end": -1
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                }
+            },
+            "phosanis_nightmare": {
+                "metric": "phosanis_nightmare",
+                "ehb": {
+                    "gained": 0,
+                    "start": 0,
+                    "end": 0
+                },
+                "rank": {
+                    "gained": -1,
+                    "start": -1,
+                    "end": -1
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                }
+            },
+            "obor": {
+                "metric": "obor",
+                "ehb": {
+                    "gained": 0,
+                    "start": 0,
+                    "end": 0
+                },
+                "rank": {
+                    "gained": -1,
+                    "start": -1,
+                    "end": -1
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                }
+            },
+            "phantom_muspah": {
+                "metric": "phantom_muspah",
+                "ehb": {
+                    "gained": 0,
+                    "start": 1.19231,
+                    "end": 1.19231
+                },
+                "rank": {
+                    "gained": 1529,
+                    "start": 177292,
+                    "end": 178821
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": 31,
+                    "end": 31
+                }
+            },
+            "sarachnis": {
+                "metric": "sarachnis",
+                "ehb": {
+                    "gained": 0,
+                    "start": 0,
+                    "end": 0
+                },
+                "rank": {
+                    "gained": -1,
+                    "start": -1,
+                    "end": -1
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                }
+            },
+            "scorpia": {
+                "metric": "scorpia",
+                "ehb": {
+                    "gained": 0,
+                    "start": 0.15385,
+                    "end": 0.15385
+                },
+                "rank": {
+                    "gained": 961,
+                    "start": 189075,
+                    "end": 190036
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": 20,
+                    "end": 20
+                }
+            },
+            "scurrius": {
+                "metric": "scurrius",
+                "ehb": {
+                    "gained": 0,
+                    "start": 0,
+                    "end": 0
+                },
+                "rank": {
+                    "gained": -1,
+                    "start": -1,
+                    "end": -1
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                }
+            },
+            "shellbane_gryphon": {
+                "metric": "shellbane_gryphon",
+                "ehb": {
+                    "gained": 0,
+                    "start": 0,
+                    "end": 0
+                },
+                "rank": {
+                    "gained": -1,
+                    "start": -1,
+                    "end": -1
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                }
+            },
+            "skotizo": {
+                "metric": "skotizo",
+                "ehb": {
+                    "gained": 0,
+                    "start": 0.33333,
+                    "end": 0.33333
+                },
+                "rank": {
+                    "gained": 1368,
+                    "start": 368389,
+                    "end": 369757
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": 15,
+                    "end": 15
+                }
+            },
+            "sol_heredit": {
+                "metric": "sol_heredit",
+                "ehb": {
+                    "gained": 0,
+                    "start": 0,
+                    "end": 0
+                },
+                "rank": {
+                    "gained": -1,
+                    "start": -1,
+                    "end": -1
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                }
+            },
+            "spindel": {
+                "metric": "spindel",
+                "ehb": {
+                    "gained": 0,
+                    "start": 0.36364,
+                    "end": 0.36364
+                },
+                "rank": {
+                    "gained": 950,
+                    "start": 130122,
+                    "end": 131072
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": 20,
+                    "end": 20
+                }
+            },
+            "tempoross": {
+                "metric": "tempoross",
+                "ehb": {
+                    "gained": 0,
+                    "start": 0,
+                    "end": 0
+                },
+                "rank": {
+                    "gained": -1,
+                    "start": -1,
+                    "end": -1
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                }
+            },
+            "the_gauntlet": {
+                "metric": "the_gauntlet",
+                "ehb": {
+                    "gained": 0,
+                    "start": 0,
+                    "end": 0
+                },
+                "rank": {
+                    "gained": -1,
+                    "start": -1,
+                    "end": -1
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                }
+            },
+            "the_corrupted_gauntlet": {
+                "metric": "the_corrupted_gauntlet",
+                "ehb": {
+                    "gained": 0,
+                    "start": 0,
+                    "end": 0
+                },
+                "rank": {
+                    "gained": -1,
+                    "start": -1,
+                    "end": -1
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                }
+            },
+            "the_hueycoatl": {
+                "metric": "the_hueycoatl",
+                "ehb": {
+                    "gained": 0,
+                    "start": 0,
+                    "end": 0
+                },
+                "rank": {
+                    "gained": -1,
+                    "start": -1,
+                    "end": -1
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                }
+            },
+            "the_leviathan": {
+                "metric": "the_leviathan",
+                "ehb": {
+                    "gained": 0,
+                    "start": 0,
+                    "end": 0
+                },
+                "rank": {
+                    "gained": -1,
+                    "start": -1,
+                    "end": -1
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                }
+            },
+            "the_royal_titans": {
+                "metric": "the_royal_titans",
+                "ehb": {
+                    "gained": 0,
+                    "start": 0,
+                    "end": 0
+                },
+                "rank": {
+                    "gained": -1,
+                    "start": -1,
+                    "end": -1
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                }
+            },
+            "the_whisperer": {
+                "metric": "the_whisperer",
+                "ehb": {
+                    "gained": 0,
+                    "start": 0,
+                    "end": 0
+                },
+                "rank": {
+                    "gained": -1,
+                    "start": -1,
+                    "end": -1
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                }
+            },
+            "theatre_of_blood": {
+                "metric": "theatre_of_blood",
+                "ehb": {
+                    "gained": 0,
+                    "start": 0,
+                    "end": 0
+                },
+                "rank": {
+                    "gained": -1,
+                    "start": -1,
+                    "end": -1
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                }
+            },
+            "theatre_of_blood_hard_mode": {
+                "metric": "theatre_of_blood_hard_mode",
+                "ehb": {
+                    "gained": 0,
+                    "start": 0,
+                    "end": 0
+                },
+                "rank": {
+                    "gained": -1,
+                    "start": -1,
+                    "end": -1
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                }
+            },
+            "thermonuclear_smoke_devil": {
+                "metric": "thermonuclear_smoke_devil",
+                "ehb": {
+                    "gained": 0,
+                    "start": 0,
+                    "end": 0
+                },
+                "rank": {
+                    "gained": -1,
+                    "start": -1,
+                    "end": -1
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                }
+            },
+            "tombs_of_amascut": {
+                "metric": "tombs_of_amascut",
+                "ehb": {
+                    "gained": 0,
+                    "start": 0,
+                    "end": 0
+                },
+                "rank": {
+                    "gained": -1,
+                    "start": -1,
+                    "end": -1
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                }
+            },
+            "tombs_of_amascut_expert": {
+                "metric": "tombs_of_amascut_expert",
+                "ehb": {
+                    "gained": 0,
+                    "start": 0,
+                    "end": 0
+                },
+                "rank": {
+                    "gained": -1,
+                    "start": -1,
+                    "end": -1
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                }
+            },
+            "tzkal_zuk": {
+                "metric": "tzkal_zuk",
+                "ehb": {
+                    "gained": 0,
+                    "start": 1,
+                    "end": 1
+                },
+                "rank": {
+                    "gained": 154,
+                    "start": 51533,
+                    "end": 51687
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": 1,
+                    "end": 1
+                }
+            },
+            "tztok_jad": {
+                "metric": "tztok_jad",
+                "ehb": {
+                    "gained": 0,
+                    "start": 5.2,
+                    "end": 5.2
+                },
+                "rank": {
+                    "gained": 382,
+                    "start": 88772,
+                    "end": 89154
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": 13,
+                    "end": 13
+                }
+            },
+            "vardorvis": {
+                "metric": "vardorvis",
+                "ehb": {
+                    "gained": 0,
+                    "start": 0,
+                    "end": 0
+                },
+                "rank": {
+                    "gained": -1,
+                    "start": -1,
+                    "end": -1
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                }
+            },
+            "venenatis": {
+                "metric": "venenatis",
+                "ehb": {
+                    "gained": 0,
+                    "start": 20.3,
+                    "end": 20.3
+                },
+                "rank": {
+                    "gained": 54,
+                    "start": 15061,
+                    "end": 15115
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": 812,
+                    "end": 812
+                }
+            },
+            "vetion": {
+                "metric": "vetion",
+                "ehb": {
+                    "gained": 0,
+                    "start": 54.02,
+                    "end": 54.02
+                },
+                "rank": {
+                    "gained": 39,
+                    "start": 1091,
+                    "end": 1130
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": 2701,
+                    "end": 2701
+                }
+            },
+            "vorkath": {
+                "metric": "vorkath",
+                "ehb": {
+                    "gained": 0,
+                    "start": 1.55882,
+                    "end": 1.55882
+                },
+                "rank": {
+                    "gained": 2520,
+                    "start": 519963,
+                    "end": 522483
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": 53,
+                    "end": 53
+                }
+            },
+            "wintertodt": {
+                "metric": "wintertodt",
+                "ehb": {
+                    "gained": 0,
+                    "start": 0,
+                    "end": 0
+                },
+                "rank": {
+                    "gained": 4624,
+                    "start": 932097,
+                    "end": 936721
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": 90,
+                    "end": 90
+                }
+            },
+            "yama": {
+                "metric": "yama",
+                "ehb": {
+                    "gained": 0,
+                    "start": 0,
+                    "end": 0
+                },
+                "rank": {
+                    "gained": -1,
+                    "start": -1,
+                    "end": -1
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                }
+            },
+            "zalcano": {
+                "metric": "zalcano",
+                "ehb": {
+                    "gained": 0,
+                    "start": 0,
+                    "end": 0
+                },
+                "rank": {
+                    "gained": -1,
+                    "start": -1,
+                    "end": -1
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                }
+            },
+            "zulrah": {
+                "metric": "zulrah",
+                "ehb": {
+                    "gained": 0,
+                    "start": 283.95455,
+                    "end": 283.95455
+                },
+                "rank": {
+                    "gained": 8,
+                    "start": 1540,
+                    "end": 1548
+                },
+                "kills": {
+                    "gained": 0,
+                    "start": 12494,
+                    "end": 12494
+                }
+            }
+        },
+        "activities": {
+            "league_points": {
+                "metric": "league_points",
+                "rank": {
+                    "gained": -1,
+                    "start": -1,
+                    "end": -1
+                },
+                "score": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                }
+            },
+            "bounty_hunter_hunter": {
+                "metric": "bounty_hunter_hunter",
+                "rank": {
+                    "gained": -1,
+                    "start": -1,
+                    "end": -1
+                },
+                "score": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                }
+            },
+            "bounty_hunter_rogue": {
+                "metric": "bounty_hunter_rogue",
+                "rank": {
+                    "gained": -1,
+                    "start": -1,
+                    "end": -1
+                },
+                "score": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                }
+            },
+            "clue_scrolls_all": {
+                "metric": "clue_scrolls_all",
+                "rank": {
+                    "gained": -11517,
+                    "start": 149625,
+                    "end": 138108
+                },
+                "score": {
+                    "gained": 34,
+                    "start": 436,
+                    "end": 470
+                }
+            },
+            "clue_scrolls_beginner": {
+                "metric": "clue_scrolls_beginner",
+                "rank": {
+                    "gained": 9469,
+                    "start": 1989788,
+                    "end": 1999257
+                },
+                "score": {
+                    "gained": 0,
+                    "start": 1,
+                    "end": 1
+                }
+            },
+            "clue_scrolls_easy": {
+                "metric": "clue_scrolls_easy",
+                "rank": {
+                    "gained": -6936,
+                    "start": 99802,
+                    "end": 92866
+                },
+                "score": {
+                    "gained": 8,
+                    "start": 83,
+                    "end": 91
+                }
+            },
+            "clue_scrolls_medium": {
+                "metric": "clue_scrolls_medium",
+                "rank": {
+                    "gained": -18234,
+                    "start": 201560,
+                    "end": 183326
+                },
+                "score": {
+                    "gained": 11,
+                    "start": 82,
+                    "end": 93
+                }
+            },
+            "clue_scrolls_hard": {
+                "metric": "clue_scrolls_hard",
+                "rank": {
+                    "gained": -58891,
+                    "start": 470615,
+                    "end": 411724
+                },
+                "score": {
+                    "gained": 12,
+                    "start": 42,
+                    "end": 54
+                }
+            },
+            "clue_scrolls_elite": {
+                "metric": "clue_scrolls_elite",
+                "rank": {
+                    "gained": -8965,
+                    "start": 177418,
+                    "end": 168453
+                },
+                "score": {
+                    "gained": 2,
+                    "start": 28,
+                    "end": 30
+                }
+            },
+            "clue_scrolls_master": {
+                "metric": "clue_scrolls_master",
+                "rank": {
+                    "gained": -9,
+                    "start": 10808,
+                    "end": 10799
+                },
+                "score": {
+                    "gained": 1,
+                    "start": 200,
+                    "end": 201
+                }
+            },
+            "last_man_standing": {
+                "metric": "last_man_standing",
+                "rank": {
+                    "gained": -1,
+                    "start": -1,
+                    "end": -1
+                },
+                "score": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                }
+            },
+            "pvp_arena": {
+                "metric": "pvp_arena",
+                "rank": {
+                    "gained": -1,
+                    "start": -1,
+                    "end": -1
+                },
+                "score": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                }
+            },
+            "soul_wars_zeal": {
+                "metric": "soul_wars_zeal",
+                "rank": {
+                    "gained": -1,
+                    "start": -1,
+                    "end": -1
+                },
+                "score": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                }
+            },
+            "guardians_of_the_rift": {
+                "metric": "guardians_of_the_rift",
+                "rank": {
+                    "gained": -1,
+                    "start": -1,
+                    "end": -1
+                },
+                "score": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                }
+            },
+            "colosseum_glory": {
+                "metric": "colosseum_glory",
+                "rank": {
+                    "gained": -1,
+                    "start": -1,
+                    "end": -1
+                },
+                "score": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                }
+            },
+            "collections_logged": {
+                "metric": "collections_logged",
+                "rank": {
+                    "gained": -1,
+                    "start": -1,
+                    "end": -1
+                },
+                "score": {
+                    "gained": 0,
+                    "start": -1,
+                    "end": -1
+                }
+            }
+        },
+        "computed": {
+            "ehp": {
+                "metric": "ehp",
+                "value": {
+                    "gained": 12.41483,
+                    "start": 685.1886099999999,
+                    "end": 697.6034400000001
+                },
+                "rank": {
+                    "gained": -2896,
+                    "start": 118833,
+                    "end": 115937
+                }
+            },
+            "ehb": {
+                "metric": "ehb",
+                "value": {
+                    "gained": 8.95138,
+                    "start": 945.22379,
+                    "end": 954.17517
+                },
+                "rank": {
+                    "gained": -251,
+                    "start": 26782,
+                    "end": 26531
+                }
+            }
+        }
+    }
+}
