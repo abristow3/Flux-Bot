@@ -33,7 +33,9 @@ class HuntData:
         self.player_most_cox_completed = {}  # player name and total
         self.player_most_tob_completed = {}  # player name and total
         self.player_most_toa_completed = {}  # player name and total
-        self.most_clues_completed = {}  # player name and total
+        self.player_most_barrows_completed = {"Name": "", "Total": 0}
+        self.player_most_clues_completed = {}  # player name and total
+        self.player_most_xp_gained = {"Name": "", "Total": 0}
 
     def calculate_total_event_ehb(self) -> None:
         participants: list = self.competition_data['participations']
@@ -155,8 +157,96 @@ class HuntData:
                 most_kills_total = total_kills
                 most_kills_name = player_name
 
-        self.player_most_bosses_killed = {most_kills_name:most_kills_total}
+        self.player_most_bosses_killed = {most_kills_name: most_kills_total}
         print(f"Most Bosses Killed: {most_kills_name} - {most_kills_total:,}")
+
+    def calculate_player_most_raids_completed(self) -> None:
+        most_kills_total = 0
+        most_kills_name = ""
+        most_cox_kills_total = 0
+        most_cox_kills_name = ""
+        most_tob_kills_total = 0
+        most_tob_kills_name = ""
+        most_toa_kills_total = 0
+        most_toa_kills_name = ""
+
+        for file in os.listdir("players"):
+            player_data: dict = load_json_data(f"players/{file}")
+            player_name = file.split(".")[0]
+            raid_total = 0
+
+            for boss_name, boss_info in player_data['data']['bosses'].items():
+                kills = boss_info.get('kills', {}).get('gained', 0)
+
+                if 'chambers_of_xeric' in boss_name:
+                    if kills > most_cox_kills_total:
+                        most_cox_kills_total = kills
+                        raid_total += kills
+                        most_cox_kills_name = player_name
+                elif 'theatre_of_blood' in boss_name:
+                    if kills > most_tob_kills_total:
+                        most_tob_kills_total = kills
+                        raid_total += kills
+                        most_tob_kills_name = player_name
+                elif 'tombs_of_amascut' in boss_name:
+                    if kills > most_toa_kills_total:
+                        most_toa_kills_total = kills
+                        raid_total += kills
+                        most_toa_kills_name = player_name
+
+            if raid_total > most_kills_total:
+                most_kills_total = raid_total
+                most_kills_name = player_name
+
+        print(f"Most Raids Completed: {most_kills_name} - {most_kills_total:,}")
+        print(f"Most CoX Completed: {most_cox_kills_name} - {most_cox_kills_total:,}")
+        print(f"Most ToB Completed: {most_tob_kills_name} - {most_tob_kills_total:,}")
+        print(f"Most ToA Completed: {most_toa_kills_name} - {most_toa_kills_total:,}")
+
+    def calculate_player_most_clues(self) -> None:
+        most_clues_total = 0
+        most_clues_name = ""
+        for file in os.listdir("players"):
+            player_data: dict = load_json_data(f"players/{file}")
+            player_name = file.split(".")[0]
+
+            for activity_name, activity_info in player_data['data']['activities'].items():
+                clues_completed = activity_info.get('score', {}).get('gained', 0)
+
+                if 'clue_scrolls_all' in activity_name:
+                    if clues_completed > most_clues_total:
+                        most_clues_name = player_name
+                        most_clues_total = clues_completed
+
+        print(f"Most Clue Scrolls Completed: {most_clues_name} - {most_clues_total:,}")
+
+    def calculate_player_most_xp_gained(self) -> None:
+        for file in os.listdir("players"):
+            player_data: dict = load_json_data(f"players/{file}")
+            player_name = file.split(".")[0]
+            xp_gained = player_data['data']['skills']['overall']['experience']['gained']
+
+            if xp_gained > self.player_most_xp_gained['Total']:
+                self.player_most_xp_gained['Name'] = player_name
+                self.player_most_xp_gained['Total'] = xp_gained
+
+        print(f"Most Experience Gained: {self.player_most_xp_gained['Name']} - {self.player_most_xp_gained['Total']:,}")
+
+    def calculate_player_most_barrows(self) -> None:
+        for file in os.listdir("players"):
+            player_data: dict = load_json_data(f"players/{file}")
+            player_name = file.split(".")[0]
+
+            for boss_name, boss_info in player_data['data']['bosses'].items():
+                kills = boss_info.get('kills', {}).get('gained', 0)
+
+                if 'barrows_chests' in boss_name:
+                    if kills > self.player_most_barrows_completed['Total']:
+                        self.player_most_barrows_completed['Total'] = kills
+                        self.player_most_barrows_completed['Name'] = player_name
+
+        print(f"Most Barrows Chests Looted: {self.player_most_barrows_completed['Name']} - "
+              f"{self.player_most_barrows_completed['Total']:,}")
 
 
 if __name__ == "__main__":
@@ -170,3 +260,7 @@ if __name__ == "__main__":
     details.calculate_total_clues_completed()
     details.calculate_total_xp()
     details.calculate_player_most_total_kills()
+    details.calculate_player_most_raids_completed()
+    details.calculate_player_most_clues()
+    details.calculate_player_most_xp_gained()
+    details.calculate_player_most_barrows()
