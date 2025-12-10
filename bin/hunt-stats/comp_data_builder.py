@@ -8,9 +8,20 @@ def load_json_data(filepath) -> dict:
     return data
 
 
+'''
+Total GP
+Total Drops
+Most Expensive Drop
+Team 1 Score / Name
+Team 2 Score / Name
+Player with most drops
+Player earned most GP
+'''
+
+
 class HuntData:
     def __init__(self):
-        self.competition_data = load_json_data("competition.json")
+        self.competition_data = load_json_data("Hunts/Hunt-14/competition.json")
         self.total_hunt_ehb = 0.0
         self.total_participants = 0
         self.most_ehb = 0.0
@@ -63,8 +74,8 @@ class HuntData:
         print(f"Most EHB: {player_name} - {most_ehb} EHB")
 
     def calculate_total_bosses_killed(self) -> None:
-        for file in os.listdir("players"):
-            player_data: dict = load_json_data(f"players/{file}")
+        for file in os.listdir("Hunts/Hunt-14/players"):
+            player_data: dict = load_json_data(f"Hunts/Hunt-14/players/{file}")
 
             for boss_name, boss_info in player_data['data']['bosses'].items():
                 self.total_bosses_killed += boss_info.get('kills', {}).get('gained', 0)
@@ -72,8 +83,8 @@ class HuntData:
         print(f"Total Boss Kills: {self.total_bosses_killed:,}")
 
     def calculate_total_raids_killed(self) -> None:
-        for file in os.listdir("players"):
-            player_data: dict = load_json_data(f"players/{file}")
+        for file in os.listdir("Hunts/Hunt-14/players"):
+            player_data: dict = load_json_data(f"Hunts/Hunt-14/players/{file}")
 
             for boss_name, boss_info in player_data['data']['bosses'].items():
                 kills = boss_info.get('kills', {}).get('gained', 0)
@@ -94,8 +105,8 @@ class HuntData:
         print(f"Total ToA Completed: {self.total_toa_completed:,}")
 
     def calculate_total_barrows_killed(self) -> None:
-        for file in os.listdir("players"):
-            player_data: dict = load_json_data(f"players/{file}")
+        for file in os.listdir("Hunts/Hunt-14/players"):
+            player_data: dict = load_json_data(f"Hunts/Hunt-14/players/{file}")
 
             for boss_name, boss_info in player_data['data']['bosses'].items():
                 kills = boss_info.get('kills', {}).get('gained', 0)
@@ -106,8 +117,8 @@ class HuntData:
         print(f"Total Barrows Chests Looted: {self.total_barrows_looted:,}")
 
     def calculate_total_clues_completed(self) -> None:
-        for file in os.listdir("players"):
-            player_data: dict = load_json_data(f"players/{file}")
+        for file in os.listdir("Hunts/Hunt-14/players"):
+            player_data: dict = load_json_data(f"Hunts/Hunt-14/players/{file}")
 
             for activity_name, activity_info in player_data['data']['activities'].items():
                 clues_completed = activity_info.get('score', {}).get('gained', 0)
@@ -136,8 +147,8 @@ class HuntData:
         print(f"Total Master Clue Scrolls Completed: {self.total_master_clues}")
 
     def calculate_total_xp(self) -> None:
-        for file in os.listdir("players"):
-            player_data: dict = load_json_data(f"players/{file}")
+        for file in os.listdir("Hunts/Hunt-14/players"):
+            player_data: dict = load_json_data(f"Hunts/Hunt-14/players/{file}")
             self.total_xp_gained += player_data['data']['skills']['overall']['experience']['gained']
 
         print(f"Total Experience Gained: {self.total_xp_gained:,}")
@@ -145,8 +156,8 @@ class HuntData:
     def calculate_player_most_total_kills(self) -> None:
         most_kills_total = 0
         most_kills_name = ""
-        for file in os.listdir("players"):
-            player_data: dict = load_json_data(f"players/{file}")
+        for file in os.listdir("Hunts/Hunt-14/players"):
+            player_data: dict = load_json_data(f"Hunts/Hunt-14/players/{file}")
             total_kills = 0
             player_name = file.split(".")[0]
 
@@ -170,8 +181,8 @@ class HuntData:
         most_toa_kills_total = 0
         most_toa_kills_name = ""
 
-        for file in os.listdir("players"):
-            player_data: dict = load_json_data(f"players/{file}")
+        for file in os.listdir("Hunts/Hunt-14/players"):
+            player_data: dict = load_json_data(f"Hunts/Hunt-14/players/{file}")
             player_name = file.split(".")[0]
             raid_total = 0
 
@@ -206,8 +217,8 @@ class HuntData:
     def calculate_player_most_clues(self) -> None:
         most_clues_total = 0
         most_clues_name = ""
-        for file in os.listdir("players"):
-            player_data: dict = load_json_data(f"players/{file}")
+        for file in os.listdir("Hunts/Hunt-14/players"):
+            player_data: dict = load_json_data(f"Hunts/Hunt-14/players/{file}")
             player_name = file.split(".")[0]
 
             for activity_name, activity_info in player_data['data']['activities'].items():
@@ -221,8 +232,8 @@ class HuntData:
         print(f"Most Clue Scrolls Completed: {most_clues_name} - {most_clues_total:,}")
 
     def calculate_player_most_xp_gained(self) -> None:
-        for file in os.listdir("players"):
-            player_data: dict = load_json_data(f"players/{file}")
+        for file in os.listdir("Hunts/Hunt-14/players"):
+            player_data: dict = load_json_data(f"Hunts/Hunt-14/players/{file}")
             player_name = file.split(".")[0]
             xp_gained = player_data['data']['skills']['overall']['experience']['gained']
 
@@ -233,8 +244,8 @@ class HuntData:
         print(f"Most Experience Gained: {self.player_most_xp_gained['Name']} - {self.player_most_xp_gained['Total']:,}")
 
     def calculate_player_most_barrows(self) -> None:
-        for file in os.listdir("players"):
-            player_data: dict = load_json_data(f"players/{file}")
+        for file in os.listdir("Hunts/Hunt-14/players"):
+            player_data: dict = load_json_data(f"Hunts/Hunt-14/players/{file}")
             player_name = file.split(".")[0]
 
             for boss_name, boss_info in player_data['data']['bosses'].items():
