@@ -8,18 +8,7 @@ def load_json_data(filepath) -> dict:
     return data
 
 
-'''
-Total GP
-Total Drops
-Most Expensive Drop
-Team 1 Score / Name
-Team 2 Score / Name
-Player with most drops
-Player earned most GP
-'''
-
-
-class HuntData:
+class WOMDataParser:
     def __init__(self):
         self.competition_data = load_json_data("../data/Hunt-14/competition.json")
         self.total_hunt_ehb = 0.0
@@ -261,7 +250,7 @@ class HuntData:
 
 
 if __name__ == "__main__":
-    details = HuntData()
+    details = WOMDataParser()
     details.calculate_total_event_ehb()
     details.calculate_total_participants()
     details.calculate_most_ehb()
