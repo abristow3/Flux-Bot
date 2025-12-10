@@ -140,6 +140,25 @@ class HuntData:
 
         print(f"Total Experience Gained: {self.total_xp_gained:,}")
 
+    def calculate_player_most_total_kills(self) -> None:
+        most_kills_total = 0
+        most_kills_name = ""
+        for file in os.listdir("players"):
+            player_data: dict = load_json_data(f"players/{file}")
+            total_kills = 0
+            player_name = file.split(".")[0]
+
+            for boss_name, boss_info in player_data['data']['bosses'].items():
+                total_kills += boss_info.get('kills', {}).get('gained', 0)
+
+            if total_kills > most_kills_total:
+                most_kills_total = total_kills
+                most_kills_name = player_name
+
+        self.player_most_bosses_killed = {most_kills_name:most_kills_total}
+        print(f"Most Bosses Killed: {most_kills_name} - {most_kills_total:,}")
+
+
 if __name__ == "__main__":
     details = HuntData()
     details.calculate_total_event_ehb()
@@ -150,3 +169,4 @@ if __name__ == "__main__":
     details.calculate_total_barrows_killed()
     details.calculate_total_clues_completed()
     details.calculate_total_xp()
+    details.calculate_player_most_total_kills()
