@@ -8,7 +8,7 @@ ICON_SIZE = 50  # Size for each icon
 
 def create_card_with_side_icons(title_text, left_icon_path=None, right_icon_path=None):
     # ---------- Load background image exactly as-is ----------
-    card = Image.open("bin/red-gloss-background.png").convert("RGBA")
+    card = Image.open("assets/red-gloss-background.png").convert("RGBA")
     card = card.resize((CARD_WIDTH, CARD_HEIGHT))
 
     draw = ImageDraw.Draw(card)
@@ -57,7 +57,7 @@ def create_card_with_side_icons(title_text, left_icon_path=None, right_icon_path
     rounded.paste(card, (0, 0), mask)
 
     # ---------- Save ----------
-    filename = "hunt14_card_side_icons.png"
+    filename = "assets/hunt14_card_side_icons.png"
     rounded.save(filename)
     print(f"Saved {filename}")
 

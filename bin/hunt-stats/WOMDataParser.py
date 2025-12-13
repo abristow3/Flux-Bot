@@ -145,13 +145,18 @@ class WOMDataParser:
     def calculate_player_most_total_kills(self) -> None:
         most_kills_total = 0
         most_kills_name = ""
+        written = False
         for file in os.listdir("../data/Hunt-14/players"):
             player_data: dict = load_json_data(f"../data/Hunt-14/players/{file}")
             total_kills = 0
             player_name = file.split(".")[0]
 
-            for boss_name, boss_info in player_data['data']['bosses'].items():
-                total_kills += boss_info.get('kills', {}).get('gained', 0)
+            # Write boss names once (from the first player only)
+            if not written:
+                with open("../data/Hunt-14/boss_names.txt", "w", encoding="utf-8") as f:
+                    for boss_name in player_data["data"]["bosses"].keys():
+                        f.write(f"{boss_name}\n")
+                written = True
 
             if total_kills > most_kills_total:
                 most_kills_total = total_kills
