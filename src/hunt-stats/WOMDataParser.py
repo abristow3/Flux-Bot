@@ -253,7 +253,32 @@ class WOMDataParser:
         print(f"Most Barrows Chests Looted: {self.player_most_barrows_completed['Name']} - "
               f"{self.player_most_barrows_completed['Total']:,}")
 
+'''
+Total GP
+Total Drops
+total pets
+total jars
+total mega-rares
 
+Most Expensive Drop
+Team 1 Score / Name / points
+Team 2 Score / Name / points
+most points from gdoc
+
+Player with most drops
+Player earned most GP
+Player most points per EHB
+player most GP per EHB
+players most drops per EHB
+player most pets
+player most jars
+
+===== from both data sources ====
+avg gp per boss kill
+player with most gp per boss kill
+player with least gp per boss kill
+
+'''
 if __name__ == "__main__":
     details = WOMDataParser()
     details.calculate_total_event_ehb()

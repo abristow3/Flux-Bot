@@ -1,5 +1,6 @@
 auth.yaml
 .idea
+src/conf/google_auth.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
