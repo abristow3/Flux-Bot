@@ -20,7 +20,7 @@ class GDocDataParser:
                 "players": {},
                 "team_totals": {
                     "total_drops": 0,
-                    "total_points": 0.0,
+                    "total_points": 0.0,  # Leave as 0 for now
                     "total_coins": 0.0
                 }
             },
@@ -28,34 +28,30 @@ class GDocDataParser:
                 "players": {},
                 "team_totals": {
                     "total_drops": 0,
-                    "total_points": 0.0,
+                    "total_points": 0.0,  # Leave as 0 for now
                     "total_coins": 0.0
                 }
             }
         }
 
-    # ---------------------------------------------------------
-    # Example run method
-    # ---------------------------------------------------------
     def run(self):
         """Main method to fetch, parse, and write metrics."""
-        # Fetch team data
         df_red, df_gold = self.get_team_dataframes(self.sheet_name)
 
-        # Ingest
-        self.ingest_team_dataframe(df_red, "Team Red")
-        self.ingest_team_dataframe(df_gold, "Team Gold")
+        df_red_clean = self.clean_team_dataframe(df_red)
+        df_gold_clean = self.clean_team_dataframe(df_gold)
 
-        # Write to JSON
+        self.ingest_team_dataframe(df_red_clean, "Team Red")
+        self.ingest_team_dataframe(df_gold_clean, "Team Gold")
+
         self.write_metrics_to_file(self.output_file)
-        print("GDoc Parsing Completed")
+        print("GDOC PARSING COMPLETED")
 
     # ---------------------------------------------------------
     # Sheet parsing
     # ---------------------------------------------------------
     def get_team_dataframes(self, sheet_name: str):
         raw_data = self.gdoc.get_data_from_sheet(sheet_name)
-
         if raw_data is None or raw_data.shape[0] < 3:
             return pd.DataFrame(), pd.DataFrame()
 
@@ -66,22 +62,14 @@ class GDocDataParser:
         for r in rows:
             r += [""] * (6 - len(r))
             red_rows.append([r[0], r[1], r[2], r[4], r[5]])
-
-        df_red = pd.DataFrame(
-            red_rows,
-            columns=["Content", "Item", "Player", "Coins", "Points"]
-        )
+        df_red = pd.DataFrame(red_rows, columns=["Content", "Item", "Player", "Coins", "Points"])
 
         # Team Gold (J-O → keep J,K,L,N,O)
         gold_rows = []
         for r in rows:
             r += [""] * (15 - len(r))
             gold_rows.append([r[9], r[10], r[11], r[13], r[14]])
-
-        df_gold = pd.DataFrame(
-            gold_rows,
-            columns=["Content", "Item", "Player", "Coins", "Points"]
-        )
+        df_gold = pd.DataFrame(gold_rows, columns=["Content", "Item", "Player", "Coins", "Points"])
 
         return df_red, df_gold
 
@@ -98,14 +86,8 @@ class GDocDataParser:
                 "boss_pets": 0,
                 "jars": 0,
                 "mega_rares": 0,
-                "most_expensive_drop": {
-                    "item": None,
-                    "value": 0.0
-                },
-                "most_points_item": {
-                    "item": None,
-                    "points": 0.0
-                }
+                "most_expensive_drop": {"item": None, "value": 0.0},
+                "most_points_item": {"item": None, "points": 0.0}
             }
 
     # ---------------------------------------------------------
@@ -116,7 +98,6 @@ class GDocDataParser:
             return
 
         df = df_team.copy()
-
         for col in ["Player", "Item", "Coins", "Points"]:
             if col in df.columns:
                 df[col] = df[col].astype(str).str.replace(",", "").str.strip()
@@ -127,11 +108,8 @@ class GDocDataParser:
         df_valid = df[(df["Player"] != "") & (df["Item"] != "")]
 
         mega_rares = [
-            "scythe of vitur",
-            "twisted bow",
-            "elder maul",
-            "kodai insignia",
-            "tumeken's shadow"
+            "scythe of vitur", "twisted bow", "elder maul",
+            "kodai insignia", "tumeken's shadow"
         ]
 
         for _, row in df_valid.iterrows():
@@ -151,14 +129,10 @@ class GDocDataParser:
 
             pdata["total_points"] += points
             pdata["total_coins"] += coins
-            totals["total_points"] += points
             totals["total_coins"] += coins
 
             if points > pdata["most_points_item"]["points"]:
-                pdata["most_points_item"] = {
-                    "item": item,
-                    "points": points
-                }
+                pdata["most_points_item"] = {"item": item, "points": points}
 
             if "pet" in item.lower():
                 pdata["boss_pets"] += 1
@@ -170,22 +144,18 @@ class GDocDataParser:
                 pdata["mega_rares"] += 1
 
             if coins > pdata["most_expensive_drop"]["value"]:
-                pdata["most_expensive_drop"] = {
-                    "item": item,
-                    "value": coins
-                }
+                pdata["most_expensive_drop"] = {"item": item, "value": coins}
 
     # ---------------------------------------------------------
     # Output
     # ---------------------------------------------------------
     def write_metrics_to_file(self, path: str):
         output = {}
-
         for team, data in self.team_players.items():
             output[team] = {
                 "team_totals": {
                     "total_drops": data["team_totals"]["total_drops"],
-                    "total_points": f'{data["team_totals"]["total_points"]:,.1f}',
+                    "total_points": f'{data["team_totals"]["total_points"]:,.1f}',  # still 0 for now
                     "total_coins": f'{data["team_totals"]["total_coins"]:,.0f}'
                 },
                 "players": {}
@@ -212,5 +182,51 @@ class GDocDataParser:
         with open(path, "w", encoding="utf-8") as f:
             json.dump(output, f, indent=2)
 
+    # ---------------------------------------------------------
+    # Data cleaning
+    # ---------------------------------------------------------
+    def clean_team_dataframe(self, df_team: pd.DataFrame) -> pd.DataFrame:
+        """Normalize and clean a team dataframe."""
+        if df_team is None or df_team.empty:
+            return pd.DataFrame()
 
+        df = df_team.copy()
 
+        # Normalize string columns
+        for col in ["Content", "Item", "Player"]:
+            if col in df.columns:
+                df[col] = df[col].fillna("").astype(str).str.strip()
+
+        # Normalize Coins
+        if "Coins" in df.columns:
+            df["Coins"] = (
+                df["Coins"]
+                .fillna(0)
+                .astype(str)
+                .str.replace(",", "")
+                .str.strip()
+                .replace(["", "NULL", "None"], "0")
+            )
+            df["Coins"] = pd.to_numeric(df["Coins"], errors="coerce").fillna(0).astype(int)
+        else:
+            df["Coins"] = 0
+
+        # Normalize Points
+        if "Points" in df.columns:
+            df["Points"] = (
+                df["Points"]
+                .fillna(0)
+                .astype(str)
+                .str.replace(",", "")
+                .str.strip()
+                .replace(["", "NULL", "None"], "0")
+            )
+            df["Points"] = pd.to_numeric(df["Points"], errors="coerce").fillna(0).astype(float)
+        else:
+            df["Points"] = 0.0
+
+        # Drop rows where all columns except 'Points' are empty/NaN
+        cols_except_points = [col for col in df.columns if col != "Points"]
+        df = df.loc[~df[cols_except_points].apply(lambda x: all([v in [None, "", "nan"] for v in x]), axis=1)]
+
+        return df
