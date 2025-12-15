@@ -1,0 +1,4049 @@
+{
+  "Team Red": {
+    "team_totals": {
+      "total_drops": 688,
+      "total_points": "48,382.5",
+      "total_coins": "10,506,265,741"
+    },
+    "players": {
+      "Matt BTW": {
+        "total_drops": 16,
+        "total_points": "1,482.5",
+        "total_coins": "239,111,710",
+        "boss_pets": 1,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Ultor vestige",
+          "value": "113,370,403"
+        },
+        "most_points_item": {
+          "item": "Virtus mask",
+          "points": "380.0"
+        },
+        "wom": {
+          "ehb": 74.5526,
+          "boss_kills": 1329,
+          "raids": 90,
+          "cox": 48,
+          "tob": 31,
+          "toa": 11,
+          "barrows": 2,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 13444945
+        }
+      },
+      "Brukismy": {
+        "total_drops": 12,
+        "total_points": "947.5",
+        "total_coins": "125,338,138",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 1,
+        "most_expensive_drop": {
+          "item": "Elder maul",
+          "value": "99,505,557"
+        },
+        "most_points_item": {
+          "item": "Elder maul",
+          "points": "335.0"
+        },
+        "wom": {
+          "ehb": 29.83141,
+          "boss_kills": 871,
+          "raids": 30,
+          "cox": 15,
+          "tob": 15,
+          "toa": 0,
+          "barrows": 3,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 6698040
+        }
+      },
+      "Tom o 0": {
+        "total_drops": 26,
+        "total_points": "1,617.5",
+        "total_coins": "275,471,791",
+        "boss_pets": 2,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Oathplate chest",
+          "value": "90,402,906"
+        },
+        "most_points_item": {
+          "item": "Boss pet",
+          "points": "300.0"
+        },
+        "wom": {
+          "ehb": 27.65564,
+          "boss_kills": 1644,
+          "raids": 4,
+          "cox": 1,
+          "tob": 3,
+          "toa": 0,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 5964330
+        }
+      },
+      "Z achh": {
+        "total_drops": 19,
+        "total_points": "2,910.0",
+        "total_coins": "1,525,710,982",
+        "boss_pets": 1,
+        "jars": 0,
+        "mega_rares": 1,
+        "most_expensive_drop": {
+          "item": "Scythe of vitur (uncharged)",
+          "value": "1,399,879,328"
+        },
+        "most_points_item": {
+          "item": "Scythe of vitur (uncharged)",
+          "points": "1,700.0"
+        }
+      },
+      "Fe Jesse": {
+        "total_drops": 18,
+        "total_points": "1,610.0",
+        "total_coins": "61,204,760",
+        "boss_pets": 0,
+        "jars": 2,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Magus vestige",
+          "value": "37,902,560"
+        },
+        "most_points_item": {
+          "item": "Justiciar faceguard",
+          "points": "850.0"
+        },
+        "wom": {
+          "ehb": 36.74798,
+          "boss_kills": 1081,
+          "raids": 30,
+          "cox": 20,
+          "tob": 9,
+          "toa": 1,
+          "barrows": 38,
+          "clues": {
+            "total": 6,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 2,
+            "hard": 0,
+            "elite": 4,
+            "master": 0
+          },
+          "xp_gained": 5735697
+        }
+      },
+      "C habs": {
+        "total_drops": 15,
+        "total_points": "757.5",
+        "total_coins": "29,652,323",
+        "boss_pets": 1,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Voidwaker Hilt",
+          "value": "11,461,876"
+        },
+        "most_points_item": {
+          "item": "Boss pet",
+          "points": "300.0"
+        },
+        "wom": {
+          "ehb": 15.05956,
+          "boss_kills": 735,
+          "raids": 9,
+          "cox": 8,
+          "tob": 0,
+          "toa": 1,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 2334938
+        }
+      },
+      "THFC Con": {
+        "total_drops": 6,
+        "total_points": "1,415.0",
+        "total_coins": "145,826,721",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Ancestral hat",
+          "value": "68,011,103"
+        },
+        "most_points_item": {
+          "item": "Ancestral hat",
+          "points": "880.0"
+        },
+        "wom": {
+          "ehb": 29.36066,
+          "boss_kills": 652,
+          "raids": 36,
+          "cox": 21,
+          "tob": 13,
+          "toa": 2,
+          "barrows": 1,
+          "clues": {
+            "total": 3,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 3,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 7609093
+        }
+      },
+      "andydfence": {
+        "total_drops": 15,
+        "total_points": "1,620.0",
+        "total_coins": "225,646,059",
+        "boss_pets": 2,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Enhanced crystal weapon seed",
+          "value": "138,085,918"
+        },
+        "most_points_item": {
+          "item": "Enhanced crystal weapon seed",
+          "points": "480.0"
+        },
+        "wom": {
+          "ehb": 3.6631,
+          "boss_kills": 91,
+          "raids": 3,
+          "cox": 1,
+          "tob": 2,
+          "toa": 0,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 4958233
+        }
+      },
+      "Belindaa": {
+        "total_drops": 6,
+        "total_points": "110.0",
+        "total_coins": "12,033,924",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Verac's flail",
+          "value": "6,090,166"
+        },
+        "most_points_item": {
+          "item": "Verac's flail",
+          "points": "20.0"
+        },
+        "wom": {
+          "ehb": 3.85152,
+          "boss_kills": 86,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 84,
+          "clues": {
+            "total": 2,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 1,
+            "hard": 0,
+            "elite": 1,
+            "master": 0
+          },
+          "xp_gained": 1413976
+        }
+      },
+      "Druid Ras": {
+        "total_drops": 14,
+        "total_points": "675.0",
+        "total_coins": "252,888,871",
+        "boss_pets": 1,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Avernic Treads",
+          "value": "166,310,068"
+        },
+        "most_points_item": {
+          "item": "Avernic Treads",
+          "points": "220.0"
+        },
+        "wom": {
+          "ehb": 27.7588,
+          "boss_kills": 919,
+          "raids": 41,
+          "cox": 5,
+          "tob": 36,
+          "toa": 0,
+          "barrows": 3,
+          "clues": {
+            "total": 10,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 10
+          },
+          "xp_gained": 5398271
+        }
+      },
+      "Crf Craft": {
+        "total_drops": 24,
+        "total_points": "567.5",
+        "total_coins": "54,053,284",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Zenyte shard",
+          "value": "16,184,639"
+        },
+        "most_points_item": {
+          "item": "Bottomless compost bucket",
+          "points": "100.0"
+        }
+      },
+      "Frank Donner": {
+        "total_drops": 37,
+        "total_points": "3,851.5",
+        "total_coins": "446,755,269",
+        "boss_pets": 2,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Ancestral robe top",
+          "value": "144,846,860"
+        },
+        "most_points_item": {
+          "item": "Ancestral robe top",
+          "points": "880.0"
+        }
+      },
+      "Availing42": {
+        "total_drops": 9,
+        "total_points": "282.5",
+        "total_coins": "13,253,797",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Dual macuahuitl",
+          "value": "4,509,673"
+        },
+        "most_points_item": {
+          "item": "Bounty 2nd",
+          "points": "100.0"
+        },
+        "wom": {
+          "ehb": 14.71154,
+          "boss_kills": 633,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 22,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 2827114
+        }
+      },
+      "THFC Ham": {
+        "total_drops": 16,
+        "total_points": "1,152.5",
+        "total_coins": "224,901,813",
+        "boss_pets": 0,
+        "jars": 1,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Oathplate legs",
+          "value": "91,388,000"
+        },
+        "most_points_item": {
+          "item": "Oathplate legs",
+          "points": "380.0"
+        },
+        "wom": {
+          "ehb": 53.67699,
+          "boss_kills": 1787,
+          "raids": 35,
+          "cox": 25,
+          "tob": 10,
+          "toa": 0,
+          "barrows": 8,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 11980782
+        }
+      },
+      "Ludw1g": {
+        "total_drops": 29,
+        "total_points": "940.0",
+        "total_coins": "145,129,679",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Dexterous prayer scroll",
+          "value": "41,406,544"
+        },
+        "most_points_item": {
+          "item": "Dragon hunter wand",
+          "points": "140.0"
+        },
+        "wom": {
+          "ehb": 44.72323,
+          "boss_kills": 1460,
+          "raids": 21,
+          "cox": 21,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 1,
+          "clues": {
+            "total": 6,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 4,
+            "elite": 0,
+            "master": 2
+          },
+          "xp_gained": 12466379
+        }
+      },
+      "MarioKartDD": {
+        "total_drops": 28,
+        "total_points": "960.0",
+        "total_coins": "104,894,591",
+        "boss_pets": 0,
+        "jars": 2,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Armadyl chestplate",
+          "value": "37,742,348"
+        },
+        "most_points_item": {
+          "item": "Jar",
+          "points": "100.0"
+        },
+        "wom": {
+          "ehb": 22.72987,
+          "boss_kills": 1054,
+          "raids": 1,
+          "cox": 1,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 0,
+          "clues": {
+            "total": 13,
+            "beginner": 0,
+            "easy": 2,
+            "medium": 0,
+            "hard": 9,
+            "elite": 2,
+            "master": 0
+          },
+          "xp_gained": 6653732
+        }
+      },
+      "Jalllly": {
+        "total_drops": 13,
+        "total_points": "2,385.0",
+        "total_coins": "154,531,302",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Zaryte Vambraces",
+          "value": "83,800,000"
+        },
+        "most_points_item": {
+          "item": "Justiciar legguards",
+          "points": "850.0"
+        },
+        "wom": {
+          "ehb": 7.56358,
+          "boss_kills": 195,
+          "raids": 3,
+          "cox": 0,
+          "tob": 3,
+          "toa": 0,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 1842494
+        }
+      },
+      "Quakbou": {
+        "total_drops": 50,
+        "total_points": "3,896.0",
+        "total_coins": "1,815,809,130",
+        "boss_pets": 1,
+        "jars": 0,
+        "mega_rares": 2,
+        "most_expensive_drop": {
+          "item": "Twisted bow",
+          "value": "1,443,431,759"
+        },
+        "most_points_item": {
+          "item": "Twisted bow",
+          "points": "1,340.0"
+        },
+        "wom": {
+          "ehb": 78.2173,
+          "boss_kills": 1774,
+          "raids": 70,
+          "cox": 27,
+          "tob": 27,
+          "toa": 16,
+          "barrows": 8,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 14182951
+        }
+      },
+      "Irondemic": {
+        "total_drops": 1,
+        "total_points": "410.0",
+        "total_coins": "35,756,593",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Virtus robe bottom",
+          "value": "35,756,593"
+        },
+        "most_points_item": {
+          "item": "Virtus robe bottom",
+          "points": "410.0"
+        }
+      },
+      "mbearmike": {
+        "total_drops": 40,
+        "total_points": "1,235.0",
+        "total_coins": "180,930,779",
+        "boss_pets": 0,
+        "jars": 1,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Siren's staff",
+          "value": "60,977,677"
+        },
+        "most_points_item": {
+          "item": "Dragon pickaxe",
+          "points": "110.0"
+        }
+      },
+      "Jorn RS": {
+        "total_drops": 7,
+        "total_points": "650.0",
+        "total_coins": "12,552,376",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Archers ring",
+          "value": "4,992,444"
+        },
+        "most_points_item": {
+          "item": "Elidinis' ward",
+          "points": "460.0"
+        },
+        "wom": {
+          "ehb": 17.2463,
+          "boss_kills": 625,
+          "raids": 28,
+          "cox": 7,
+          "tob": 0,
+          "toa": 21,
+          "barrows": 3,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 4041242
+        }
+      },
+      "Tom Tbow": {
+        "total_drops": 15,
+        "total_points": "1,450.0",
+        "total_coins": "121,483,229",
+        "boss_pets": 1,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Dexterous prayer scroll",
+          "value": "41,406,544"
+        },
+        "most_points_item": {
+          "item": "Justiciar chestguard",
+          "points": "850.0"
+        }
+      },
+      "Google Knows": {
+        "total_drops": 12,
+        "total_points": "567.5",
+        "total_coins": "103,156,020",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Dragon Hunter Crossbow",
+          "value": "43,611,402"
+        },
+        "most_points_item": {
+          "item": "Dragon Hunter Crossbow",
+          "points": "165.0"
+        },
+        "wom": {
+          "ehb": 25.74745,
+          "boss_kills": 849,
+          "raids": 23,
+          "cox": 23,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 2,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 5011562
+        }
+      },
+      "Monke Vibes": {
+        "total_drops": 24,
+        "total_points": "2,277.5",
+        "total_coins": "145,397,239",
+        "boss_pets": 0,
+        "jars": 1,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Hydra's claw",
+          "value": "65,012,135"
+        },
+        "most_points_item": {
+          "item": "Masori mask",
+          "points": "700.0"
+        },
+        "wom": {
+          "ehb": 44.64305,
+          "boss_kills": 1439,
+          "raids": 7,
+          "cox": 0,
+          "tob": 0,
+          "toa": 7,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 10116508
+        }
+      },
+      "codeViking": {
+        "total_drops": 1,
+        "total_points": "35.0",
+        "total_coins": "14,344,045",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Noxious halberd piece",
+          "value": "14,344,045"
+        },
+        "most_points_item": {
+          "item": "Noxious halberd piece",
+          "points": "35.0"
+        },
+        "wom": {
+          "ehb": 2.48649,
+          "boss_kills": 92,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 1178945
+        }
+      },
+      "Twosp00n": {
+        "total_drops": 4,
+        "total_points": "270.0",
+        "total_coins": "47,833,191",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Tonalztics of ralos (uncharged)",
+          "value": "36,843,976"
+        },
+        "most_points_item": {
+          "item": "Tonalztics of ralos (uncharged)",
+          "points": "190.0"
+        },
+        "wom": {
+          "ehb": 6.18717,
+          "boss_kills": 45,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 8,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 2330801
+        }
+      },
+      "Kuln": {
+        "total_drops": 5,
+        "total_points": "90.0",
+        "total_coins": "44,066,223",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Primordial crystal",
+          "value": "24,372,242"
+        },
+        "most_points_item": {
+          "item": "Primordial crystal",
+          "points": "30.0"
+        },
+        "wom": {
+          "ehb": 15.44019,
+          "boss_kills": 541,
+          "raids": 8,
+          "cox": 2,
+          "tob": 4,
+          "toa": 2,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 3597634
+        }
+      },
+      "NextPet": {
+        "total_drops": 7,
+        "total_points": "395.0",
+        "total_coins": "66,746,527",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Inquisitor's plateskirt",
+          "value": "52,536,212"
+        },
+        "most_points_item": {
+          "item": "Inquisitor's plateskirt",
+          "points": "250.0"
+        }
+      },
+      "MrKraniel": {
+        "total_drops": 8,
+        "total_points": "197.5",
+        "total_coins": "49,547,716",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Noxious halberd piece",
+          "value": "14,344,045"
+        },
+        "most_points_item": {
+          "item": "Bottomless compost bucket",
+          "points": "50.0"
+        },
+        "wom": {
+          "ehb": 19.26785,
+          "boss_kills": 812,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 0,
+          "clues": {
+            "total": 1,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 1,
+            "master": 0
+          },
+          "xp_gained": 7599836
+        }
+      },
+      "Hitmonlees": {
+        "total_drops": 3,
+        "total_points": "110.0",
+        "total_coins": "14,805,457",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Venator Shard",
+          "value": "12,685,485"
+        },
+        "most_points_item": {
+          "item": "Uncut onyx",
+          "points": "55.0"
+        },
+        "wom": {
+          "ehb": 13.53671,
+          "boss_kills": 273,
+          "raids": 15,
+          "cox": 2,
+          "tob": 12,
+          "toa": 1,
+          "barrows": 5,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 2886108
+        }
+      },
+      "Cludd": {
+        "total_drops": 15,
+        "total_points": "480.0",
+        "total_coins": "36,525,484",
+        "boss_pets": 0,
+        "jars": 1,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Noxious halberd piece",
+          "value": "14,344,045"
+        },
+        "most_points_item": {
+          "item": "Jar",
+          "points": "100.0"
+        }
+      },
+      "Redmonchans": {
+        "total_drops": 23,
+        "total_points": "1,485.0",
+        "total_coins": "120,291,713",
+        "boss_pets": 2,
+        "jars": 1,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Siren's staff",
+          "value": "60,977,677"
+        },
+        "most_points_item": {
+          "item": "Boss pet",
+          "points": "300.0"
+        }
+      },
+      "Racc II": {
+        "total_drops": 16,
+        "total_points": "1,272.5",
+        "total_coins": "392,974,062",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Inquisitor's mace",
+          "value": "159,488,909"
+        },
+        "most_points_item": {
+          "item": "Inquisitor's mace",
+          "points": "450.0"
+        },
+        "wom": {
+          "ehb": 0,
+          "boss_kills": 0,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 0
+        }
+      },
+      "Flub": {
+        "total_drops": 6,
+        "total_points": "185.0",
+        "total_coins": "28,191,675",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Hydra leather",
+          "value": "13,836,791"
+        },
+        "most_points_item": {
+          "item": "Hydra leather",
+          "points": "45.0"
+        },
+        "wom": {
+          "ehb": 5.58994,
+          "boss_kills": 124,
+          "raids": 4,
+          "cox": 0,
+          "tob": 4,
+          "toa": 0,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 1721264
+        }
+      },
+      "Snape Grass": {
+        "total_drops": 13,
+        "total_points": "1,937.5",
+        "total_coins": "217,883,758",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 1,
+        "most_expensive_drop": {
+          "item": "Elder maul",
+          "value": "99,505,557"
+        },
+        "most_points_item": {
+          "item": "Elder maul",
+          "points": "1,340.0"
+        },
+        "wom": {
+          "ehb": 35.96138,
+          "boss_kills": 1070,
+          "raids": 38,
+          "cox": 36,
+          "tob": 1,
+          "toa": 1,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 4719705
+        }
+      },
+      "JimmyHC": {
+        "total_drops": 11,
+        "total_points": "645.0",
+        "total_coins": "46,273,035",
+        "boss_pets": 1,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Venator Shard",
+          "value": "12,685,485"
+        },
+        "most_points_item": {
+          "item": "Boss pet",
+          "points": "300.0"
+        },
+        "wom": {
+          "ehb": 30.47365,
+          "boss_kills": 938,
+          "raids": 3,
+          "cox": 0,
+          "tob": 0,
+          "toa": 3,
+          "barrows": 4,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 6048526
+        }
+      },
+      "Fergy bear": {
+        "total_drops": 9,
+        "total_points": "110.0",
+        "total_coins": "4,769,089",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Dharok's greataxe",
+          "value": "1,764,820"
+        },
+        "most_points_item": {
+          "item": "Karil's leatherskirt",
+          "points": "20.0"
+        }
+      },
+      "Strokin Gun": {
+        "total_drops": 3,
+        "total_points": "82.5",
+        "total_coins": "8,980,379",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Magic fang",
+          "value": "4,740,435"
+        },
+        "most_points_item": {
+          "item": "Uncut onyx",
+          "points": "27.5"
+        },
+        "wom": {
+          "ehb": 1.59091,
+          "boss_kills": 70,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 196868
+        }
+      },
+      "High Mileage": {
+        "total_drops": 6,
+        "total_points": "225.0",
+        "total_coins": "21,305,301",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Saradomin hilt",
+          "value": "19,657,500"
+        },
+        "most_points_item": {
+          "item": "Saradomin hilt",
+          "points": "100.0"
+        }
+      },
+      "eXCazh": {
+        "total_drops": 3,
+        "total_points": "585.0",
+        "total_coins": "137,220,848",
+        "boss_pets": 1,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Mokhaiotl cloth",
+          "value": "68,610,424"
+        },
+        "most_points_item": {
+          "item": "Boss pet",
+          "points": "300.0"
+        },
+        "wom": {
+          "ehb": 13.27975,
+          "boss_kills": 147,
+          "raids": 22,
+          "cox": 1,
+          "tob": 10,
+          "toa": 11,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 5630914
+        }
+      },
+      "GimPoutine": {
+        "total_drops": 10,
+        "total_points": "385.0",
+        "total_coins": "81,231,837",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Venator vestige",
+          "value": "39,824,997"
+        },
+        "most_points_item": {
+          "item": "Venator vestige",
+          "points": "130.0"
+        },
+        "wom": {
+          "ehb": 46.51417,
+          "boss_kills": 1013,
+          "raids": 63,
+          "cox": 48,
+          "tob": 14,
+          "toa": 1,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 10196593
+        }
+      },
+      "Degenerate": {
+        "total_drops": 4,
+        "total_points": "87.5",
+        "total_coins": "7,382,265",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Dual macuahuitl",
+          "value": "4,509,673"
+        },
+        "most_points_item": {
+          "item": "Dual macuahuitl",
+          "points": "25.0"
+        }
+      },
+      "piggyaza1ea": {
+        "total_drops": 6,
+        "total_points": "110.0",
+        "total_coins": "13,160,490",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Dual macuahuitl",
+          "value": "4,509,673"
+        },
+        "most_points_item": {
+          "item": "Blood moon chestplate",
+          "points": "25.0"
+        },
+        "wom": {
+          "ehb": 5.39899,
+          "boss_kills": 99,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 10,
+          "clues": {
+            "total": 4,
+            "beginner": 2,
+            "easy": 1,
+            "medium": 1,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 3398709
+        }
+      },
+      "MaxedMike": {
+        "total_drops": 11,
+        "total_points": "350.0",
+        "total_coins": "26,093,921",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Eternal gem",
+          "value": "8,036,402"
+        },
+        "most_points_item": {
+          "item": "Eternal gem",
+          "points": "100.0"
+        },
+        "wom": {
+          "ehb": 13.78406,
+          "boss_kills": 626,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 3536837
+        }
+      },
+      "Ozzyyyyyyy": {
+        "total_drops": 2,
+        "total_points": "400.0",
+        "total_coins": "44,586,704",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Avernic defender hilt",
+          "value": "44,586,704"
+        },
+        "most_points_item": {
+          "item": "Avernic defender hilt",
+          "points": "220.0"
+        }
+      },
+      "Stogie": {
+        "total_drops": 2,
+        "total_points": "55.0",
+        "total_coins": "17,098,435",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Tanzanite fang",
+          "value": "12,358,000"
+        },
+        "most_points_item": {
+          "item": "Tanzanite fang",
+          "points": "27.5"
+        },
+        "wom": {
+          "ehb": 16.24356,
+          "boss_kills": 452,
+          "raids": 4,
+          "cox": 0,
+          "tob": 0,
+          "toa": 4,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 3784208
+        }
+      },
+      "its gerty": {
+        "total_drops": 6,
+        "total_points": "137.5",
+        "total_coins": "24,106,476",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Tanzanite fang",
+          "value": "12,358,000"
+        },
+        "most_points_item": {
+          "item": "Tanzanite fang",
+          "points": "27.5"
+        },
+        "wom": {
+          "ehb": 3.1937,
+          "boss_kills": 63,
+          "raids": 4,
+          "cox": 0,
+          "tob": 0,
+          "toa": 4,
+          "barrows": 16,
+          "clues": {
+            "total": 7,
+            "beginner": 2,
+            "easy": 0,
+            "medium": 4,
+            "hard": 0,
+            "elite": 1,
+            "master": 0
+          },
+          "xp_gained": 3198218
+        }
+      },
+      "Dagh": {
+        "total_drops": 5,
+        "total_points": "485.0",
+        "total_coins": "74,998,162",
+        "boss_pets": 1,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Leviathan's lure",
+          "value": "60,977,677"
+        },
+        "most_points_item": {
+          "item": "Boss pet",
+          "points": "300.0"
+        },
+        "wom": {
+          "ehb": 11.10272,
+          "boss_kills": 320,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 36,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 4874206
+        }
+      },
+      "Profslayer": {
+        "total_drops": 4,
+        "total_points": "1,195.0",
+        "total_coins": "1,600,554,057",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 1,
+        "most_expensive_drop": {
+          "item": "Twisted bow",
+          "value": "1,443,431,759"
+        },
+        "most_points_item": {
+          "item": "Dragon Hunter Crossbow",
+          "points": "660.0"
+        }
+      },
+      "Raanduin": {
+        "total_drops": 5,
+        "total_points": "170.0",
+        "total_coins": "57,003,152",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Araxyte fang",
+          "value": "42,659,107"
+        },
+        "most_points_item": {
+          "item": "Araxyte fang",
+          "points": "100.0"
+        }
+      },
+      "Tori sama": {
+        "total_drops": 2,
+        "total_points": "200.0",
+        "total_coins": "113,510,896",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Mokhaiotl cloth",
+          "value": "68,610,424"
+        },
+        "most_points_item": {
+          "item": "Eye of ayak (uncharged)",
+          "points": "105.0"
+        },
+        "wom": {
+          "ehb": 9.25064,
+          "boss_kills": 189,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 3177864
+        }
+      },
+      "Crypt1ckyuki": {
+        "total_drops": 1,
+        "total_points": "90.0",
+        "total_coins": "3,473,143",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Soulflame horn",
+          "value": "3,473,143"
+        },
+        "most_points_item": {
+          "item": "Soulflame horn",
+          "points": "90.0"
+        }
+      },
+      "Le Gimp Dave": {
+        "total_drops": 5,
+        "total_points": "62.5",
+        "total_coins": "14,809,715",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Tanzanite fang",
+          "value": "12,358,000"
+        },
+        "most_points_item": {
+          "item": "Tanzanite fang",
+          "points": "27.5"
+        },
+        "wom": {
+          "ehb": 8.19884,
+          "boss_kills": 405,
+          "raids": 2,
+          "cox": 0,
+          "tob": 0,
+          "toa": 2,
+          "barrows": 0,
+          "clues": {
+            "total": 1,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 1,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 5002673
+        }
+      },
+      "EpicBotSpprt": {
+        "total_drops": 12,
+        "total_points": "150.0",
+        "total_coins": "11,572,092",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Ahrim's robeskirt",
+          "value": "3,160,304"
+        },
+        "most_points_item": {
+          "item": "Guthan's helm",
+          "points": "20.0"
+        },
+        "wom": {
+          "ehb": 3.72969,
+          "boss_kills": 106,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 65,
+          "clues": {
+            "total": 8,
+            "beginner": 2,
+            "easy": 2,
+            "medium": 3,
+            "hard": 1,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 2398369
+        }
+      },
+      "Nyco": {
+        "total_drops": 7,
+        "total_points": "247.5",
+        "total_coins": "200,269,316",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Ultor vestige",
+          "value": "113,370,403"
+        },
+        "most_points_item": {
+          "item": "Ultor vestige",
+          "points": "70.0"
+        },
+        "wom": {
+          "ehb": 13.43623,
+          "boss_kills": 580,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 0,
+          "clues": {
+            "total": 3,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 3
+          },
+          "xp_gained": 1823937
+        }
+      },
+      "07 RS": {
+        "total_drops": 2,
+        "total_points": "130.0",
+        "total_coins": "37,956,629",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Magus vestige",
+          "value": "37,902,560"
+        },
+        "most_points_item": {
+          "item": "Fangs of Venenatis",
+          "points": "70.0"
+        }
+      },
+      "Grayz": {
+        "total_drops": 4,
+        "total_points": "342.5",
+        "total_coins": "118,842,108",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Mokhaiotl cloth",
+          "value": "68,610,424"
+        },
+        "most_points_item": {
+          "item": "Virtus robe bottom",
+          "points": "205.0"
+        },
+        "wom": {
+          "ehb": 13.61294,
+          "boss_kills": 405,
+          "raids": 9,
+          "cox": 4,
+          "tob": 5,
+          "toa": 0,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 5426959
+        }
+      },
+      "Yipee Cox": {
+        "total_drops": 1,
+        "total_points": "50.0",
+        "total_coins": "380,359",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Dragon pickaxe",
+          "value": "380,359"
+        },
+        "most_points_item": {
+          "item": "Dragon pickaxe",
+          "points": "50.0"
+        },
+        "wom": {
+          "ehb": 4.00133,
+          "boss_kills": 151,
+          "raids": 4,
+          "cox": 4,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 656051
+        }
+      },
+      "iCloud Iron": {
+        "total_drops": 3,
+        "total_points": "90.0",
+        "total_coins": "8,399,774",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Eternal crystal",
+          "value": "4,740,000"
+        },
+        "most_points_item": {
+          "item": "Eternal crystal",
+          "points": "60.0"
+        },
+        "wom": {
+          "ehb": 20.34672,
+          "boss_kills": 292,
+          "raids": 34,
+          "cox": 32,
+          "tob": 1,
+          "toa": 1,
+          "barrows": 2,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 3323597
+        }
+      },
+      "Rob Weasley": {
+        "total_drops": 1,
+        "total_points": "17.5",
+        "total_coins": "53,176",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Glacial temotli",
+          "value": "53,176"
+        },
+        "most_points_item": {
+          "item": "Glacial temotli",
+          "points": "17.5"
+        }
+      },
+      "bmtk": {
+        "total_drops": 1,
+        "total_points": "850.0",
+        "total_coins": "20,631,512",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Sanguinesti staff (uncharged)",
+          "value": "20,631,512"
+        },
+        "most_points_item": {
+          "item": "Sanguinesti staff (uncharged)",
+          "points": "850.0"
+        },
+        "wom": {
+          "ehb": 9.45833,
+          "boss_kills": 30,
+          "raids": 30,
+          "cox": 0,
+          "tob": 30,
+          "toa": 0,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 2107779
+        }
+      },
+      "Codekuv": {
+        "total_drops": 1,
+        "total_points": "12.5",
+        "total_coins": "4,509,673",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Dual macuahuitl",
+          "value": "4,509,673"
+        },
+        "most_points_item": {
+          "item": "Dual macuahuitl",
+          "points": "12.5"
+        },
+        "wom": {
+          "ehb": 2.0414,
+          "boss_kills": 41,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 8,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 1042267
+        }
+      },
+      "Bar Hop": {
+        "total_drops": 2,
+        "total_points": "130.0",
+        "total_coins": "44,927,125",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Eye of ayak (uncharged)",
+          "value": "44,900,472"
+        },
+        "most_points_item": {
+          "item": "Eye of ayak (uncharged)",
+          "points": "105.0"
+        },
+        "wom": {
+          "ehb": 4.38642,
+          "boss_kills": 63,
+          "raids": 4,
+          "cox": 0,
+          "tob": 1,
+          "toa": 3,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 3599470
+        }
+      },
+      "lerimin": {
+        "total_drops": 1,
+        "total_points": "10.0",
+        "total_coins": "959,497",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Dragon chainbody",
+          "value": "959,497"
+        },
+        "most_points_item": {
+          "item": "Dragon chainbody",
+          "points": "10.0"
+        }
+      },
+      "Mr Chonker": {
+        "total_drops": 2,
+        "total_points": "410.0",
+        "total_coins": "166,310,068",
+        "boss_pets": 1,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Avernic Treads",
+          "value": "166,310,068"
+        },
+        "most_points_item": {
+          "item": "Boss pet",
+          "points": "300.0"
+        }
+      },
+      "Harry Pottin": {
+        "total_drops": 3,
+        "total_points": "340.0",
+        "total_coins": "110,196,276",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Oathplate chest",
+          "value": "90,402,906"
+        },
+        "most_points_item": {
+          "item": "Oathplate chest",
+          "points": "190.0"
+        },
+        "wom": {
+          "ehb": 3.82483,
+          "boss_kills": 46,
+          "raids": 4,
+          "cox": 1,
+          "tob": 0,
+          "toa": 3,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 2123294
+        }
+      }
+    }
+  },
+  "Team Gold": {
+    "team_totals": {
+      "total_drops": 760,
+      "total_points": "56,625.0",
+      "total_coins": "10,344,041,489"
+    },
+    "players": {
+      "SN1 PvM": {
+        "total_drops": 18,
+        "total_points": "5,057.5",
+        "total_coins": "512,945,508",
+        "boss_pets": 1,
+        "jars": 1,
+        "mega_rares": 1,
+        "most_expensive_drop": {
+          "item": "Ancestral robe top",
+          "value": "144,846,860"
+        },
+        "most_points_item": {
+          "item": "Elder maul",
+          "points": "1,340.0"
+        },
+        "wom": {
+          "ehb": 30.38979,
+          "boss_kills": 730,
+          "raids": 53,
+          "cox": 37,
+          "tob": 9,
+          "toa": 7,
+          "barrows": 8,
+          "clues": {
+            "total": 1,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 1
+          },
+          "xp_gained": 7241970
+        }
+      },
+      "IronAssHole": {
+        "total_drops": 15,
+        "total_points": "1,695.0",
+        "total_coins": "194,810,402",
+        "boss_pets": 0,
+        "jars": 1,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Dragon claws",
+          "value": "49,643,638"
+        },
+        "most_points_item": {
+          "item": "Dragon claws",
+          "points": "880.0"
+        },
+        "wom": {
+          "ehb": 33.89667,
+          "boss_kills": 564,
+          "raids": 45,
+          "cox": 26,
+          "tob": 18,
+          "toa": 1,
+          "barrows": 0,
+          "clues": {
+            "total": 10,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 5,
+            "hard": 2,
+            "elite": 3,
+            "master": 0
+          },
+          "xp_gained": 5010261
+        }
+      },
+      "MaxXLevell": {
+        "total_drops": 9,
+        "total_points": "470.5",
+        "total_coins": "121,772,543",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Oathplate helm",
+          "value": "89,746,153"
+        },
+        "most_points_item": {
+          "item": "Oathplate helm",
+          "points": "190.0"
+        }
+      },
+      "Zenaax": {
+        "total_drops": 26,
+        "total_points": "1,085.0",
+        "total_coins": "125,286,694",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Armadyl crossbow",
+          "value": "28,275,409"
+        },
+        "most_points_item": {
+          "item": "Virtus mask",
+          "points": "180.0"
+        },
+        "wom": {
+          "ehb": 47.41309,
+          "boss_kills": 2359,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 1,
+          "clues": {
+            "total": 1,
+            "beginner": 0,
+            "easy": 1,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 10423157
+        }
+      },
+      "Curse of RNG": {
+        "total_drops": 36,
+        "total_points": "912.5",
+        "total_coins": "7,449,755",
+        "boss_pets": 1,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Berserker ring",
+          "value": "2,872,364"
+        },
+        "most_points_item": {
+          "item": "Boss pet",
+          "points": "300.0"
+        },
+        "wom": {
+          "ehb": 43.39063,
+          "boss_kills": 4614,
+          "raids": 3,
+          "cox": 3,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 5,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 9690873
+        }
+      },
+      "Goldwi": {
+        "total_drops": 23,
+        "total_points": "1,247.5",
+        "total_coins": "280,872,434",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Oathplate chest",
+          "value": "90,402,906"
+        },
+        "most_points_item": {
+          "item": "Oathplate chest",
+          "points": "380.0"
+        }
+      },
+      "Faith Dushku": {
+        "total_drops": 25,
+        "total_points": "1,027.5",
+        "total_coins": "63,243,151",
+        "boss_pets": 0,
+        "jars": 4,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Zenyte shard",
+          "value": "16,184,639"
+        },
+        "most_points_item": {
+          "item": "Jar",
+          "points": "100.0"
+        }
+      },
+      "Comicae": {
+        "total_drops": 12,
+        "total_points": "332.5",
+        "total_coins": "43,889,834",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Noxious halberd piece",
+          "value": "14,344,045"
+        },
+        "most_points_item": {
+          "item": "Twisted ancestral colour kit",
+          "points": "140.0"
+        },
+        "wom": {
+          "ehb": 24.11562,
+          "boss_kills": 837,
+          "raids": 19,
+          "cox": 14,
+          "tob": 0,
+          "toa": 5,
+          "barrows": 7,
+          "clues": {
+            "total": 1,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 1,
+            "master": 0
+          },
+          "xp_gained": 6798028
+        }
+      },
+      "BigBloor": {
+        "total_drops": 26,
+        "total_points": "2,557.5",
+        "total_coins": "234,891,622",
+        "boss_pets": 3,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Arcane sigil",
+          "value": "90,560,391"
+        },
+        "most_points_item": {
+          "item": "Arcane sigil",
+          "points": "325.0"
+        },
+        "wom": {
+          "ehb": 58.81688,
+          "boss_kills": 1953,
+          "raids": 39,
+          "cox": 29,
+          "tob": 5,
+          "toa": 5,
+          "barrows": 7,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 12616655
+        }
+      },
+      "Fireman Sam": {
+        "total_drops": 9,
+        "total_points": "855.0",
+        "total_coins": "328,251,770",
+        "boss_pets": 1,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Avernic Treads",
+          "value": "166,310,068"
+        },
+        "most_points_item": {
+          "item": "Boss pet",
+          "points": "300.0"
+        },
+        "wom": {
+          "ehb": 0,
+          "boss_kills": 0,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 441
+        }
+      },
+      "DobbysRanarr": {
+        "total_drops": 28,
+        "total_points": "1,327.5",
+        "total_coins": "125,761,882",
+        "boss_pets": 1,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Hydra's claw",
+          "value": "65,012,135"
+        },
+        "most_points_item": {
+          "item": "Bounty 1st",
+          "points": "200.0"
+        },
+        "wom": {
+          "ehb": 41.27779,
+          "boss_kills": 1342,
+          "raids": 7,
+          "cox": 3,
+          "tob": 0,
+          "toa": 4,
+          "barrows": 1,
+          "clues": {
+            "total": 9,
+            "beginner": 1,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 8
+          },
+          "xp_gained": 8252403
+        }
+      },
+      "Grumpy Bear": {
+        "total_drops": 39,
+        "total_points": "4,403.5",
+        "total_coins": "258,375,177",
+        "boss_pets": 1,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Arcane sigil",
+          "value": "90,560,391"
+        },
+        "most_points_item": {
+          "item": "Justiciar legguards",
+          "points": "850.0"
+        },
+        "wom": {
+          "ehb": 80.16372,
+          "boss_kills": 4062,
+          "raids": 28,
+          "cox": 10,
+          "tob": 18,
+          "toa": 0,
+          "barrows": 2,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 13785905
+        }
+      },
+      "Syncopy": {
+        "total_drops": 20,
+        "total_points": "1,050.0",
+        "total_coins": "58,094,350",
+        "boss_pets": 1,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Arcane prayer scroll",
+          "value": "6,090,166"
+        },
+        "most_points_item": {
+          "item": "Boss pet",
+          "points": "300.0"
+        },
+        "wom": {
+          "ehb": 17.61703,
+          "boss_kills": 494,
+          "raids": 15,
+          "cox": 15,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 9,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 4314262
+        }
+      },
+      "Apple Dough": {
+        "total_drops": 18,
+        "total_points": "1,325.0",
+        "total_coins": "462,760,270",
+        "boss_pets": 1,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Avernic Treads",
+          "value": "166,310,068"
+        },
+        "most_points_item": {
+          "item": "Boss pet",
+          "points": "300.0"
+        },
+        "wom": {
+          "ehb": 43.65464,
+          "boss_kills": 1002,
+          "raids": 52,
+          "cox": 22,
+          "tob": 26,
+          "toa": 4,
+          "barrows": 10,
+          "clues": {
+            "total": 18,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 2,
+            "elite": 0,
+            "master": 16
+          },
+          "xp_gained": 8867252
+        }
+      },
+      "Annexer": {
+        "total_drops": 11,
+        "total_points": "670.0",
+        "total_coins": "43,059,990",
+        "boss_pets": 1,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Noxious halberd piece",
+          "value": "14,344,045"
+        },
+        "most_points_item": {
+          "item": "Boss pet",
+          "points": "300.0"
+        }
+      },
+      "Iron Demboo": {
+        "total_drops": 1,
+        "total_points": "20.0",
+        "total_coins": "254,278",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Guthan's chainskirt",
+          "value": "254,278"
+        },
+        "most_points_item": {
+          "item": "Guthan's chainskirt",
+          "points": "20.0"
+        },
+        "wom": {
+          "ehb": 0.81424,
+          "boss_kills": 28,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 13,
+          "clues": {
+            "total": 3,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 3,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 3150560
+        }
+      },
+      "iulz": {
+        "total_drops": 11,
+        "total_points": "275.0",
+        "total_coins": "81,626,909",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Araxyte fang",
+          "value": "42,659,107"
+        },
+        "most_points_item": {
+          "item": "Araxyte fang",
+          "points": "50.0"
+        }
+      },
+      "Vitamin Died": {
+        "total_drops": 7,
+        "total_points": "220.0",
+        "total_coins": "43,894,196",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Osmumten's fang",
+          "value": "20,783,928"
+        },
+        "most_points_item": {
+          "item": "Lightbearer",
+          "points": "50.0"
+        }
+      },
+      "Jhosani": {
+        "total_drops": 15,
+        "total_points": "1,207.5",
+        "total_coins": "161,112,629",
+        "boss_pets": 1,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Inquisitor's mace",
+          "value": "159,488,909"
+        },
+        "most_points_item": {
+          "item": "Inquisitor's mace",
+          "points": "450.0"
+        },
+        "wom": {
+          "ehb": 36.85814,
+          "boss_kills": 957,
+          "raids": 17,
+          "cox": 15,
+          "tob": 0,
+          "toa": 2,
+          "barrows": 4,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 7377605
+        }
+      },
+      "Mazzel": {
+        "total_drops": 19,
+        "total_points": "3,067.5",
+        "total_coins": "1,421,690,815",
+        "boss_pets": 1,
+        "jars": 2,
+        "mega_rares": 1,
+        "most_expensive_drop": {
+          "item": "Scythe of vitur (uncharged)",
+          "value": "1,399,879,328"
+        },
+        "most_points_item": {
+          "item": "Scythe of vitur (uncharged)",
+          "points": "1,700.0"
+        },
+        "wom": {
+          "ehb": 40.18155,
+          "boss_kills": 1098,
+          "raids": 34,
+          "cox": 8,
+          "tob": 20,
+          "toa": 6,
+          "barrows": 59,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 9051174
+        }
+      },
+      "Fe Danke": {
+        "total_drops": 13,
+        "total_points": "517.5",
+        "total_coins": "20,109,897",
+        "boss_pets": 0,
+        "jars": 1,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Lightbearer",
+          "value": "5,090,546"
+        },
+        "most_points_item": {
+          "item": "Jar",
+          "points": "100.0"
+        }
+      },
+      "Miracle Sun": {
+        "total_drops": 8,
+        "total_points": "462.5",
+        "total_coins": "90,893,033",
+        "boss_pets": 0,
+        "jars": 1,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Dexterous prayer scroll",
+          "value": "41,406,544"
+        },
+        "most_points_item": {
+          "item": "Jar",
+          "points": "100.0"
+        },
+        "wom": {
+          "ehb": 17.36132,
+          "boss_kills": 629,
+          "raids": 5,
+          "cox": 5,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 4,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 5843747
+        }
+      },
+      "Listerr1": {
+        "total_drops": 10,
+        "total_points": "232.5",
+        "total_coins": "16,366,788",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Lightbearer",
+          "value": "5,090,546"
+        },
+        "most_points_item": {
+          "item": "Lightbearer",
+          "points": "50.0"
+        },
+        "wom": {
+          "ehb": 34.10029,
+          "boss_kills": 984,
+          "raids": 42,
+          "cox": 0,
+          "tob": 0,
+          "toa": 42,
+          "barrows": 4,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 8825278
+        }
+      },
+      "C e j a s": {
+        "total_drops": 3,
+        "total_points": "252.5",
+        "total_coins": "108,851,072",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Oathplate chest",
+          "value": "90,402,906"
+        },
+        "most_points_item": {
+          "item": "Oathplate chest",
+          "points": "190.0"
+        },
+        "wom": {
+          "ehb": 14.09129,
+          "boss_kills": 227,
+          "raids": 8,
+          "cox": 3,
+          "tob": 5,
+          "toa": 0,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 4156716
+        }
+      },
+      "ShadowOf War": {
+        "total_drops": 22,
+        "total_points": "432.5",
+        "total_coins": "44,053,569",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Primordial crystal",
+          "value": "24,372,242"
+        },
+        "most_points_item": {
+          "item": "Bounty 1st",
+          "points": "200.0"
+        },
+        "wom": {
+          "ehb": 9.63406,
+          "boss_kills": 317,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 26,
+          "clues": {
+            "total": 8,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 5,
+            "elite": 3,
+            "master": 0
+          },
+          "xp_gained": 3069796
+        }
+      },
+      "Bayley G": {
+        "total_drops": 14,
+        "total_points": "662.5",
+        "total_coins": "89,549,294",
+        "boss_pets": 1,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Eye of the duke",
+          "value": "60,977,677"
+        },
+        "most_points_item": {
+          "item": "Boss pet",
+          "points": "300.0"
+        }
+      },
+      "iiStoontz": {
+        "total_drops": 4,
+        "total_points": "332.5",
+        "total_coins": "6,084,480",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Soulflame horn",
+          "value": "3,473,143"
+        },
+        "most_points_item": {
+          "item": "Soulflame horn",
+          "points": "180.0"
+        }
+      },
+      "sosly28": {
+        "total_drops": 8,
+        "total_points": "885.0",
+        "total_coins": "40,915,640",
+        "boss_pets": 1,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Osmumten's fang",
+          "value": "20,783,928"
+        },
+        "most_points_item": {
+          "item": "Elidinis' ward",
+          "points": "460.0"
+        },
+        "wom": {
+          "ehb": 17.61084,
+          "boss_kills": 319,
+          "raids": 30,
+          "cox": 0,
+          "tob": 5,
+          "toa": 25,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 4896559
+        }
+      },
+      "TimTheLegend": {
+        "total_drops": 13,
+        "total_points": "580.0",
+        "total_coins": "21,859,335",
+        "boss_pets": 1,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Hydra leather",
+          "value": "13,836,791"
+        },
+        "most_points_item": {
+          "item": "Boss pet",
+          "points": "300.0"
+        },
+        "wom": {
+          "ehb": 16.73376,
+          "boss_kills": 1118,
+          "raids": 1,
+          "cox": 0,
+          "tob": 0,
+          "toa": 1,
+          "barrows": 1,
+          "clues": {
+            "total": 19,
+            "beginner": 0,
+            "easy": 2,
+            "medium": 2,
+            "hard": 8,
+            "elite": 6,
+            "master": 1
+          },
+          "xp_gained": 5216421
+        }
+      },
+      "Kudosss": {
+        "total_drops": 10,
+        "total_points": "655.0",
+        "total_coins": "126,219,750",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Dragon claws",
+          "value": "49,643,638"
+        },
+        "most_points_item": {
+          "item": "Dragon claws",
+          "points": "220.0"
+        }
+      },
+      "Poop Slidous": {
+        "total_drops": 2,
+        "total_points": "35.0",
+        "total_coins": "7,399,712",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Dual macuahuitl",
+          "value": "4,509,673"
+        },
+        "most_points_item": {
+          "item": "Dual macuahuitl",
+          "points": "25.0"
+        },
+        "wom": {
+          "ehb": 6.13939,
+          "boss_kills": 174,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 58,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 3046172
+        }
+      },
+      "Plankalot": {
+        "total_drops": 4,
+        "total_points": "180.0",
+        "total_coins": "168,638,772",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Avernic Treads",
+          "value": "166,310,068"
+        },
+        "most_points_item": {
+          "item": "Avernic Treads",
+          "points": "110.0"
+        },
+        "wom": {
+          "ehb": 29.02123,
+          "boss_kills": 349,
+          "raids": 39,
+          "cox": 15,
+          "tob": 15,
+          "toa": 9,
+          "barrows": 14,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 11356401
+        }
+      },
+      "Theowner91": {
+        "total_drops": 4,
+        "total_points": "147.5",
+        "total_coins": "6,252,140",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Blood moon chestplate",
+          "value": "3,490,321"
+        },
+        "most_points_item": {
+          "item": "Bounty 2nd",
+          "points": "100.0"
+        }
+      },
+      "OG Dilbert26": {
+        "total_drops": 6,
+        "total_points": "100.0",
+        "total_coins": "2,461,941",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Karil's leathertop",
+          "value": "1,017,805"
+        },
+        "most_points_item": {
+          "item": "Guthan's warspear",
+          "points": "20.0"
+        }
+      },
+      "watova": {
+        "total_drops": 21,
+        "total_points": "505.0",
+        "total_coins": "6,848,494",
+        "boss_pets": 0,
+        "jars": 2,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Ahrim's robetop",
+          "value": "2,890,039"
+        },
+        "most_points_item": {
+          "item": "Jar",
+          "points": "100.0"
+        }
+      },
+      "Iron Az": {
+        "total_drops": 6,
+        "total_points": "205.0",
+        "total_coins": "35,147,935",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Bandos tassets",
+          "value": "16,681,328"
+        },
+        "most_points_item": {
+          "item": "Bandos tassets",
+          "points": "80.0"
+        },
+        "wom": {
+          "ehb": 9.25357,
+          "boss_kills": 280,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 1,
+          "clues": {
+            "total": 17,
+            "beginner": 3,
+            "easy": 3,
+            "medium": 3,
+            "hard": 5,
+            "elite": 3,
+            "master": 0
+          },
+          "xp_gained": 2953974
+        }
+      },
+      "Maddedede": {
+        "total_drops": 7,
+        "total_points": "322.5",
+        "total_coins": "41,188,714",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Zenyte shard",
+          "value": "16,184,639"
+        },
+        "most_points_item": {
+          "item": "Bounty 2nd",
+          "points": "100.0"
+        },
+        "wom": {
+          "ehb": 21.70344,
+          "boss_kills": 379,
+          "raids": 45,
+          "cox": 26,
+          "tob": 0,
+          "toa": 19,
+          "barrows": 6,
+          "clues": {
+            "total": 18,
+            "beginner": 2,
+            "easy": 6,
+            "medium": 1,
+            "hard": 7,
+            "elite": 2,
+            "master": 0
+          },
+          "xp_gained": 6796565
+        }
+      },
+      "Con Academy": {
+        "total_drops": 8,
+        "total_points": "1,547.5",
+        "total_coins": "196,097,696",
+        "boss_pets": 1,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Ancestral robe bottom",
+          "value": "104,750,920"
+        },
+        "most_points_item": {
+          "item": "Magma mutagen",
+          "points": "700.0"
+        },
+        "wom": {
+          "ehb": 23.69627,
+          "boss_kills": 385,
+          "raids": 25,
+          "cox": 9,
+          "tob": 16,
+          "toa": 0,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 11067541
+        }
+      },
+      "Btxr4ge123": {
+        "total_drops": 5,
+        "total_points": "315.0",
+        "total_coins": "12,196,320",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Abyssal bludgeon piece",
+          "value": "5,593,702"
+        },
+        "most_points_item": {
+          "item": "Abyssal whip",
+          "points": "200.0"
+        }
+      },
+      "AirxRS": {
+        "total_drops": 16,
+        "total_points": "2,540.0",
+        "total_coins": "1,596,043,119",
+        "boss_pets": 1,
+        "jars": 0,
+        "mega_rares": 1,
+        "most_expensive_drop": {
+          "item": "Twisted bow",
+          "value": "1,443,431,759"
+        },
+        "most_points_item": {
+          "item": "Twisted bow",
+          "points": "1,340.0"
+        },
+        "wom": {
+          "ehb": 0.10102,
+          "boss_kills": 2,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 1,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 697
+        }
+      },
+      "Rod Man": {
+        "total_drops": 5,
+        "total_points": "347.5",
+        "total_coins": "163,760,524",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Ancestral robe bottom",
+          "value": "104,750,920"
+        },
+        "most_points_item": {
+          "item": "Ancestral robe bottom",
+          "points": "220.0"
+        },
+        "wom": {
+          "ehb": 17.94655,
+          "boss_kills": 251,
+          "raids": 49,
+          "cox": 47,
+          "tob": 2,
+          "toa": 0,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 3218570
+        }
+      },
+      "Chief Haqua": {
+        "total_drops": 8,
+        "total_points": "372.5",
+        "total_coins": "2,215,262",
+        "boss_pets": 1,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Abyssal whip",
+          "value": "1,305,642"
+        },
+        "most_points_item": {
+          "item": "Boss pet",
+          "points": "300.0"
+        },
+        "wom": {
+          "ehb": 7.19917,
+          "boss_kills": 225,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 5092752
+        }
+      },
+      "unlucky acc": {
+        "total_drops": 13,
+        "total_points": "1,887.5",
+        "total_coins": "225,200,541",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Enhanced crystal weapon seed",
+          "value": "138,085,918"
+        },
+        "most_points_item": {
+          "item": "Sanguinesti staff (uncharged)",
+          "points": "850.0"
+        },
+        "wom": {
+          "ehb": 7.24634,
+          "boss_kills": 131,
+          "raids": 12,
+          "cox": 0,
+          "tob": 12,
+          "toa": 0,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 2170918
+        }
+      },
+      "SeeScotttv2": {
+        "total_drops": 9,
+        "total_points": "1,760.0",
+        "total_coins": "307,337,564",
+        "boss_pets": 1,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Ultor vestige",
+          "value": "113,370,403"
+        },
+        "most_points_item": {
+          "item": "Virtus robe bottom",
+          "points": "410.0"
+        },
+        "wom": {
+          "ehb": 28.19168,
+          "boss_kills": 788,
+          "raids": 9,
+          "cox": 9,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 4,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 5400691
+        }
+      },
+      "Pudum": {
+        "total_drops": 8,
+        "total_points": "907.5",
+        "total_coins": "45,929,059",
+        "boss_pets": 1,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Tormented synapse",
+          "value": "17,889,870"
+        },
+        "most_points_item": {
+          "item": "Virtus mask",
+          "points": "360.0"
+        },
+        "wom": {
+          "ehb": 1.33271,
+          "boss_kills": 36,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 2212101
+        }
+      },
+      "small Bwana": {
+        "total_drops": 3,
+        "total_points": "60.0",
+        "total_coins": "7,039,099",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Odium shard 2",
+          "value": "4,854,838"
+        },
+        "most_points_item": {
+          "item": "Smouldering stone",
+          "points": "60.0"
+        },
+        "wom": {
+          "ehb": 0.56667,
+          "boss_kills": 10,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 118194
+        }
+      },
+      "zArchelaus": {
+        "total_drops": 5,
+        "total_points": "200.0",
+        "total_coins": "5,949,157",
+        "boss_pets": 0,
+        "jars": 1,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Abyssal bludgeon piece",
+          "value": "5,593,702"
+        },
+        "most_points_item": {
+          "item": "Jar",
+          "points": "100.0"
+        },
+        "wom": {
+          "ehb": 15.33135,
+          "boss_kills": 671,
+          "raids": 2,
+          "cox": 1,
+          "tob": 0,
+          "toa": 1,
+          "barrows": 11,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 3889545
+        }
+      },
+      "Ryan Pasta": {
+        "total_drops": 1,
+        "total_points": "380.0",
+        "total_coins": "89,746,153",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Oathplate helm",
+          "value": "89,746,153"
+        },
+        "most_points_item": {
+          "item": "Oathplate helm",
+          "points": "380.0"
+        }
+      },
+      "snd": {
+        "total_drops": 8,
+        "total_points": "197.5",
+        "total_coins": "60,063,911",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Noxious halberd piece",
+          "value": "14,344,045"
+        },
+        "most_points_item": {
+          "item": "Crystal weapon seed",
+          "points": "30.0"
+        },
+        "wom": {
+          "ehb": 12.14276,
+          "boss_kills": 349,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 3,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 6857117
+        }
+      },
+      "Smooth Draft": {
+        "total_drops": 18,
+        "total_points": "285.0",
+        "total_coins": "111,208,623",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Araxyte fang",
+          "value": "42,659,107"
+        },
+        "most_points_item": {
+          "item": "Araxyte fang",
+          "points": "50.0"
+        },
+        "wom": {
+          "ehb": 28.62921,
+          "boss_kills": 1505,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 78,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 8606094
+        }
+      },
+      "Danimal": {
+        "total_drops": 4,
+        "total_points": "95.0",
+        "total_coins": "12,508,329",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Abyssal bludgeon piece",
+          "value": "5,593,702"
+        },
+        "most_points_item": {
+          "item": "Abyssal dagger",
+          "points": "45.0"
+        },
+        "wom": {
+          "ehb": 0,
+          "boss_kills": 0,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 3640
+        }
+      },
+      "RazenOh": {
+        "total_drops": 11,
+        "total_points": "607.5",
+        "total_coins": "71,758,079",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Inquisitor's plateskirt",
+          "value": "52,536,212"
+        },
+        "most_points_item": {
+          "item": "Inquisitor's plateskirt",
+          "points": "250.0"
+        },
+        "wom": {
+          "ehb": 18.80841,
+          "boss_kills": 576,
+          "raids": 13,
+          "cox": 12,
+          "tob": 0,
+          "toa": 1,
+          "barrows": 2,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 4449928
+        }
+      },
+      "B I G Bwana": {
+        "total_drops": 18,
+        "total_points": "1,587.5",
+        "total_coins": "200,294,578",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Ancestral robe bottom",
+          "value": "104,750,920"
+        },
+        "most_points_item": {
+          "item": "Dinh's bulwark",
+          "points": "880.0"
+        },
+        "wom": {
+          "ehb": 31.73651,
+          "boss_kills": 833,
+          "raids": 23,
+          "cox": 22,
+          "tob": 0,
+          "toa": 1,
+          "barrows": 15,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 6726453
+        }
+      },
+      "Jimmb0": {
+        "total_drops": 4,
+        "total_points": "158.5",
+        "total_coins": "71,403,413",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Mokhaiotl cloth",
+          "value": "68,610,424"
+        },
+        "most_points_item": {
+          "item": "Mokhaiotl cloth",
+          "points": "95.0"
+        },
+        "wom": {
+          "ehb": 11.31065,
+          "boss_kills": 390,
+          "raids": 11,
+          "cox": 0,
+          "tob": 0,
+          "toa": 11,
+          "barrows": 0,
+          "clues": {
+            "total": 1,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 1,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 4174057
+        }
+      },
+      "SquirtnotGIM": {
+        "total_drops": 14,
+        "total_points": "1,937.5",
+        "total_coins": "908,264,957",
+        "boss_pets": 0,
+        "jars": 1,
+        "mega_rares": 1,
+        "most_expensive_drop": {
+          "item": "Tumeken's shadow",
+          "value": "852,831,523"
+        },
+        "most_points_item": {
+          "item": "Tumeken's shadow",
+          "points": "1,400.0"
+        },
+        "wom": {
+          "ehb": 38.73183,
+          "boss_kills": 1035,
+          "raids": 47,
+          "cox": 11,
+          "tob": 0,
+          "toa": 36,
+          "barrows": 6,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 10019738
+        }
+      },
+      "Ollie 01": {
+        "total_drops": 9,
+        "total_points": "255.0",
+        "total_coins": "48,842,854",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Armadyl crossbow",
+          "value": "28,275,409"
+        },
+        "most_points_item": {
+          "item": "Saradomin hilt",
+          "points": "50.0"
+        },
+        "wom": {
+          "ehb": 23.91529,
+          "boss_kills": 660,
+          "raids": 35,
+          "cox": 7,
+          "tob": 27,
+          "toa": 1,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 5398833
+        }
+      },
+      "Darkest Kind": {
+        "total_drops": 2,
+        "total_points": "30.0",
+        "total_coins": "3,659,774",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Brimstone ring piece",
+          "value": "1,829,887"
+        },
+        "most_points_item": {
+          "item": "Brimstone ring piece",
+          "points": "15.0"
+        },
+        "wom": {
+          "ehb": 6.43694,
+          "boss_kills": 195,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 1749207
+        }
+      },
+      "3rd eyes": {
+        "total_drops": 3,
+        "total_points": "190.0",
+        "total_coins": "113,457,417",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Ultor vestige",
+          "value": "113,370,403"
+        },
+        "most_points_item": {
+          "item": "Ultor vestige",
+          "points": "140.0"
+        }
+      },
+      "Bull Medic": {
+        "total_drops": 3,
+        "total_points": "197.5",
+        "total_coins": "997,390",
+        "boss_pets": 0,
+        "jars": 1,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Trident of the seas (full)",
+          "value": "682,155"
+        },
+        "most_points_item": {
+          "item": "Jar",
+          "points": "100.0"
+        }
+      },
+      "DemonFebat": {
+        "total_drops": 12,
+        "total_points": "1,950.0",
+        "total_coins": "156,951,680",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Ancestral robe bottom",
+          "value": "104,750,920"
+        },
+        "most_points_item": {
+          "item": "Ancestral robe bottom",
+          "points": "880.0"
+        }
+      },
+      "322scape": {
+        "total_drops": 2,
+        "total_points": "7.5",
+        "total_coins": "202,500",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Odium shard 3",
+          "value": "202,500"
+        },
+        "most_points_item": {
+          "item": "Kbd heads",
+          "points": "7.5"
+        },
+        "wom": {
+          "ehb": 4.77998,
+          "boss_kills": 134,
+          "raids": 12,
+          "cox": 12,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 601438
+        }
+      },
+      "Derivxtive": {
+        "total_drops": 6,
+        "total_points": "830.0",
+        "total_coins": "50,593,245",
+        "boss_pets": 1,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Eye of ayak (uncharged)",
+          "value": "44,900,472"
+        },
+        "most_points_item": {
+          "item": "Boss pet",
+          "points": "300.0"
+        },
+        "wom": {
+          "ehb": 18.50837,
+          "boss_kills": 341,
+          "raids": 34,
+          "cox": 3,
+          "tob": 31,
+          "toa": 0,
+          "barrows": 10,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 7138576
+        }
+      },
+      "AbyssWalkerr": {
+        "total_drops": 1,
+        "total_points": "220.0",
+        "total_coins": "166,310,068",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Avernic Treads",
+          "value": "166,310,068"
+        },
+        "most_points_item": {
+          "item": "Avernic Treads",
+          "points": "220.0"
+        },
+        "wom": {
+          "ehb": 7.23333,
+          "boss_kills": 122,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 759690
+        }
+      },
+      "LegoHawkeye": {
+        "total_drops": 6,
+        "total_points": "77.5",
+        "total_coins": "10,505,469",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Blue moon tassets",
+          "value": "4,115,910"
+        },
+        "most_points_item": {
+          "item": "Ahrim's hood",
+          "points": "20.0"
+        }
+      },
+      "Refugy": {
+        "total_drops": 12,
+        "total_points": "517.5",
+        "total_coins": "60,828,740",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Noxious halberd piece",
+          "value": "14,344,045"
+        },
+        "most_points_item": {
+          "item": "Abyssal head",
+          "points": "240.0"
+        }
+      },
+      "dupsi": {
+        "total_drops": 1,
+        "total_points": "17.5",
+        "total_coins": "14,344,045",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Noxious halberd piece",
+          "value": "14,344,045"
+        },
+        "most_points_item": {
+          "item": "Noxious halberd piece",
+          "points": "17.5"
+        },
+        "wom": {
+          "ehb": 7.54513,
+          "boss_kills": 186,
+          "raids": 10,
+          "cox": 1,
+          "tob": 0,
+          "toa": 9,
+          "barrows": 2,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 2119032
+        }
+      },
+      "Ninjakiituri": {
+        "total_drops": 3,
+        "total_points": "320.0",
+        "total_coins": "2,782,625",
+        "boss_pets": 1,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Dharok's greataxe",
+          "value": "1,764,820"
+        },
+        "most_points_item": {
+          "item": "Boss pet",
+          "points": "300.0"
+        },
+        "wom": {
+          "ehb": 14.65336,
+          "boss_kills": 314,
+          "raids": 20,
+          "cox": 18,
+          "tob": 0,
+          "toa": 2,
+          "barrows": 18,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 6755925
+        }
+      },
+      "GoinInDrai": {
+        "total_drops": 4,
+        "total_points": "505.0",
+        "total_coins": "4,316,538",
+        "boss_pets": 1,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Smouldering stone",
+          "value": "2,178,051"
+        },
+        "most_points_item": {
+          "item": "Boss pet",
+          "points": "300.0"
+        }
+      },
+      "KennyKennn": {
+        "total_drops": 2,
+        "total_points": "40.0",
+        "total_coins": "579,786",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Occult necklace",
+          "value": "536,279"
+        },
+        "most_points_item": {
+          "item": "Chromium ingot",
+          "points": "25.0"
+        }
+      },
+      "Jonny BTW": {
+        "total_drops": 3,
+        "total_points": "310.0",
+        "total_coins": "45,244,920",
+        "boss_pets": 0,
+        "jars": 1,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Bellator vestige",
+          "value": "28,594,420"
+        },
+        "most_points_item": {
+          "item": "Zamorak hilt",
+          "points": "110.0"
+        }
+      },
+      "StoneyBloney": {
+        "total_drops": 5,
+        "total_points": "35.0",
+        "total_coins": "1,767,866",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Obsidian cape",
+          "value": "619,011"
+        },
+        "most_points_item": {
+          "item": "Guthan's platebody",
+          "points": "10.0"
+        }
+      },
+      "N oco": {
+        "total_drops": 4,
+        "total_points": "605.0",
+        "total_coins": "158,411,368",
+        "boss_pets": 1,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Mokhaiotl cloth",
+          "value": "68,610,424"
+        },
+        "most_points_item": {
+          "item": "Boss pet",
+          "points": "300.0"
+        },
+        "wom": {
+          "ehb": 24.07211,
+          "boss_kills": 501,
+          "raids": 13,
+          "cox": 4,
+          "tob": 6,
+          "toa": 3,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 10615660
+        }
+      },
+      "tinmer": {
+        "total_drops": 1,
+        "total_points": "17.5",
+        "total_coins": "14,344,045",
+        "boss_pets": 0,
+        "jars": 0,
+        "mega_rares": 0,
+        "most_expensive_drop": {
+          "item": "Noxious halberd piece",
+          "value": "14,344,045"
+        },
+        "most_points_item": {
+          "item": "Noxious halberd piece",
+          "points": "17.5"
+        },
+        "wom": {
+          "ehb": 1.0001,
+          "boss_kills": 37,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 2055613
+        }
+      }
+    }
+  }
+}

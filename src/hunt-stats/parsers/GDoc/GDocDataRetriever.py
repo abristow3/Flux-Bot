@@ -8,11 +8,11 @@ logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO)
 
 
-class GDoc:
-    def __init__(self) -> None:
+class GDocDataRetriever:
+    def __init__(self, sheet_id: str) -> None:
         self.service = None
         self.sheets = None
-        self.sheet_id = ""
+        self.sheet_id = sheet_id
         self.creds_path = ""
         self.credentials = None
         self.on_startup()
