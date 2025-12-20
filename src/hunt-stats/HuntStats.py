@@ -6,6 +6,10 @@ import json
 import os
 from pathlib import Path
 
+def load_json_data(filepath) -> dict:
+    with open(filepath, "r", encoding="utf-8") as f:
+        return json.load(f)
+
 class HuntStats:
     def __init__(self, hunt_edition: str, gdoc_sheet_id: str, wom_comp_id: str):
         self.hunt_edition: str = hunt_edition
@@ -25,11 +29,17 @@ class HuntStats:
         # wom_data = WOMDataRetriever(comp_id=self.wom_comp_id, hunt_edition=self.hunt_edition)
         # wom_data.run()  # Uncomment if fetching from API
 
+        # Lowercase all filename
+        self.lowercase_filenames("src/hunt-stats/data/Hunt-14/players")
+
         wom_parser = WOMDataParser(hunt_edition=self.hunt_edition)
         wom_parser.run()
 
         # Load JSON data
         self.load_json()
+
+        # Lowercase all player names
+        self.lowercase_player_names()
 
         # Calculate totals
         self.calculate_team_totals()
@@ -39,6 +49,12 @@ class HuntStats:
 
         # Calc team best point per EHB
         self.calculate_team_best_avg_points_per_ehb()
+
+        # Calc most killed boss for each team
+        self.calculate_team_most_killed_boss(wom_parser.players_dir)
+
+        # Count entries missing WoM data
+        self.count_players_missing_wom()
 
         # Save JSON back
         self.save_json()
@@ -163,6 +179,94 @@ class HuntStats:
                     f"{best_player} ({best_value})"
                 )
 
+    def count_players_missing_wom(self) -> None:
+        for team_name, team_data in self.data.items():
+            players = team_data.get("players", {})
+
+            missing_names = []
+
+            for player_name, player_data in players.items():
+                if "wom" not in player_data:
+                    missing_names.append(player_name)
+
+            print(f"{team_name}: {len(missing_names)} players missing wom data")
+
+            if missing_names:
+                print("  Players:", ", ".join(missing_names))
+
+    def lowercase_filenames(self, directory: str) -> None:
+        for filename in os.listdir(directory):
+            old_path = os.path.join(directory, filename)
+
+            # Skip subdirectories
+            if not os.path.isfile(old_path):
+                continue
+
+            new_filename = filename.lower()
+            new_path = os.path.join(directory, new_filename)
+
+            # Avoid unnecessary rename
+            if old_path == new_path:
+                continue
+
+            os.rename(old_path, new_path)
+
+    def lowercase_player_names(self) -> None:
+        for team_data in self.data.values():
+            players = team_data.get("players", {})
+
+            new_players = {}
+
+            for player_name, player_data in players.items():
+                lower_name = player_name.lower()
+
+                # If a collision happens, keep the first one found
+                if lower_name not in new_players:
+                    new_players[lower_name] = player_data
+                else:
+                    # Optional: handle collisions explicitly if you want
+                    pass
+
+            team_data["players"] = new_players
+
+    def calculate_team_most_killed_boss(self, players_dir) -> None:
+        for team_data in self.data.values():
+            players = team_data.get("players", {})
+            team_totals = team_data.setdefault("team_totals", {})
+
+            boss_kill_totals = {}
+
+            for player_name in players.keys():
+                player_file = os.path.join(players_dir, f"{player_name}.json")
+
+                if not os.path.exists(player_file):
+                    continue
+
+                player_data = load_json_data(player_file)
+                bosses = player_data.get("data", {}).get("bosses", {})
+
+                for boss_name, boss_info in bosses.items():
+                    kills = boss_info.get("kills", {}).get("gained", 0)
+
+                    if kills <= 0:
+                        continue
+
+                    boss_kill_totals[boss_name] = (
+                        boss_kill_totals.get(boss_name, 0) + kills
+                    )
+
+            if not boss_kill_totals:
+                continue
+
+            most_killed_boss, total_kills = max(
+                boss_kill_totals.items(),
+                key=lambda item: item[1]
+            )
+
+            team_totals["most_killed_boss"] = {
+                "boss": most_killed_boss,
+                "kills": total_kills
+            }
 
 if __name__ == "__main__":
     gdoc_sheet_id = "1uQYTIZz6szfp4yyHkVPlPzCcEK042Kb-lFUx2gmCOlg"

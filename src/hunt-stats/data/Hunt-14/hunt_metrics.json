@@ -7,25 +7,29 @@
       "total_pets": 18,
       "total_jars": 9,
       "total_mega_rares": 6,
-      "total_cox": 353,
-      "total_tob": 231,
-      "total_toa": 95,
-      "total_raids": 679,
-      "total_ehb": 926.1361,
-      "total_clues": 64,
+      "total_cox": 443,
+      "total_tob": 383,
+      "total_toa": 123,
+      "total_raids": 949,
+      "total_ehb": 1207.5922,
+      "total_clues": 131,
       "clues_breakdown": {
-        "beginner": 6,
-        "easy": 5,
-        "medium": 15,
-        "hard": 14,
-        "elite": 9,
-        "master": 15
+        "beginner": 12,
+        "easy": 6,
+        "medium": 28,
+        "hard": 36,
+        "elite": 20,
+        "master": 29
       },
-      "total_xp": 218261919,
-      "best_points_per_ehb": "Jalllly (315.33)"
+      "total_xp": 305107056,
+      "best_points_per_ehb": "jalllly (315.33)",
+      "most_killed_boss": {
+        "boss": "king_black_dragon",
+        "kills": 2293
+      }
     },
     "players": {
-      "Matt BTW": {
+      "matt btw": {
         "total_drops": 16,
         "total_points": "1,482.5",
         "total_coins": "240,068,093",
@@ -57,11 +61,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 13444945
+          "xp_gained": 13444945,
+          "most_killed_boss": {
+            "boss": "callisto",
+            "kills": 205
+          }
         },
         "points_per_ehb": 19.89
       },
-      "Brukismy": {
+      "brukismy": {
         "total_drops": 12,
         "total_points": "947.5",
         "total_coins": "125,457,169",
@@ -93,11 +101,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 6698040
+          "xp_gained": 6698040,
+          "most_killed_boss": {
+            "boss": "callisto",
+            "kills": 213
+          }
         },
         "points_per_ehb": 31.76
       },
-      "Tom o 0": {
+      "tom o 0": {
         "total_drops": 26,
         "total_points": "1,617.5",
         "total_coins": "285,214,100",
@@ -129,11 +141,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 5964330
+          "xp_gained": 5964330,
+          "most_killed_boss": {
+            "boss": "dagannoth_rex",
+            "kills": 594
+          }
         },
         "points_per_ehb": 58.49
       },
-      "Z achh": {
+      "z achh": {
         "total_drops": 19,
         "total_points": "2,910.0",
         "total_coins": "1,570,762,978",
@@ -148,9 +164,32 @@
           "item": "Scythe of vitur (uncharged)",
           "points": "1,700.0"
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 48.05,
+        "wom": {
+          "ehb": 60.56205,
+          "boss_kills": 1870,
+          "raids": 67,
+          "cox": 18,
+          "tob": 38,
+          "toa": 11,
+          "barrows": 4,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 13212601,
+          "most_killed_boss": {
+            "boss": "general_graardor",
+            "kills": 565
+          }
+        }
       },
-      "Fe Jesse": {
+      "fe jesse": {
         "total_drops": 18,
         "total_points": "1,610.0",
         "total_coins": "62,211,004",
@@ -182,11 +221,15 @@
             "elite": 4,
             "master": 0
           },
-          "xp_gained": 5735697
+          "xp_gained": 5735697,
+          "most_killed_boss": {
+            "boss": "crazy_archaeologist",
+            "kills": 391
+          }
         },
         "points_per_ehb": 43.81
       },
-      "C habs": {
+      "c habs": {
         "total_drops": 15,
         "total_points": "757.5",
         "total_coins": "34,092,532",
@@ -218,11 +261,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 2334938
+          "xp_gained": 2334938,
+          "most_killed_boss": {
+            "boss": "callisto",
+            "kills": 234
+          }
         },
         "points_per_ehb": 50.3
       },
-      "THFC Con": {
+      "thfc con": {
         "total_drops": 6,
         "total_points": "1,415.0",
         "total_coins": "148,521,525",
@@ -254,7 +301,11 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 7609093
+          "xp_gained": 7609093,
+          "most_killed_boss": {
+            "boss": "cerberus",
+            "kills": 298
+          }
         },
         "points_per_ehb": 48.19
       },
@@ -290,11 +341,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 4958233
+          "xp_gained": 4958233,
+          "most_killed_boss": {
+            "boss": "doom_of_mokhaiotl",
+            "kills": 20
+          }
         },
         "points_per_ehb": 40.79
       },
-      "Belindaa": {
+      "belindaa": {
         "total_drops": 6,
         "total_points": "110.0",
         "total_coins": "11,847,420",
@@ -326,11 +381,15 @@
             "elite": 1,
             "master": 0
           },
-          "xp_gained": 1413976
+          "xp_gained": 1413976,
+          "most_killed_boss": {
+            "boss": "barrows_chests",
+            "kills": 84
+          }
         },
         "points_per_ehb": 28.56
       },
-      "Druid Ras": {
+      "druid ras": {
         "total_drops": 14,
         "total_points": "675.0",
         "total_coins": "231,056,196",
@@ -362,11 +421,15 @@
             "elite": 0,
             "master": 10
           },
-          "xp_gained": 5398271
+          "xp_gained": 5398271,
+          "most_killed_boss": {
+            "boss": "sarachnis",
+            "kills": 189
+          }
         },
         "points_per_ehb": 24.32
       },
-      "Crf Craft": {
+      "crf craft": {
         "total_drops": 24,
         "total_points": "567.5",
         "total_coins": "55,738,159",
@@ -381,9 +444,31 @@
           "item": "Bottomless compost bucket",
           "points": "100.0"
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 0.0,
+        "wom": {
+          "boss_kills": 1697,
+          "raids": 8,
+          "cox": 8,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 2,
+          "clues": {
+            "total": 33,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 20,
+            "elite": 8,
+            "master": 5
+          },
+          "xp_gained": 6067478,
+          "most_killed_boss": {
+            "boss": "kraken",
+            "kills": 270
+          }
+        }
       },
-      "Frank Donner": {
+      "frank donner": {
         "total_drops": 37,
         "total_points": "3,851.5",
         "total_coins": "457,956,121",
@@ -398,9 +483,32 @@
           "item": "Ancestral robe top",
           "points": "880.0"
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 55.91,
+        "wom": {
+          "ehb": 68.88817,
+          "boss_kills": 1743,
+          "raids": 22,
+          "cox": 17,
+          "tob": 2,
+          "toa": 3,
+          "barrows": 1,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 11213312,
+          "most_killed_boss": {
+            "boss": "calvarion",
+            "kills": 402
+          }
+        }
       },
-      "Availing42": {
+      "availing42": {
         "total_drops": 9,
         "total_points": "282.5",
         "total_coins": "11,357,113",
@@ -432,11 +540,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 2827114
+          "xp_gained": 2827114,
+          "most_killed_boss": {
+            "boss": "sarachnis",
+            "kills": 171
+          }
         },
         "points_per_ehb": 19.2
       },
-      "THFC Ham": {
+      "thfc ham": {
         "total_drops": 16,
         "total_points": "1,152.5",
         "total_coins": "240,416,835",
@@ -468,11 +580,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 11980782
+          "xp_gained": 11980782,
+          "most_killed_boss": {
+            "boss": "cerberus",
+            "kills": 327
+          }
         },
         "points_per_ehb": 21.47
       },
-      "Ludw1g": {
+      "ludw1g": {
         "total_drops": 29,
         "total_points": "940.0",
         "total_coins": "148,751,396",
@@ -504,11 +620,15 @@
             "elite": 0,
             "master": 2
           },
-          "xp_gained": 12466379
+          "xp_gained": 12466379,
+          "most_killed_boss": {
+            "boss": "alchemical_hydra",
+            "kills": 626
+          }
         },
         "points_per_ehb": 21.02
       },
-      "MarioKartDD": {
+      "mariokartdd": {
         "total_drops": 28,
         "total_points": "960.0",
         "total_coins": "106,196,582",
@@ -540,11 +660,15 @@
             "elite": 2,
             "master": 0
           },
-          "xp_gained": 6653732
+          "xp_gained": 6653732,
+          "most_killed_boss": {
+            "boss": "kraken",
+            "kills": 250
+          }
         },
         "points_per_ehb": 42.24
       },
-      "Jalllly": {
+      "jalllly": {
         "total_drops": 13,
         "total_points": "2,385.0",
         "total_coins": "160,689,501",
@@ -576,11 +700,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 1842494
+          "xp_gained": 1842494,
+          "most_killed_boss": {
+            "boss": "nex",
+            "kills": 121
+          }
         },
         "points_per_ehb": 315.33
       },
-      "Quakbou": {
+      "quakbou": {
         "total_drops": 50,
         "total_points": "3,896.0",
         "total_coins": "1,872,286,735",
@@ -612,11 +740,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 14182951
+          "xp_gained": 14182951,
+          "most_killed_boss": {
+            "boss": "the_leviathan",
+            "kills": 300
+          }
         },
         "points_per_ehb": 49.81
       },
-      "Irondemic": {
+      "irondemic": {
         "total_drops": 1,
         "total_points": "410.0",
         "total_coins": "34,879,171",
@@ -631,7 +763,29 @@
           "item": "Virtus robe bottom",
           "points": "410.0"
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 0.0,
+        "wom": {
+          "boss_kills": 345,
+          "raids": 3,
+          "cox": 1,
+          "tob": 0,
+          "toa": 2,
+          "barrows": 0,
+          "clues": {
+            "total": 13,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 13,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 3011869,
+          "most_killed_boss": {
+            "boss": "vardorvis",
+            "kills": 139
+          }
+        }
       },
       "mbearmike": {
         "total_drops": 40,
@@ -648,9 +802,32 @@
           "item": "Dragon pickaxe",
           "points": "110.0"
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 112.93,
+        "wom": {
+          "boss_kills": 1396,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 2588106,
+          "ehb": 10.9359,
+          "most_killed_boss": {
+            "boss": "king_black_dragon",
+            "kills": 1309
+          }
+        }
       },
-      "Jorn RS": {
+      "jorn rs": {
         "total_drops": 7,
         "total_points": "650.0",
         "total_coins": "13,060,680",
@@ -682,11 +859,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 4041242
+          "xp_gained": 4041242,
+          "most_killed_boss": {
+            "boss": "thermonuclear_smoke_devil",
+            "kills": 165
+          }
         },
         "points_per_ehb": 37.69
       },
-      "Tom Tbow": {
+      "tom tbow": {
         "total_drops": 15,
         "total_points": "1,450.0",
         "total_coins": "121,886,989",
@@ -701,9 +882,31 @@
           "item": "Justiciar chestguard",
           "points": "850.0"
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 0.0,
+        "wom": {
+          "boss_kills": 501,
+          "raids": 27,
+          "cox": 14,
+          "tob": 8,
+          "toa": 5,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 5446116,
+          "most_killed_boss": {
+            "boss": "cerberus",
+            "kills": 165
+          }
+        }
       },
-      "Google Knows": {
+      "google knows": {
         "total_drops": 12,
         "total_points": "567.5",
         "total_coins": "102,646,196",
@@ -735,11 +938,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 5011562
+          "xp_gained": 5011562,
+          "most_killed_boss": {
+            "boss": "king_black_dragon",
+            "kills": 319
+          }
         },
         "points_per_ehb": 22.04
       },
-      "Monke Vibes": {
+      "monke vibes": {
         "total_drops": 24,
         "total_points": "2,277.5",
         "total_coins": "155,182,744",
@@ -771,11 +978,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 10116508
+          "xp_gained": 10116508,
+          "most_killed_boss": {
+            "boss": "calvarion",
+            "kills": 468
+          }
         },
         "points_per_ehb": 51.02
       },
-      "codeViking": {
+      "codeviking": {
         "total_drops": 1,
         "total_points": "35.0",
         "total_coins": "14,450,000",
@@ -807,11 +1018,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 1178945
+          "xp_gained": 1178945,
+          "most_killed_boss": {
+            "boss": "araxxor",
+            "kills": 92
+          }
         },
         "points_per_ehb": 14.08
       },
-      "Twosp00n": {
+      "twosp00n": {
         "total_drops": 4,
         "total_points": "270.0",
         "total_coins": "54,083,399",
@@ -843,11 +1058,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 2330801
+          "xp_gained": 2330801,
+          "most_killed_boss": {
+            "boss": "nex",
+            "kills": 20
+          }
         },
         "points_per_ehb": 43.64
       },
-      "Kuln": {
+      "kuln": {
         "total_drops": 5,
         "total_points": "90.0",
         "total_coins": "45,620,370",
@@ -879,11 +1098,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 3597634
+          "xp_gained": 3597634,
+          "most_killed_boss": {
+            "boss": "cerberus",
+            "kills": 141
+          }
         },
         "points_per_ehb": 5.83
       },
-      "NextPet": {
+      "nextpet": {
         "total_drops": 7,
         "total_points": "395.0",
         "total_coins": "70,565,089",
@@ -898,9 +1121,32 @@
           "item": "Inquisitor's plateskirt",
           "points": "250.0"
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 15.9,
+        "wom": {
+          "ehb": 24.83625,
+          "boss_kills": 568,
+          "raids": 19,
+          "cox": 17,
+          "tob": 0,
+          "toa": 2,
+          "barrows": 0,
+          "clues": {
+            "total": 6,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 6
+          },
+          "xp_gained": 3519622,
+          "most_killed_boss": {
+            "boss": "dagannoth_rex",
+            "kills": 113
+          }
+        }
       },
-      "MrKraniel": {
+      "mrkraniel": {
         "total_drops": 8,
         "total_points": "197.5",
         "total_coins": "50,101,719",
@@ -932,11 +1178,15 @@
             "elite": 1,
             "master": 0
           },
-          "xp_gained": 7599836
+          "xp_gained": 7599836,
+          "most_killed_boss": {
+            "boss": "araxxor",
+            "kills": 485
+          }
         },
         "points_per_ehb": 10.25
       },
-      "Hitmonlees": {
+      "hitmonlees": {
         "total_drops": 3,
         "total_points": "110.0",
         "total_coins": "15,515,368",
@@ -968,11 +1218,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 2886108
+          "xp_gained": 2886108,
+          "most_killed_boss": {
+            "boss": "yama",
+            "kills": 48
+          }
         },
         "points_per_ehb": 8.13
       },
-      "Cludd": {
+      "cludd": {
         "total_drops": 15,
         "total_points": "480.0",
         "total_coins": "37,054,298",
@@ -987,9 +1241,32 @@
           "item": "Jar",
           "points": "100.0"
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 15.58,
+        "wom": {
+          "ehb": 30.80344,
+          "boss_kills": 1082,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 43,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 6780494,
+          "most_killed_boss": {
+            "boss": "duke_sucellus",
+            "kills": 236
+          }
+        }
       },
-      "Redmonchans": {
+      "redmonchans": {
         "total_drops": 23,
         "total_points": "1,485.0",
         "total_coins": "120,757,354",
@@ -1006,7 +1283,7 @@
         },
         "points_per_ehb": 0.0
       },
-      "Racc II": {
+      "racc ii": {
         "total_drops": 16,
         "total_points": "1,272.5",
         "total_coins": "412,616,476",
@@ -1042,7 +1319,7 @@
         },
         "points_per_ehb": 0.0
       },
-      "Flub": {
+      "flub": {
         "total_drops": 6,
         "total_points": "185.0",
         "total_coins": "29,316,975",
@@ -1074,11 +1351,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 1721264
+          "xp_gained": 1721264,
+          "most_killed_boss": {
+            "boss": "alchemical_hydra",
+            "kills": 73
+          }
         },
         "points_per_ehb": 33.1
       },
-      "Snape Grass": {
+      "snape grass": {
         "total_drops": 13,
         "total_points": "1,937.5",
         "total_coins": "217,800,761",
@@ -1110,11 +1391,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 4719705
+          "xp_gained": 4719705,
+          "most_killed_boss": {
+            "boss": "sarachnis",
+            "kills": 459
+          }
         },
         "points_per_ehb": 53.88
       },
-      "JimmyHC": {
+      "jimmyhc": {
         "total_drops": 11,
         "total_points": "645.0",
         "total_coins": "48,074,540",
@@ -1146,11 +1431,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 6048526
+          "xp_gained": 6048526,
+          "most_killed_boss": {
+            "boss": "zulrah",
+            "kills": 632
+          }
         },
         "points_per_ehb": 21.17
       },
-      "Fergy bear": {
+      "fergy bear": {
         "total_drops": 9,
         "total_points": "110.0",
         "total_coins": "4,890,350",
@@ -1165,9 +1454,31 @@
           "item": "Karil's leatherskirt",
           "points": "20.0"
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 0.0,
+        "wom": {
+          "boss_kills": 126,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 110,
+          "clues": {
+            "total": 2,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 1,
+            "master": 1
+          },
+          "xp_gained": 3854885,
+          "most_killed_boss": {
+            "boss": "barrows_chests",
+            "kills": 110
+          }
+        }
       },
-      "Strokin Gun": {
+      "strokin gun": {
         "total_drops": 3,
         "total_points": "82.5",
         "total_coins": "8,599,648",
@@ -1199,11 +1510,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 196868
+          "xp_gained": 196868,
+          "most_killed_boss": {
+            "boss": "zulrah",
+            "kills": 70
+          }
         },
         "points_per_ehb": 51.86
       },
-      "High Mileage": {
+      "high mileage": {
         "total_drops": 6,
         "total_points": "225.0",
         "total_coins": "20,876,848",
@@ -1218,9 +1533,32 @@
           "item": "Saradomin hilt",
           "points": "100.0"
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 59.92,
+        "wom": {
+          "ehb": 3.75482,
+          "boss_kills": 213,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 1696182,
+          "most_killed_boss": {
+            "boss": "kril_tsutsaroth",
+            "kills": 122
+          }
+        }
       },
-      "eXCazh": {
+      "excazh": {
         "total_drops": 3,
         "total_points": "585.0",
         "total_coins": "120,851,684",
@@ -1252,11 +1590,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 5630914
+          "xp_gained": 5630914,
+          "most_killed_boss": {
+            "boss": "doom_of_mokhaiotl",
+            "kills": 121
+          }
         },
         "points_per_ehb": 44.05
       },
-      "GimPoutine": {
+      "gimpoutine": {
         "total_drops": 10,
         "total_points": "385.0",
         "total_coins": "78,777,359",
@@ -1288,11 +1630,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 10196593
+          "xp_gained": 10196593,
+          "most_killed_boss": {
+            "boss": "artio",
+            "kills": 226
+          }
         },
         "points_per_ehb": 8.28
       },
-      "Degenerate": {
+      "degenerate": {
         "total_drops": 4,
         "total_points": "87.5",
         "total_coins": "6,523,581",
@@ -1307,7 +1653,26 @@
           "item": "Dual macuahuitl",
           "points": "25.0"
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 0.0,
+        "wom": {
+          "ehb": 0,
+          "boss_kills": 0,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 0
+        }
       },
       "piggyaza1ea": {
         "total_drops": 6,
@@ -1341,11 +1706,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 3398709
+          "xp_gained": 3398709,
+          "most_killed_boss": {
+            "boss": "lunar_chests",
+            "kills": 89
+          }
         },
         "points_per_ehb": 20.37
       },
-      "MaxedMike": {
+      "maxedmike": {
         "total_drops": 11,
         "total_points": "350.0",
         "total_coins": "27,285,346",
@@ -1377,11 +1746,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 3536837
+          "xp_gained": 3536837,
+          "most_killed_boss": {
+            "boss": "grotesque_guardians",
+            "kills": 206
+          }
         },
         "points_per_ehb": 25.39
       },
-      "Ozzyyyyyyy": {
+      "ozzyyyyyyy": {
         "total_drops": 2,
         "total_points": "400.0",
         "total_coins": "44,018,025",
@@ -1396,9 +1769,32 @@
           "item": "Avernic defender hilt",
           "points": "220.0"
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 11.49,
+        "wom": {
+          "ehb": 34.80781,
+          "boss_kills": 137,
+          "raids": 102,
+          "cox": 0,
+          "tob": 102,
+          "toa": 0,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 6423601,
+          "most_killed_boss": {
+            "boss": "theatre_of_blood_hard_mode",
+            "kills": 94
+          }
+        }
       },
-      "Stogie": {
+      "stogie": {
         "total_drops": 2,
         "total_points": "55.0",
         "total_coins": "19,501,506",
@@ -1430,7 +1826,11 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 3784208
+          "xp_gained": 3784208,
+          "most_killed_boss": {
+            "boss": "zulrah",
+            "kills": 207
+          }
         },
         "points_per_ehb": 3.39
       },
@@ -1466,11 +1866,15 @@
             "elite": 1,
             "master": 0
           },
-          "xp_gained": 3198218
+          "xp_gained": 3198218,
+          "most_killed_boss": {
+            "boss": "duke_sucellus",
+            "kills": 19
+          }
         },
         "points_per_ehb": 43.05
       },
-      "Dagh": {
+      "dagh": {
         "total_drops": 5,
         "total_points": "485.0",
         "total_coins": "76,802,961",
@@ -1502,11 +1906,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 4874206
+          "xp_gained": 4874206,
+          "most_killed_boss": {
+            "boss": "yama",
+            "kills": 79
+          }
         },
         "points_per_ehb": 43.68
       },
-      "Profslayer": {
+      "profslayer": {
         "total_drops": 4,
         "total_points": "1,195.0",
         "total_coins": "1,643,762,933",
@@ -1521,9 +1929,31 @@
           "item": "Dragon Hunter Crossbow",
           "points": "660.0"
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 0.0,
+        "wom": {
+          "boss_kills": 311,
+          "raids": 18,
+          "cox": 11,
+          "tob": 2,
+          "toa": 5,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 4973187,
+          "most_killed_boss": {
+            "boss": "doom_of_mokhaiotl",
+            "kills": 107
+          }
+        }
       },
-      "Raanduin": {
+      "raanduin": {
         "total_drops": 5,
         "total_points": "170.0",
         "total_coins": "56,037,679",
@@ -1538,9 +1968,32 @@
           "item": "Araxyte fang",
           "points": "100.0"
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 9.05,
+        "wom": {
+          "ehb": 18.78479,
+          "boss_kills": 519,
+          "raids": 1,
+          "cox": 1,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 5118297,
+          "most_killed_boss": {
+            "boss": "araxxor",
+            "kills": 325
+          }
+        }
       },
-      "Tori sama": {
+      "tori sama": {
         "total_drops": 2,
         "total_points": "200.0",
         "total_coins": "103,282,755",
@@ -1572,11 +2025,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 3177864
+          "xp_gained": 3177864,
+          "most_killed_boss": {
+            "boss": "doom_of_mokhaiotl",
+            "kills": 141
+          }
         },
         "points_per_ehb": 21.62
       },
-      "Crypt1ckyuki": {
+      "crypt1ckyuki": {
         "total_drops": 1,
         "total_points": "90.0",
         "total_coins": "3,502,032",
@@ -1591,9 +2048,32 @@
           "item": "Soulflame horn",
           "points": "90.0"
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 19.93,
+        "wom": {
+          "ehb": 4.51576,
+          "boss_kills": 95,
+          "raids": 3,
+          "cox": 3,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 1,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 1044693,
+          "most_killed_boss": {
+            "boss": "yama",
+            "kills": 61
+          }
+        }
       },
-      "Le Gimp Dave": {
+      "le gimp dave": {
         "total_drops": 5,
         "total_points": "62.5",
         "total_coins": "17,363,352",
@@ -1625,11 +2105,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 5002673
+          "xp_gained": 5002673,
+          "most_killed_boss": {
+            "boss": "the_royal_titans",
+            "kills": 127
+          }
         },
         "points_per_ehb": 7.62
       },
-      "EpicBotSpprt": {
+      "epicbotspprt": {
         "total_drops": 12,
         "total_points": "150.0",
         "total_coins": "11,513,301",
@@ -1661,11 +2145,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 2398369
+          "xp_gained": 2398369,
+          "most_killed_boss": {
+            "boss": "barrows_chests",
+            "kills": 65
+          }
         },
         "points_per_ehb": 40.22
       },
-      "Nyco": {
+      "nyco": {
         "total_drops": 7,
         "total_points": "247.5",
         "total_coins": "203,297,247",
@@ -1697,11 +2185,15 @@
             "elite": 0,
             "master": 3
           },
-          "xp_gained": 1823937
+          "xp_gained": 1823937,
+          "most_killed_boss": {
+            "boss": "vardorvis",
+            "kills": 126
+          }
         },
         "points_per_ehb": 18.42
       },
-      "07 RS": {
+      "07 rs": {
         "total_drops": 2,
         "total_points": "130.0",
         "total_coins": "36,408,890",
@@ -1716,9 +2208,32 @@
           "item": "Fangs of Venenatis",
           "points": "70.0"
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 12.13,
+        "wom": {
+          "ehb": 10.71708,
+          "boss_kills": 430,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 0,
+          "clues": {
+            "total": 11,
+            "beginner": 6,
+            "easy": 1,
+            "medium": 0,
+            "hard": 0,
+            "elite": 2,
+            "master": 2
+          },
+          "xp_gained": 4704628,
+          "most_killed_boss": {
+            "boss": "araxxor",
+            "kills": 125
+          }
+        }
       },
-      "Grayz": {
+      "grayz": {
         "total_drops": 4,
         "total_points": "342.5",
         "total_coins": "109,885,625",
@@ -1750,11 +2265,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 5426959
+          "xp_gained": 5426959,
+          "most_killed_boss": {
+            "boss": "araxxor",
+            "kills": 169
+          }
         },
         "points_per_ehb": 25.16
       },
-      "Yipee Cox": {
+      "yipee cox": {
         "total_drops": 1,
         "total_points": "50.0",
         "total_coins": "418,952",
@@ -1786,11 +2305,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 656051
+          "xp_gained": 656051,
+          "most_killed_boss": {
+            "boss": "dagannoth_rex",
+            "kills": 34
+          }
         },
         "points_per_ehb": 12.5
       },
-      "iCloud Iron": {
+      "icloud iron": {
         "total_drops": 3,
         "total_points": "90.0",
         "total_coins": "8,245,213",
@@ -1822,11 +2345,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 3323597
+          "xp_gained": 3323597,
+          "most_killed_boss": {
+            "boss": "alchemical_hydra",
+            "kills": 126
+          }
         },
         "points_per_ehb": 4.42
       },
-      "Rob Weasley": {
+      "rob weasley": {
         "total_drops": 1,
         "total_points": "17.5",
         "total_coins": "50,616",
@@ -1875,11 +2402,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 2107779
+          "xp_gained": 2107779,
+          "most_killed_boss": {
+            "boss": "theatre_of_blood",
+            "kills": 26
+          }
         },
         "points_per_ehb": 89.87
       },
-      "Codekuv": {
+      "codekuv": {
         "total_drops": 1,
         "total_points": "12.5",
         "total_coins": "4,014,047",
@@ -1911,11 +2442,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 1042267
+          "xp_gained": 1042267,
+          "most_killed_boss": {
+            "boss": "lunar_chests",
+            "kills": 23
+          }
         },
         "points_per_ehb": 6.12
       },
-      "Bar Hop": {
+      "bar hop": {
         "total_drops": 2,
         "total_points": "130.0",
         "total_coins": "42,883,729",
@@ -1947,7 +2482,11 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 3599470
+          "xp_gained": 3599470,
+          "most_killed_boss": {
+            "boss": "doom_of_mokhaiotl",
+            "kills": 26
+          }
         },
         "points_per_ehb": 29.64
       },
@@ -1966,9 +2505,31 @@
           "item": "Dragon chainbody",
           "points": "10.0"
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 0.0,
+        "wom": {
+          "boss_kills": 51,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 0,
+          "clues": {
+            "total": 2,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 2,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 182998,
+          "most_killed_boss": {
+            "boss": "kalphite_queen",
+            "kills": 34
+          }
+        }
       },
-      "Mr Chonker": {
+      "mr chonker": {
         "total_drops": 2,
         "total_points": "410.0",
         "total_coins": "147,705,963",
@@ -1983,9 +2544,32 @@
           "item": "Boss pet",
           "points": "300.0"
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 31.91,
+        "wom": {
+          "ehb": 12.85,
+          "boss_kills": 257,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 7007068,
+          "most_killed_boss": {
+            "boss": "doom_of_mokhaiotl",
+            "kills": 257
+          }
+        }
       },
-      "Harry Pottin": {
+      "harry pottin": {
         "total_drops": 3,
         "total_points": "340.0",
         "total_coins": "114,917,772",
@@ -2017,7 +2601,11 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 2123294
+          "xp_gained": 2123294,
+          "most_killed_boss": {
+            "boss": "the_leviathan",
+            "kills": 32
+          }
         },
         "points_per_ehb": 88.89
       }
@@ -2031,25 +2619,29 @@
       "total_pets": 25,
       "total_jars": 16,
       "total_mega_rares": 4,
-      "total_cox": 388,
-      "total_tob": 215,
-      "total_toa": 195,
-      "total_raids": 798,
-      "total_ehb": 1085.8394,
-      "total_clues": 106,
+      "total_cox": 512,
+      "total_tob": 230,
+      "total_toa": 298,
+      "total_raids": 1040,
+      "total_ehb": 1378.9339,
+      "total_clues": 186,
       "clues_breakdown": {
-        "beginner": 6,
-        "easy": 12,
-        "medium": 12,
-        "hard": 32,
-        "elite": 18,
-        "master": 26
+        "beginner": 14,
+        "easy": 16,
+        "medium": 18,
+        "hard": 70,
+        "elite": 37,
+        "master": 31
       },
-      "total_xp": 274321314,
-      "best_points_per_ehb": "dEmOnBaT (6824.86)"
+      "total_xp": 379583855,
+      "best_points_per_ehb": "demonbat (6824.86)",
+      "most_killed_boss": {
+        "boss": "king_black_dragon",
+        "kills": 4282
+      }
     },
     "players": {
-      "SN1 PvM": {
+      "sn1 pvm": {
         "total_drops": 18,
         "total_points": "5,057.5",
         "total_coins": "513,210,515",
@@ -2081,11 +2673,15 @@
             "elite": 0,
             "master": 1
           },
-          "xp_gained": 7241970
+          "xp_gained": 7241970,
+          "most_killed_boss": {
+            "boss": "thermonuclear_smoke_devil",
+            "kills": 160
+          }
         },
         "points_per_ehb": 166.42
       },
-      "IronAssHole": {
+      "ironasshole": {
         "total_drops": 15,
         "total_points": "1,695.0",
         "total_coins": "195,983,304",
@@ -2117,11 +2713,15 @@
             "elite": 3,
             "master": 0
           },
-          "xp_gained": 5010261
+          "xp_gained": 5010261,
+          "most_killed_boss": {
+            "boss": "the_whisperer",
+            "kills": 110
+          }
         },
         "points_per_ehb": 50.0
       },
-      "MaxXLevell": {
+      "maxxlevell": {
         "total_drops": 9,
         "total_points": "470.5",
         "total_coins": "126,841,933",
@@ -2136,9 +2736,32 @@
           "item": "Oathplate helm",
           "points": "190.0"
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 15.37,
+        "wom": {
+          "ehb": 30.60979,
+          "boss_kills": 950,
+          "raids": 6,
+          "cox": 3,
+          "tob": 0,
+          "toa": 3,
+          "barrows": 8,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 8105886,
+          "most_killed_boss": {
+            "boss": "vardorvis",
+            "kills": 494
+          }
+        }
       },
-      "Zenaax": {
+      "zenaax": {
         "total_drops": 26,
         "total_points": "1,085.0",
         "total_coins": "124,654,728",
@@ -2170,11 +2793,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 10423157
+          "xp_gained": 10423157,
+          "most_killed_boss": {
+            "boss": "vardorvis",
+            "kills": 427
+          }
         },
         "points_per_ehb": 22.88
       },
-      "Curse of RNG": {
+      "curse of rng": {
         "total_drops": 36,
         "total_points": "912.5",
         "total_coins": "8,183,143",
@@ -2206,11 +2833,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 9690873
+          "xp_gained": 9690873,
+          "most_killed_boss": {
+            "boss": "king_black_dragon",
+            "kills": 3737
+          }
         },
         "points_per_ehb": 21.03
       },
-      "Goldwi": {
+      "goldwi": {
         "total_drops": 23,
         "total_points": "1,247.5",
         "total_coins": "290,792,643",
@@ -2225,9 +2856,31 @@
           "item": "Oathplate chest",
           "points": "380.0"
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 0.0,
+        "wom": {
+          "boss_kills": 836,
+          "raids": 60,
+          "cox": 51,
+          "tob": 8,
+          "toa": 1,
+          "barrows": 3,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 4829241,
+          "most_killed_boss": {
+            "boss": "thermonuclear_smoke_devil",
+            "kills": 174
+          }
+        }
       },
-      "Faith Dushku": {
+      "faith dushku": {
         "total_drops": 25,
         "total_points": "1,027.5",
         "total_coins": "68,011,885",
@@ -2242,9 +2895,32 @@
           "item": "Jar",
           "points": "100.0"
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 16.3,
+        "wom": {
+          "ehb": 63.01958,
+          "boss_kills": 2148,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 7,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 9132432,
+          "most_killed_boss": {
+            "boss": "sarachnis",
+            "kills": 804
+          }
+        }
       },
-      "Comicae": {
+      "comicae": {
         "total_drops": 12,
         "total_points": "332.5",
         "total_coins": "44,158,745",
@@ -2276,11 +2952,15 @@
             "elite": 1,
             "master": 0
           },
-          "xp_gained": 6798028
+          "xp_gained": 6798028,
+          "most_killed_boss": {
+            "boss": "araxxor",
+            "kills": 301
+          }
         },
         "points_per_ehb": 13.79
       },
-      "BigBloor": {
+      "bigbloor": {
         "total_drops": 26,
         "total_points": "2,557.5",
         "total_coins": "233,331,963",
@@ -2312,11 +2992,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 12616655
+          "xp_gained": 12616655,
+          "most_killed_boss": {
+            "boss": "vardorvis",
+            "kills": 554
+          }
         },
         "points_per_ehb": 43.48
       },
-      "Fireman Sam": {
+      "fireman sam": {
         "total_drops": 9,
         "total_points": "855.0",
         "total_coins": "299,993,164",
@@ -2352,7 +3036,7 @@
         },
         "points_per_ehb": 0.0
       },
-      "DobbysRanarr": {
+      "dobbysranarr": {
         "total_drops": 28,
         "total_points": "1,327.5",
         "total_coins": "130,314,735",
@@ -2384,11 +3068,15 @@
             "elite": 0,
             "master": 8
           },
-          "xp_gained": 8252403
+          "xp_gained": 8252403,
+          "most_killed_boss": {
+            "boss": "calvarion",
+            "kills": 263
+          }
         },
         "points_per_ehb": 32.16
       },
-      "Grumpy Bear": {
+      "grumpy bear": {
         "total_drops": 39,
         "total_points": "4,403.5",
         "total_coins": "253,149,345",
@@ -2420,11 +3108,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 13785905
+          "xp_gained": 13785905,
+          "most_killed_boss": {
+            "boss": "kraken",
+            "kills": 862
+          }
         },
         "points_per_ehb": 54.93
       },
-      "Syncopy": {
+      "syncopy": {
         "total_drops": 20,
         "total_points": "1,050.0",
         "total_coins": "58,040,501",
@@ -2456,11 +3148,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 4314262
+          "xp_gained": 4314262,
+          "most_killed_boss": {
+            "boss": "abyssal_sire",
+            "kills": 198
+          }
         },
         "points_per_ehb": 59.6
       },
-      "Apple Dough": {
+      "apple dough": {
         "total_drops": 18,
         "total_points": "1,325.0",
         "total_coins": "422,078,057",
@@ -2492,11 +3188,15 @@
             "elite": 0,
             "master": 16
           },
-          "xp_gained": 8867252
+          "xp_gained": 8867252,
+          "most_killed_boss": {
+            "boss": "kraken",
+            "kills": 173
+          }
         },
         "points_per_ehb": 30.35
       },
-      "Annexer": {
+      "annexer": {
         "total_drops": 11,
         "total_points": "670.0",
         "total_coins": "43,523,059",
@@ -2511,9 +3211,32 @@
           "item": "Boss pet",
           "points": "300.0"
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 21.26,
+        "wom": {
+          "ehb": 31.51392,
+          "boss_kills": 1162,
+          "raids": 6,
+          "cox": 0,
+          "tob": 0,
+          "toa": 6,
+          "barrows": 8,
+          "clues": {
+            "total": 20,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 13,
+            "elite": 6,
+            "master": 1
+          },
+          "xp_gained": 5301738,
+          "most_killed_boss": {
+            "boss": "callisto",
+            "kills": 368
+          }
+        }
       },
-      "Iron Demboo": {
+      "iron demboo": {
         "total_drops": 1,
         "total_points": "20.0",
         "total_coins": "231,827",
@@ -2545,7 +3268,11 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 3150560
+          "xp_gained": 3150560,
+          "most_killed_boss": {
+            "boss": "barrows_chests",
+            "kills": 13
+          }
         },
         "points_per_ehb": 24.56
       },
@@ -2564,9 +3291,31 @@
           "item": "Araxyte fang",
           "points": "50.0"
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 0.0,
+        "wom": {
+          "boss_kills": 450,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 27,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 7438516,
+          "most_killed_boss": {
+            "boss": "araxxor",
+            "kills": 204
+          }
+        }
       },
-      "Vitamin Died": {
+      "vitamin died": {
         "total_drops": 7,
         "total_points": "220.0",
         "total_coins": "45,179,503",
@@ -2581,9 +3330,31 @@
           "item": "Lightbearer",
           "points": "50.0"
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 0.0,
+        "wom": {
+          "boss_kills": 449,
+          "raids": 19,
+          "cox": 0,
+          "tob": 0,
+          "toa": 19,
+          "barrows": 7,
+          "clues": {
+            "total": 2,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 2,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 5871304,
+          "most_killed_boss": {
+            "boss": "cerberus",
+            "kills": 199
+          }
+        }
       },
-      "Jhosani": {
+      "jhosani": {
         "total_drops": 15,
         "total_points": "1,207.5",
         "total_coins": "181,551,928",
@@ -2615,11 +3386,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 7377605
+          "xp_gained": 7377605,
+          "most_killed_boss": {
+            "boss": "grotesque_guardians",
+            "kills": 143
+          }
         },
         "points_per_ehb": 32.76
       },
-      "Mazzel": {
+      "mazzel": {
         "total_drops": 19,
         "total_points": "3,067.5",
         "total_coins": "1,470,721,774",
@@ -2651,11 +3426,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 9051174
+          "xp_gained": 9051174,
+          "most_killed_boss": {
+            "boss": "vardorvis",
+            "kills": 195
+          }
         },
         "points_per_ehb": 76.34
       },
-      "Fe Danke": {
+      "fe danke": {
         "total_drops": 13,
         "total_points": "517.5",
         "total_coins": "21,909,154",
@@ -2670,9 +3449,32 @@
           "item": "Jar",
           "points": "100.0"
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 16.5,
+        "wom": {
+          "ehb": 31.372,
+          "boss_kills": 695,
+          "raids": 29,
+          "cox": 12,
+          "tob": 4,
+          "toa": 13,
+          "barrows": 64,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 4175864,
+          "most_killed_boss": {
+            "boss": "calvarion",
+            "kills": 208
+          }
+        }
       },
-      "Miracle Sun": {
+      "miracle sun": {
         "total_drops": 8,
         "total_points": "462.5",
         "total_coins": "89,322,116",
@@ -2704,11 +3506,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 5843747
+          "xp_gained": 5843747,
+          "most_killed_boss": {
+            "boss": "cerberus",
+            "kills": 188
+          }
         },
         "points_per_ehb": 26.64
       },
-      "Listerr1": {
+      "listerr1": {
         "total_drops": 10,
         "total_points": "232.5",
         "total_coins": "18,137,744",
@@ -2740,11 +3546,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 8825278
+          "xp_gained": 8825278,
+          "most_killed_boss": {
+            "boss": "araxxor",
+            "kills": 284
+          }
         },
         "points_per_ehb": 6.82
       },
-      "C e j a s": {
+      "c e j a s": {
         "total_drops": 3,
         "total_points": "252.5",
         "total_coins": "116,157,496",
@@ -2776,11 +3586,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 4156716
+          "xp_gained": 4156716,
+          "most_killed_boss": {
+            "boss": "yama",
+            "kills": 160
+          }
         },
         "points_per_ehb": 17.92
       },
-      "ShadowOf War": {
+      "shadowof war": {
         "total_drops": 22,
         "total_points": "432.5",
         "total_coins": "45,256,679",
@@ -2812,11 +3626,15 @@
             "elite": 3,
             "master": 0
           },
-          "xp_gained": 3069796
+          "xp_gained": 3069796,
+          "most_killed_boss": {
+            "boss": "alchemical_hydra",
+            "kills": 140
+          }
         },
         "points_per_ehb": 44.89
       },
-      "Bayley G": {
+      "bayley g": {
         "total_drops": 14,
         "total_points": "662.5",
         "total_coins": "91,332,335",
@@ -2831,9 +3649,32 @@
           "item": "Boss pet",
           "points": "300.0"
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 32.79,
+        "wom": {
+          "ehb": 20.20273,
+          "boss_kills": 1100,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 3,
+          "clues": {
+            "total": 32,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 1,
+            "hard": 19,
+            "elite": 11,
+            "master": 1
+          },
+          "xp_gained": 6498556,
+          "most_killed_boss": {
+            "boss": "cerberus",
+            "kills": 319
+          }
+        }
       },
-      "iiStoontz": {
+      "iistoontz": {
         "total_drops": 4,
         "total_points": "332.5",
         "total_coins": "6,094,926",
@@ -2848,7 +3689,30 @@
           "item": "Soulflame horn",
           "points": "180.0"
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 14.19,
+        "wom": {
+          "ehb": 23.43312,
+          "boss_kills": 660,
+          "raids": 23,
+          "cox": 17,
+          "tob": 0,
+          "toa": 6,
+          "barrows": 1,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 4667811,
+          "most_killed_boss": {
+            "boss": "callisto",
+            "kills": 214
+          }
+        }
       },
       "sosly28": {
         "total_drops": 8,
@@ -2882,11 +3746,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 4896559
+          "xp_gained": 4896559,
+          "most_killed_boss": {
+            "boss": "abyssal_sire",
+            "kills": 91
+          }
         },
         "points_per_ehb": 50.25
       },
-      "TimTheLegend": {
+      "timthelegend": {
         "total_drops": 13,
         "total_points": "580.0",
         "total_coins": "22,694,043",
@@ -2918,11 +3786,15 @@
             "elite": 6,
             "master": 1
           },
-          "xp_gained": 5216421
+          "xp_gained": 5216421,
+          "most_killed_boss": {
+            "boss": "thermonuclear_smoke_devil",
+            "kills": 409
+          }
         },
         "points_per_ehb": 34.66
       },
-      "Kudosss": {
+      "kudosss": {
         "total_drops": 10,
         "total_points": "655.0",
         "total_coins": "132,504,976",
@@ -2937,9 +3809,32 @@
           "item": "Dragon claws",
           "points": "220.0"
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 20.81,
+        "wom": {
+          "ehb": 31.47106,
+          "boss_kills": 722,
+          "raids": 26,
+          "cox": 19,
+          "tob": 0,
+          "toa": 7,
+          "barrows": 11,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 8693012,
+          "most_killed_boss": {
+            "boss": "zulrah",
+            "kills": 169
+          }
+        }
       },
-      "Poop Slidous": {
+      "poop slidous": {
         "total_drops": 2,
         "total_points": "35.0",
         "total_coins": "6,916,091",
@@ -2971,11 +3866,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 3046172
+          "xp_gained": 3046172,
+          "most_killed_boss": {
+            "boss": "barrows_chests",
+            "kills": 58
+          }
         },
         "points_per_ehb": 5.7
       },
-      "Plankalot": {
+      "plankalot": {
         "total_drops": 4,
         "total_points": "180.0",
         "total_coins": "150,139,503",
@@ -3007,11 +3906,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 11356401
+          "xp_gained": 11356401,
+          "most_killed_boss": {
+            "boss": "yama",
+            "kills": 47
+          }
         },
         "points_per_ehb": 6.2
       },
-      "Theowner91": {
+      "theowner91": {
         "total_drops": 4,
         "total_points": "147.5",
         "total_coins": "5,447,609",
@@ -3026,9 +3929,31 @@
           "item": "Bounty 2nd",
           "points": "100.0"
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 0.0,
+        "wom": {
+          "boss_kills": 291,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 5,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 2789753,
+          "most_killed_boss": {
+            "boss": "alchemical_hydra",
+            "kills": 236
+          }
+        }
       },
-      "OG Dilbert26": {
+      "og dilbert26": {
         "total_drops": 6,
         "total_points": "100.0",
         "total_coins": "2,607,279",
@@ -3043,7 +3968,30 @@
           "item": "Guthan's warspear",
           "points": "20.0"
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 46.98,
+        "wom": {
+          "ehb": 2.12878,
+          "boss_kills": 46,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 41,
+          "clues": {
+            "total": 11,
+            "beginner": 5,
+            "easy": 1,
+            "medium": 2,
+            "hard": 3,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 5037841,
+          "most_killed_boss": {
+            "boss": "barrows_chests",
+            "kills": 41
+          }
+        }
       },
       "watova": {
         "total_drops": 21,
@@ -3060,9 +4008,31 @@
           "item": "Jar",
           "points": "100.0"
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 0.0,
+        "wom": {
+          "boss_kills": 752,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 64,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 4512406,
+          "most_killed_boss": {
+            "boss": "thermonuclear_smoke_devil",
+            "kills": 435
+          }
+        }
       },
-      "Iron Az": {
+      "iron az": {
         "total_drops": 6,
         "total_points": "205.0",
         "total_coins": "34,744,073",
@@ -3094,11 +4064,15 @@
             "elite": 3,
             "master": 0
           },
-          "xp_gained": 2953974
+          "xp_gained": 2953974,
+          "most_killed_boss": {
+            "boss": "general_graardor",
+            "kills": 230
+          }
         },
         "points_per_ehb": 22.15
       },
-      "Maddedede": {
+      "maddedede": {
         "total_drops": 7,
         "total_points": "322.5",
         "total_coins": "46,374,216",
@@ -3130,11 +4104,15 @@
             "elite": 2,
             "master": 0
           },
-          "xp_gained": 6796565
+          "xp_gained": 6796565,
+          "most_killed_boss": {
+            "boss": "zulrah",
+            "kills": 167
+          }
         },
         "points_per_ehb": 14.86
       },
-      "Con Academy": {
+      "con academy": {
         "total_drops": 8,
         "total_points": "1,547.5",
         "total_coins": "194,008,819",
@@ -3166,11 +4144,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 11067541
+          "xp_gained": 11067541,
+          "most_killed_boss": {
+            "boss": "yama",
+            "kills": 83
+          }
         },
         "points_per_ehb": 65.31
       },
-      "Btxr4ge123": {
+      "btxr4ge123": {
         "total_drops": 5,
         "total_points": "315.0",
         "total_coins": "11,708,870",
@@ -3185,9 +4167,32 @@
           "item": "Abyssal whip",
           "points": "200.0"
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 74.97,
+        "wom": {
+          "ehb": 4.20195,
+          "boss_kills": 172,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 0,
+          "clues": {
+            "total": 7,
+            "beginner": 1,
+            "easy": 1,
+            "medium": 1,
+            "hard": 0,
+            "elite": 2,
+            "master": 2
+          },
+          "xp_gained": 2116346,
+          "most_killed_boss": {
+            "boss": "abyssal_sire",
+            "kills": 136
+          }
+        }
       },
-      "AirxRS": {
+      "airxrs": {
         "total_drops": 16,
         "total_points": "2,540.0",
         "total_coins": "1,652,027,871",
@@ -3219,11 +4224,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 697
+          "xp_gained": 697,
+          "most_killed_boss": {
+            "boss": "barrows_chests",
+            "kills": 1
+          }
         },
         "points_per_ehb": 42.12
       },
-      "Rod Man": {
+      "rod man": {
         "total_drops": 5,
         "total_points": "347.5",
         "total_coins": "167,433,024",
@@ -3255,11 +4264,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 3218570
+          "xp_gained": 3218570,
+          "most_killed_boss": {
+            "boss": "callisto",
+            "kills": 101
+          }
         },
         "points_per_ehb": 19.36
       },
-      "Chief Haqua": {
+      "chief haqua": {
         "total_drops": 8,
         "total_points": "372.5",
         "total_coins": "2,221,175",
@@ -3291,7 +4304,11 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 5092752
+          "xp_gained": 5092752,
+          "most_killed_boss": {
+            "boss": "vorkath",
+            "kills": 81
+          }
         },
         "points_per_ehb": 51.74
       },
@@ -3327,11 +4344,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 2170918
+          "xp_gained": 2170918,
+          "most_killed_boss": {
+            "boss": "grotesque_guardians",
+            "kills": 42
+          }
         },
         "points_per_ehb": 260.48
       },
-      "SeeScotttv2": {
+      "seescotttv2": {
         "total_drops": 9,
         "total_points": "1,760.0",
         "total_coins": "315,571,151",
@@ -3363,11 +4384,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 5400691
+          "xp_gained": 5400691,
+          "most_killed_boss": {
+            "boss": "vardorvis",
+            "kills": 332
+          }
         },
         "points_per_ehb": 62.43
       },
-      "Pudum": {
+      "pudum": {
         "total_drops": 8,
         "total_points": "907.5",
         "total_coins": "46,644,702",
@@ -3399,11 +4424,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 2212101
+          "xp_gained": 2212101,
+          "most_killed_boss": {
+            "boss": "duke_sucellus",
+            "kills": 13
+          }
         },
         "points_per_ehb": 680.94
       },
-      "small Bwana": {
+      "small bwana": {
         "total_drops": 3,
         "total_points": "60.0",
         "total_coins": "6,620,159",
@@ -3435,11 +4464,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 118194
+          "xp_gained": 118194,
+          "most_killed_boss": {
+            "boss": "alchemical_hydra",
+            "kills": 8
+          }
         },
         "points_per_ehb": 105.88
       },
-      "zArchelaus": {
+      "zarchelaus": {
         "total_drops": 5,
         "total_points": "200.0",
         "total_coins": "6,059,546",
@@ -3471,11 +4504,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 3889545
+          "xp_gained": 3889545,
+          "most_killed_boss": {
+            "boss": "kraken",
+            "kills": 310
+          }
         },
         "points_per_ehb": 13.05
       },
-      "Ryan Pasta": {
+      "ryan pasta": {
         "total_drops": 1,
         "total_points": "380.0",
         "total_coins": "93,151,464",
@@ -3490,7 +4527,30 @@
           "item": "Oathplate helm",
           "points": "380.0"
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 47.76,
+        "wom": {
+          "ehb": 7.95714,
+          "boss_kills": 45,
+          "raids": 23,
+          "cox": 17,
+          "tob": 0,
+          "toa": 6,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 1247736,
+          "most_killed_boss": {
+            "boss": "yama",
+            "kills": 22
+          }
+        }
       },
       "snd": {
         "total_drops": 8,
@@ -3524,11 +4584,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 6857117
+          "xp_gained": 6857117,
+          "most_killed_boss": {
+            "boss": "vardorvis",
+            "kills": 98
+          }
         },
         "points_per_ehb": 16.26
       },
-      "Smooth Draft": {
+      "smooth draft": {
         "total_drops": 18,
         "total_points": "285.0",
         "total_coins": "111,824,129",
@@ -3560,11 +4624,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 8606094
+          "xp_gained": 8606094,
+          "most_killed_boss": {
+            "boss": "araxxor",
+            "kills": 456
+          }
         },
         "points_per_ehb": 9.95
       },
-      "Danimal": {
+      "danimal": {
         "total_drops": 4,
         "total_points": "95.0",
         "total_coins": "12,368,130",
@@ -3600,7 +4668,7 @@
         },
         "points_per_ehb": 0.0
       },
-      "RazenOh": {
+      "razenoh": {
         "total_drops": 11,
         "total_points": "607.5",
         "total_coins": "75,915,611",
@@ -3632,11 +4700,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 4449928
+          "xp_gained": 4449928,
+          "most_killed_boss": {
+            "boss": "callisto",
+            "kills": 115
+          }
         },
         "points_per_ehb": 32.3
       },
-      "B I G Bwana": {
+      "b i g bwana": {
         "total_drops": 18,
         "total_points": "1,587.5",
         "total_coins": "205,484,131",
@@ -3668,11 +4740,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 6726453
+          "xp_gained": 6726453,
+          "most_killed_boss": {
+            "boss": "vardorvis",
+            "kills": 388
+          }
         },
         "points_per_ehb": 50.02
       },
-      "Jimmb0": {
+      "jimmb0": {
         "total_drops": 4,
         "total_points": "158.5",
         "total_coins": "63,110,790",
@@ -3704,11 +4780,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 4174057
+          "xp_gained": 4174057,
+          "most_killed_boss": {
+            "boss": "kraken",
+            "kills": 162
+          }
         },
         "points_per_ehb": 14.01
       },
-      "SquirtnotGIM": {
+      "squirtnotgim": {
         "total_drops": 14,
         "total_points": "1,937.5",
         "total_coins": "953,675,225",
@@ -3740,11 +4820,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 10019738
+          "xp_gained": 10019738,
+          "most_killed_boss": {
+            "boss": "araxxor",
+            "kills": 315
+          }
         },
         "points_per_ehb": 50.02
       },
-      "Ollie 01": {
+      "ollie 01": {
         "total_drops": 9,
         "total_points": "255.0",
         "total_coins": "48,632,604",
@@ -3776,11 +4860,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 5398833
+          "xp_gained": 5398833,
+          "most_killed_boss": {
+            "boss": "commander_zilyana",
+            "kills": 145
+          }
         },
         "points_per_ehb": 10.66
       },
-      "Darkest Kind": {
+      "darkest kind": {
         "total_drops": 2,
         "total_points": "30.0",
         "total_coins": "3,505,162",
@@ -3812,7 +4900,11 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 1749207
+          "xp_gained": 1749207,
+          "most_killed_boss": {
+            "boss": "alchemical_hydra",
+            "kills": 185
+          }
         },
         "points_per_ehb": 4.66
       },
@@ -3831,9 +4923,31 @@
           "item": "Ultor vestige",
           "points": "140.0"
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 0.0,
+        "wom": {
+          "boss_kills": 229,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 1367557,
+          "most_killed_boss": {
+            "boss": "vardorvis",
+            "kills": 229
+          }
+        }
       },
-      "Bull Medic": {
+      "bull medic": {
         "total_drops": 3,
         "total_points": "197.5",
         "total_coins": "955,770",
@@ -3848,9 +4962,32 @@
           "item": "Jar",
           "points": "100.0"
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 47.1,
+        "wom": {
+          "ehb": 4.19333,
+          "boss_kills": 437,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 0,
+          "clues": {
+            "total": 4,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 3,
+            "elite": 0,
+            "master": 1
+          },
+          "xp_gained": 601852,
+          "most_killed_boss": {
+            "boss": "kraken",
+            "kills": 194
+          }
+        }
       },
-      "dEmOnBaT": {
+      "demonbat": {
         "total_drops": 12,
         "total_points": "1,950.0",
         "total_coins": "163,708,047",
@@ -3883,7 +5020,11 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 377129
+          "xp_gained": 377129,
+          "most_killed_boss": {
+            "boss": "chambers_of_xeric",
+            "kills": 1
+          }
         }
       },
       "322scape": {
@@ -3918,11 +5059,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 601438
+          "xp_gained": 601438,
+          "most_killed_boss": {
+            "boss": "scorpia",
+            "kills": 49
+          }
         },
         "points_per_ehb": 1.57
       },
-      "Derivxtive": {
+      "derivxtive": {
         "total_drops": 6,
         "total_points": "830.0",
         "total_coins": "48,456,532",
@@ -3954,11 +5099,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 7138576
+          "xp_gained": 7138576,
+          "most_killed_boss": {
+            "boss": "vetion",
+            "kills": 142
+          }
         },
         "points_per_ehb": 44.84
       },
-      "AbyssWalkerr": {
+      "abysswalkerr": {
         "total_drops": 1,
         "total_points": "220.0",
         "total_coins": "147,705,963",
@@ -3990,11 +5139,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 759690
+          "xp_gained": 759690,
+          "most_killed_boss": {
+            "boss": "doom_of_mokhaiotl",
+            "kills": 88
+          }
         },
         "points_per_ehb": 30.41
       },
-      "LegoHawkeye": {
+      "legohawkeye": {
         "total_drops": 6,
         "total_points": "77.5",
         "total_coins": "8,905,775",
@@ -4009,9 +5162,32 @@
           "item": "Ahrim's hood",
           "points": "20.0"
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 13.88,
+        "wom": {
+          "ehb": 5.58442,
+          "boss_kills": 175,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 6,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 881647,
+          "most_killed_boss": {
+            "boss": "vetion",
+            "kills": 63
+          }
+        }
       },
-      "Refugy": {
+      "refugy": {
         "total_drops": 12,
         "total_points": "517.5",
         "total_coins": "61,994,873",
@@ -4026,7 +5202,30 @@
           "item": "Abyssal head",
           "points": "240.0"
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 40.19,
+        "wom": {
+          "ehb": 12.87573,
+          "boss_kills": 492,
+          "raids": 1,
+          "cox": 0,
+          "tob": 0,
+          "toa": 1,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 7696036,
+          "most_killed_boss": {
+            "boss": "kraken",
+            "kills": 189
+          }
+        }
       },
       "dupsi": {
         "total_drops": 1,
@@ -4060,11 +5259,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 2119032
+          "xp_gained": 2119032,
+          "most_killed_boss": {
+            "boss": "araxxor",
+            "kills": 78
+          }
         },
         "points_per_ehb": 2.32
       },
-      "Ninjakiituri": {
+      "ninjakiituri": {
         "total_drops": 3,
         "total_points": "320.0",
         "total_coins": "2,949,539",
@@ -4096,11 +5299,15 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 6755925
+          "xp_gained": 6755925,
+          "most_killed_boss": {
+            "boss": "araxxor",
+            "kills": 97
+          }
         },
         "points_per_ehb": 21.84
       },
-      "GoinInDrai": {
+      "goinindrai": {
         "total_drops": 4,
         "total_points": "505.0",
         "total_coins": "3,982,328",
@@ -4115,9 +5322,32 @@
           "item": "Boss pet",
           "points": "300.0"
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 183.47,
+        "wom": {
+          "ehb": 2.75244,
+          "boss_kills": 232,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 0,
+          "clues": {
+            "total": 4,
+            "beginner": 2,
+            "easy": 2,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 1881161,
+          "most_killed_boss": {
+            "boss": "thermonuclear_smoke_devil",
+            "kills": 136
+          }
+        }
       },
-      "KennyKennn": {
+      "kennykennn": {
         "total_drops": 2,
         "total_points": "40.0",
         "total_coins": "618,269",
@@ -4132,9 +5362,32 @@
           "item": "Chromium ingot",
           "points": "25.0"
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 1.94,
+        "wom": {
+          "ehb": 20.61629,
+          "boss_kills": 255,
+          "raids": 42,
+          "cox": 5,
+          "tob": 0,
+          "toa": 37,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 4568646,
+          "most_killed_boss": {
+            "boss": "vardorvis",
+            "kills": 121
+          }
+        }
       },
-      "Jonny BTW": {
+      "jonny btw": {
         "total_drops": 3,
         "total_points": "310.0",
         "total_coins": "45,789,800",
@@ -4149,9 +5402,31 @@
           "item": "Zamorak hilt",
           "points": "110.0"
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 0.0,
+        "wom": {
+          "boss_kills": 361,
+          "raids": 7,
+          "cox": 0,
+          "tob": 3,
+          "toa": 4,
+          "barrows": 0,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 5340564,
+          "most_killed_boss": {
+            "boss": "kraken",
+            "kills": 116
+          }
+        }
       },
-      "StoneyBloney": {
+      "stoneybloney": {
         "total_drops": 5,
         "total_points": "35.0",
         "total_coins": "1,653,072",
@@ -4166,9 +5441,32 @@
           "item": "Guthan's platebody",
           "points": "10.0"
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 30.11,
+        "wom": {
+          "ehb": 1.16224,
+          "boss_kills": 40,
+          "raids": 0,
+          "cox": 0,
+          "tob": 0,
+          "toa": 0,
+          "barrows": 17,
+          "clues": {
+            "total": 0,
+            "beginner": 0,
+            "easy": 0,
+            "medium": 0,
+            "hard": 0,
+            "elite": 0,
+            "master": 0
+          },
+          "xp_gained": 2506636,
+          "most_killed_boss": {
+            "boss": "king_black_dragon",
+            "kills": 23
+          }
+        }
       },
-      "N oco": {
+      "n oco": {
         "total_drops": 4,
         "total_points": "605.0",
         "total_coins": "146,139,668",
@@ -4200,7 +5498,11 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 10615660
+          "xp_gained": 10615660,
+          "most_killed_boss": {
+            "boss": "doom_of_mokhaiotl",
+            "kills": 175
+          }
         },
         "points_per_ehb": 25.13
       },
@@ -4236,7 +5538,11 @@
             "elite": 0,
             "master": 0
           },
-          "xp_gained": 2055613
+          "xp_gained": 2055613,
+          "most_killed_boss": {
+            "boss": "araxxor",
+            "kills": 28
+          }
         },
         "points_per_ehb": 17.5
       }

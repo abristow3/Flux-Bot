@@ -154,6 +154,39 @@ class WOMDataParser:
             player_data = load_json_data(os.path.join(self.players_dir, file))
             wom["xp_gained"] = player_data["data"]["skills"]["overall"]["experience"]["gained"]
 
+    def calculate_most_killed_boss(self) -> None:
+        for file in os.listdir(self.players_dir):
+            if not file.endswith(".json"):
+                continue
+
+            player_name = file.replace(".json", "")
+            player_obj = self._get_player_obj(player_name)
+            if not player_obj:
+                continue
+
+            wom = self._ensure_wom_bucket(player_obj)
+
+            player_data = load_json_data(os.path.join(self.players_dir, file))
+            bosses = player_data.get("data", {}).get("bosses", {})
+
+            most_killed_boss = None
+            most_kills = 0
+
+            for boss_name, boss_info in bosses.items():
+                kills = boss_info.get("kills", {}).get("gained", 0)
+
+                if kills > most_kills:
+                    most_kills = kills
+                    most_killed_boss = boss_name
+
+            # Store result in WOM bucket
+            if most_killed_boss is not None:
+                wom["most_killed_boss"] = {
+                    "boss": most_killed_boss,
+                    "kills": most_kills
+                }
+
+
     # -------------------------
     # Save
     # -------------------------
@@ -170,5 +203,6 @@ class WOMDataParser:
         self.calculate_total_barrows_killed()
         self.calculate_total_clues_completed()
         self.calculate_total_xp()
+        self.calculate_most_killed_boss()
         self.save()
         print("WOM PARSING COMPLETED")
