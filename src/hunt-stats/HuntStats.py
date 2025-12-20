@@ -44,11 +44,15 @@ class HuntStats:
         # Calculate totals
         self.calculate_team_totals()
 
-        # Calculate points per EHB
+        # Calculate points & coin per EHB
         self.calculate_player_points_per_ehb()
+        self.calculate_player_coins_per_ehb()
+        self.calculate_player_drops_per_ehb()
 
         # Calc team best point per EHB
         self.calculate_team_best_avg_points_per_ehb()
+        self.calculate_team_best_avg_coins_per_ehb()
+        self.calculate_team_best_drops_per_ehb()
 
         # Calc most killed boss for each team
         self.calculate_team_most_killed_boss(wom_parser.players_dir)
@@ -179,6 +183,52 @@ class HuntStats:
                     f"{best_player} ({best_value})"
                 )
 
+    def calculate_player_coins_per_ehb(self) -> None:
+        for team_data in self.data.values():
+            players = team_data.get("players", {})
+
+            for player_data in players.values():
+                # Get total coins (string with commas -> float)
+                coins_str = player_data.get("total_coins", "0")
+                total_coins = float(coins_str.replace(",", ""))
+
+                # Get EHB
+                ehb = player_data.get("wom", {}).get("ehb", 0)
+
+                # Calculate coins per EHB
+                if ehb > 0:
+                    coins_per_ehb = total_coins / ehb
+                else:
+                    coins_per_ehb = 0.0
+
+                # Store result (rounded for readability)
+                player_data["coins_per_ehb"] = round(coins_per_ehb, 2)
+
+    def calculate_team_best_avg_coins_per_ehb(self) -> None:
+        for team_data in self.data.values():
+            players = team_data.get("players", {})
+
+            best_player = None
+            best_value = -1
+
+            for player_name, player_data in players.items():
+                value = player_data.get("coins_per_ehb")
+
+                if value is None:
+                    continue
+
+                if value > best_value:
+                    best_value = value
+                    best_player = player_name
+
+            if best_player is not None:
+                team_data.setdefault("team_totals", {})
+                # Format the number with commas
+                formatted_value = f"{best_value:,.2f}"
+                team_data["team_totals"]["best_coins_per_ehb"] = (
+                    f"{best_player} ({formatted_value})"
+                )
+
     def count_players_missing_wom(self) -> None:
         for team_name, team_data in self.data.items():
             players = team_data.get("players", {})
@@ -267,6 +317,51 @@ class HuntStats:
                 "boss": most_killed_boss,
                 "kills": total_kills
             }
+
+    def calculate_player_drops_per_ehb(self) -> None:
+        for team_data in self.data.values():
+            players = team_data.get("players", {})
+
+            for player_data in players.values():
+                # Get total drops (integer)
+                total_drops = player_data.get("total_drops", 0)
+
+                # Get EHB
+                ehb = player_data.get("wom", {}).get("ehb", 0)
+
+                # Calculate drops per EHB
+                if ehb > 0:
+                    drops_per_ehb = total_drops / ehb
+                else:
+                    drops_per_ehb = 0.0
+
+                # Store result (rounded for readability)
+                player_data["drops_per_ehb"] = round(drops_per_ehb, 2)
+
+    def calculate_team_best_drops_per_ehb(self) -> None:
+        for team_data in self.data.values():
+            players = team_data.get("players", {})
+
+            best_player = None
+            best_value = -1
+
+            for player_name, player_data in players.items():
+                value = player_data.get("drops_per_ehb")
+
+                if value is None:
+                    continue
+
+                if value > best_value:
+                    best_value = value
+                    best_player = player_name
+
+            if best_player is not None:
+                team_data.setdefault("team_totals", {})
+                # Format with commas
+                formatted_value = f"{best_value:,.2f}"
+                team_data["team_totals"]["best_drops_per_ehb"] = (
+                    f"{best_player} ({formatted_value})"
+                )
 
 if __name__ == "__main__":
     gdoc_sheet_id = "1uQYTIZz6szfp4yyHkVPlPzCcEK042Kb-lFUx2gmCOlg"

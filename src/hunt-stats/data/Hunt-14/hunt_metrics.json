@@ -11,7 +11,7 @@
       "total_tob": 383,
       "total_toa": 123,
       "total_raids": 949,
-      "total_ehb": 1207.5922,
+      "total_ehb": 1224.2552,
       "total_clues": 131,
       "clues_breakdown": {
         "beginner": 12,
@@ -23,6 +23,8 @@
       },
       "total_xp": 305107056,
       "best_points_per_ehb": "jalllly (315.33)",
+      "best_coins_per_ehb": "profslayer (98,647,419.22)",
+      "best_drops_per_ehb": "mbearmike (3.66)",
       "most_killed_boss": {
         "boss": "king_black_dragon",
         "kills": 2293
@@ -67,7 +69,9 @@
             "kills": 205
           }
         },
-        "points_per_ehb": 19.89
+        "points_per_ehb": 19.89,
+        "coins_per_ehb": 3220116.98,
+        "drops_per_ehb": 0.21
       },
       "brukismy": {
         "total_drops": 12,
@@ -107,7 +111,9 @@
             "kills": 213
           }
         },
-        "points_per_ehb": 31.76
+        "points_per_ehb": 31.76,
+        "coins_per_ehb": 4205539.36,
+        "drops_per_ehb": 0.4
       },
       "tom o 0": {
         "total_drops": 26,
@@ -147,7 +153,9 @@
             "kills": 594
           }
         },
-        "points_per_ehb": 58.49
+        "points_per_ehb": 58.49,
+        "coins_per_ehb": 10313053.68,
+        "drops_per_ehb": 0.94
       },
       "z achh": {
         "total_drops": 19,
@@ -187,7 +195,9 @@
             "boss": "general_graardor",
             "kills": 565
           }
-        }
+        },
+        "coins_per_ehb": 25936423.52,
+        "drops_per_ehb": 0.31
       },
       "fe jesse": {
         "total_drops": 18,
@@ -227,7 +237,9 @@
             "kills": 391
           }
         },
-        "points_per_ehb": 43.81
+        "points_per_ehb": 43.81,
+        "coins_per_ehb": 1692909.49,
+        "drops_per_ehb": 0.49
       },
       "c habs": {
         "total_drops": 15,
@@ -267,7 +279,9 @@
             "kills": 234
           }
         },
-        "points_per_ehb": 50.3
+        "points_per_ehb": 50.3,
+        "coins_per_ehb": 2263846.49,
+        "drops_per_ehb": 1.0
       },
       "thfc con": {
         "total_drops": 6,
@@ -307,7 +321,9 @@
             "kills": 298
           }
         },
-        "points_per_ehb": 48.19
+        "points_per_ehb": 48.19,
+        "coins_per_ehb": 5058521.33,
+        "drops_per_ehb": 0.2
       },
       "andydfence": {
         "total_drops": 15,
@@ -347,7 +363,9 @@
             "kills": 20
           }
         },
-        "points_per_ehb": 40.79
+        "points_per_ehb": 40.79,
+        "coins_per_ehb": 5780578.63,
+        "drops_per_ehb": 0.38
       },
       "belindaa": {
         "total_drops": 6,
@@ -387,7 +405,9 @@
             "kills": 84
           }
         },
-        "points_per_ehb": 28.56
+        "points_per_ehb": 28.56,
+        "coins_per_ehb": 3076037.51,
+        "drops_per_ehb": 1.56
       },
       "druid ras": {
         "total_drops": 14,
@@ -427,7 +447,9 @@
             "kills": 189
           }
         },
-        "points_per_ehb": 24.32
+        "points_per_ehb": 24.32,
+        "coins_per_ehb": 8323709.81,
+        "drops_per_ehb": 0.5
       },
       "crf craft": {
         "total_drops": 24,
@@ -466,7 +488,9 @@
             "boss": "kraken",
             "kills": 270
           }
-        }
+        },
+        "coins_per_ehb": 0.0,
+        "drops_per_ehb": 0.0
       },
       "frank donner": {
         "total_drops": 37,
@@ -506,7 +530,9 @@
             "boss": "calvarion",
             "kills": 402
           }
-        }
+        },
+        "coins_per_ehb": 6647819.52,
+        "drops_per_ehb": 0.54
       },
       "availing42": {
         "total_drops": 9,
@@ -546,7 +572,9 @@
             "kills": 171
           }
         },
-        "points_per_ehb": 19.2
+        "points_per_ehb": 19.2,
+        "coins_per_ehb": 771986.69,
+        "drops_per_ehb": 0.61
       },
       "thfc ham": {
         "total_drops": 16,
@@ -586,7 +614,9 @@
             "kills": 327
           }
         },
-        "points_per_ehb": 21.47
+        "points_per_ehb": 21.47,
+        "coins_per_ehb": 4478955.23,
+        "drops_per_ehb": 0.3
       },
       "ludw1g": {
         "total_drops": 29,
@@ -626,7 +656,9 @@
             "kills": 626
           }
         },
-        "points_per_ehb": 21.02
+        "points_per_ehb": 21.02,
+        "coins_per_ehb": 3326043.22,
+        "drops_per_ehb": 0.65
       },
       "mariokartdd": {
         "total_drops": 28,
@@ -666,7 +698,9 @@
             "kills": 250
           }
         },
-        "points_per_ehb": 42.24
+        "points_per_ehb": 42.24,
+        "coins_per_ehb": 4672115.68,
+        "drops_per_ehb": 1.23
       },
       "jalllly": {
         "total_drops": 13,
@@ -706,7 +740,9 @@
             "kills": 121
           }
         },
-        "points_per_ehb": 315.33
+        "points_per_ehb": 315.33,
+        "coins_per_ehb": 21245164.46,
+        "drops_per_ehb": 1.72
       },
       "quakbou": {
         "total_drops": 50,
@@ -746,7 +782,9 @@
             "kills": 300
           }
         },
-        "points_per_ehb": 49.81
+        "points_per_ehb": 49.81,
+        "coins_per_ehb": 23936990.09,
+        "drops_per_ehb": 0.64
       },
       "irondemic": {
         "total_drops": 1,
@@ -785,7 +823,9 @@
             "boss": "vardorvis",
             "kills": 139
           }
-        }
+        },
+        "coins_per_ehb": 0.0,
+        "drops_per_ehb": 0.0
       },
       "mbearmike": {
         "total_drops": 40,
@@ -825,7 +865,9 @@
             "boss": "king_black_dragon",
             "kills": 1309
           }
-        }
+        },
+        "coins_per_ehb": 16923723.15,
+        "drops_per_ehb": 3.66
       },
       "jorn rs": {
         "total_drops": 7,
@@ -865,7 +907,9 @@
             "kills": 165
           }
         },
-        "points_per_ehb": 37.69
+        "points_per_ehb": 37.69,
+        "coins_per_ehb": 757303.31,
+        "drops_per_ehb": 0.41
       },
       "tom tbow": {
         "total_drops": 15,
@@ -904,7 +948,9 @@
             "boss": "cerberus",
             "kills": 165
           }
-        }
+        },
+        "coins_per_ehb": 0.0,
+        "drops_per_ehb": 0.0
       },
       "google knows": {
         "total_drops": 12,
@@ -944,7 +990,9 @@
             "kills": 319
           }
         },
-        "points_per_ehb": 22.04
+        "points_per_ehb": 22.04,
+        "coins_per_ehb": 3986654.83,
+        "drops_per_ehb": 0.47
       },
       "monke vibes": {
         "total_drops": 24,
@@ -984,7 +1032,9 @@
             "kills": 468
           }
         },
-        "points_per_ehb": 51.02
+        "points_per_ehb": 51.02,
+        "coins_per_ehb": 3476078.45,
+        "drops_per_ehb": 0.54
       },
       "codeviking": {
         "total_drops": 1,
@@ -1024,7 +1074,9 @@
             "kills": 92
           }
         },
-        "points_per_ehb": 14.08
+        "points_per_ehb": 14.08,
+        "coins_per_ehb": 5811404.83,
+        "drops_per_ehb": 0.4
       },
       "twosp00n": {
         "total_drops": 4,
@@ -1064,7 +1116,9 @@
             "kills": 20
           }
         },
-        "points_per_ehb": 43.64
+        "points_per_ehb": 43.64,
+        "coins_per_ehb": 8741217.55,
+        "drops_per_ehb": 0.65
       },
       "kuln": {
         "total_drops": 5,
@@ -1104,7 +1158,9 @@
             "kills": 141
           }
         },
-        "points_per_ehb": 5.83
+        "points_per_ehb": 5.83,
+        "coins_per_ehb": 2954650.82,
+        "drops_per_ehb": 0.32
       },
       "nextpet": {
         "total_drops": 7,
@@ -1144,7 +1200,9 @@
             "boss": "dagannoth_rex",
             "kills": 113
           }
-        }
+        },
+        "coins_per_ehb": 2841213.51,
+        "drops_per_ehb": 0.28
       },
       "mrkraniel": {
         "total_drops": 8,
@@ -1184,7 +1242,9 @@
             "kills": 485
           }
         },
-        "points_per_ehb": 10.25
+        "points_per_ehb": 10.25,
+        "coins_per_ehb": 2600275.54,
+        "drops_per_ehb": 0.42
       },
       "hitmonlees": {
         "total_drops": 3,
@@ -1224,7 +1284,9 @@
             "kills": 48
           }
         },
-        "points_per_ehb": 8.13
+        "points_per_ehb": 8.13,
+        "coins_per_ehb": 1146169.79,
+        "drops_per_ehb": 0.22
       },
       "cludd": {
         "total_drops": 15,
@@ -1264,7 +1326,9 @@
             "boss": "duke_sucellus",
             "kills": 236
           }
-        }
+        },
+        "coins_per_ehb": 1202927.27,
+        "drops_per_ehb": 0.49
       },
       "redmonchans": {
         "total_drops": 23,
@@ -1281,7 +1345,9 @@
           "item": "Boss pet",
           "points": "300.0"
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 0.0,
+        "coins_per_ehb": 0.0,
+        "drops_per_ehb": 0.0
       },
       "racc ii": {
         "total_drops": 16,
@@ -1317,7 +1383,9 @@
           },
           "xp_gained": 0
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 0.0,
+        "coins_per_ehb": 0.0,
+        "drops_per_ehb": 0.0
       },
       "flub": {
         "total_drops": 6,
@@ -1357,7 +1425,9 @@
             "kills": 73
           }
         },
-        "points_per_ehb": 33.1
+        "points_per_ehb": 33.1,
+        "coins_per_ehb": 5244595.65,
+        "drops_per_ehb": 1.07
       },
       "snape grass": {
         "total_drops": 13,
@@ -1397,7 +1467,9 @@
             "kills": 459
           }
         },
-        "points_per_ehb": 53.88
+        "points_per_ehb": 53.88,
+        "coins_per_ehb": 6056518.44,
+        "drops_per_ehb": 0.36
       },
       "jimmyhc": {
         "total_drops": 11,
@@ -1437,7 +1509,9 @@
             "kills": 632
           }
         },
-        "points_per_ehb": 21.17
+        "points_per_ehb": 21.17,
+        "coins_per_ehb": 1577577.35,
+        "drops_per_ehb": 0.36
       },
       "fergy bear": {
         "total_drops": 9,
@@ -1476,7 +1550,9 @@
             "boss": "barrows_chests",
             "kills": 110
           }
-        }
+        },
+        "coins_per_ehb": 0.0,
+        "drops_per_ehb": 0.0
       },
       "strokin gun": {
         "total_drops": 3,
@@ -1516,7 +1592,9 @@
             "kills": 70
           }
         },
-        "points_per_ehb": 51.86
+        "points_per_ehb": 51.86,
+        "coins_per_ehb": 5405489.94,
+        "drops_per_ehb": 1.89
       },
       "high mileage": {
         "total_drops": 6,
@@ -1556,7 +1634,9 @@
             "boss": "kril_tsutsaroth",
             "kills": 122
           }
-        }
+        },
+        "coins_per_ehb": 5560013.0,
+        "drops_per_ehb": 1.6
       },
       "excazh": {
         "total_drops": 3,
@@ -1596,7 +1676,9 @@
             "kills": 121
           }
         },
-        "points_per_ehb": 44.05
+        "points_per_ehb": 44.05,
+        "coins_per_ehb": 9100448.73,
+        "drops_per_ehb": 0.23
       },
       "gimpoutine": {
         "total_drops": 10,
@@ -1636,7 +1718,9 @@
             "kills": 226
           }
         },
-        "points_per_ehb": 8.28
+        "points_per_ehb": 8.28,
+        "coins_per_ehb": 1693620.65,
+        "drops_per_ehb": 0.21
       },
       "degenerate": {
         "total_drops": 4,
@@ -1672,7 +1756,9 @@
             "master": 0
           },
           "xp_gained": 0
-        }
+        },
+        "coins_per_ehb": 0.0,
+        "drops_per_ehb": 0.0
       },
       "piggyaza1ea": {
         "total_drops": 6,
@@ -1712,7 +1798,9 @@
             "kills": 89
           }
         },
-        "points_per_ehb": 20.37
+        "points_per_ehb": 20.37,
+        "coins_per_ehb": 2093503.23,
+        "drops_per_ehb": 1.11
       },
       "maxedmike": {
         "total_drops": 11,
@@ -1752,7 +1840,9 @@
             "kills": 206
           }
         },
-        "points_per_ehb": 25.39
+        "points_per_ehb": 25.39,
+        "coins_per_ehb": 1979485.43,
+        "drops_per_ehb": 0.8
       },
       "ozzyyyyyyy": {
         "total_drops": 2,
@@ -1792,7 +1882,9 @@
             "boss": "theatre_of_blood_hard_mode",
             "kills": 94
           }
-        }
+        },
+        "coins_per_ehb": 1264601.97,
+        "drops_per_ehb": 0.06
       },
       "stogie": {
         "total_drops": 2,
@@ -1832,7 +1924,9 @@
             "kills": 207
           }
         },
-        "points_per_ehb": 3.39
+        "points_per_ehb": 3.39,
+        "coins_per_ehb": 1200568.47,
+        "drops_per_ehb": 0.12
       },
       "its gerty": {
         "total_drops": 6,
@@ -1872,7 +1966,9 @@
             "kills": 19
           }
         },
-        "points_per_ehb": 43.05
+        "points_per_ehb": 43.05,
+        "coins_per_ehb": 8320649.09,
+        "drops_per_ehb": 1.88
       },
       "dagh": {
         "total_drops": 5,
@@ -1912,7 +2008,9 @@
             "kills": 79
           }
         },
-        "points_per_ehb": 43.68
+        "points_per_ehb": 43.68,
+        "coins_per_ehb": 6917490.58,
+        "drops_per_ehb": 0.45
       },
       "profslayer": {
         "total_drops": 4,
@@ -1929,8 +2027,9 @@
           "item": "Dragon Hunter Crossbow",
           "points": "660.0"
         },
-        "points_per_ehb": 0.0,
+        "points_per_ehb": 71.72,
         "wom": {
+          "ehb": 16.66301,
           "boss_kills": 311,
           "raids": 18,
           "cox": 11,
@@ -1951,7 +2050,9 @@
             "boss": "doom_of_mokhaiotl",
             "kills": 107
           }
-        }
+        },
+        "coins_per_ehb": 98647419.22,
+        "drops_per_ehb": 0.24
       },
       "raanduin": {
         "total_drops": 5,
@@ -1991,7 +2092,9 @@
             "boss": "araxxor",
             "kills": 325
           }
-        }
+        },
+        "coins_per_ehb": 2983141.09,
+        "drops_per_ehb": 0.27
       },
       "tori sama": {
         "total_drops": 2,
@@ -2031,7 +2134,9 @@
             "kills": 141
           }
         },
-        "points_per_ehb": 21.62
+        "points_per_ehb": 21.62,
+        "coins_per_ehb": 11164930.75,
+        "drops_per_ehb": 0.22
       },
       "crypt1ckyuki": {
         "total_drops": 1,
@@ -2071,7 +2176,9 @@
             "boss": "yama",
             "kills": 61
           }
-        }
+        },
+        "coins_per_ehb": 775513.31,
+        "drops_per_ehb": 0.22
       },
       "le gimp dave": {
         "total_drops": 5,
@@ -2111,7 +2218,9 @@
             "kills": 127
           }
         },
-        "points_per_ehb": 7.62
+        "points_per_ehb": 7.62,
+        "coins_per_ehb": 2117781.54,
+        "drops_per_ehb": 0.61
       },
       "epicbotspprt": {
         "total_drops": 12,
@@ -2151,7 +2260,9 @@
             "kills": 65
           }
         },
-        "points_per_ehb": 40.22
+        "points_per_ehb": 40.22,
+        "coins_per_ehb": 3086932.43,
+        "drops_per_ehb": 3.22
       },
       "nyco": {
         "total_drops": 7,
@@ -2191,7 +2302,9 @@
             "kills": 126
           }
         },
-        "points_per_ehb": 18.42
+        "points_per_ehb": 18.42,
+        "coins_per_ehb": 15130527.46,
+        "drops_per_ehb": 0.52
       },
       "07 rs": {
         "total_drops": 2,
@@ -2231,7 +2344,9 @@
             "boss": "araxxor",
             "kills": 125
           }
-        }
+        },
+        "coins_per_ehb": 3397277.06,
+        "drops_per_ehb": 0.19
       },
       "grayz": {
         "total_drops": 4,
@@ -2271,7 +2386,9 @@
             "kills": 169
           }
         },
-        "points_per_ehb": 25.16
+        "points_per_ehb": 25.16,
+        "coins_per_ehb": 8072144.96,
+        "drops_per_ehb": 0.29
       },
       "yipee cox": {
         "total_drops": 1,
@@ -2311,7 +2428,9 @@
             "kills": 34
           }
         },
-        "points_per_ehb": 12.5
+        "points_per_ehb": 12.5,
+        "coins_per_ehb": 104703.19,
+        "drops_per_ehb": 0.25
       },
       "icloud iron": {
         "total_drops": 3,
@@ -2351,7 +2470,9 @@
             "kills": 126
           }
         },
-        "points_per_ehb": 4.42
+        "points_per_ehb": 4.42,
+        "coins_per_ehb": 405235.49,
+        "drops_per_ehb": 0.15
       },
       "rob weasley": {
         "total_drops": 1,
@@ -2368,7 +2489,9 @@
           "item": "Glacial temotli",
           "points": "17.5"
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 0.0,
+        "coins_per_ehb": 0.0,
+        "drops_per_ehb": 0.0
       },
       "bmtk": {
         "total_drops": 1,
@@ -2408,7 +2531,9 @@
             "kills": 26
           }
         },
-        "points_per_ehb": 89.87
+        "points_per_ehb": 89.87,
+        "coins_per_ehb": 1975174.9,
+        "drops_per_ehb": 0.11
       },
       "codekuv": {
         "total_drops": 1,
@@ -2448,7 +2573,9 @@
             "kills": 23
           }
         },
-        "points_per_ehb": 6.12
+        "points_per_ehb": 6.12,
+        "coins_per_ehb": 1966320.66,
+        "drops_per_ehb": 0.49
       },
       "bar hop": {
         "total_drops": 2,
@@ -2488,7 +2615,9 @@
             "kills": 26
           }
         },
-        "points_per_ehb": 29.64
+        "points_per_ehb": 29.64,
+        "coins_per_ehb": 9776475.8,
+        "drops_per_ehb": 0.46
       },
       "lerimin": {
         "total_drops": 1,
@@ -2527,7 +2656,9 @@
             "boss": "kalphite_queen",
             "kills": 34
           }
-        }
+        },
+        "coins_per_ehb": 0.0,
+        "drops_per_ehb": 0.0
       },
       "mr chonker": {
         "total_drops": 2,
@@ -2567,7 +2698,9 @@
             "boss": "doom_of_mokhaiotl",
             "kills": 257
           }
-        }
+        },
+        "coins_per_ehb": 11494627.47,
+        "drops_per_ehb": 0.16
       },
       "harry pottin": {
         "total_drops": 3,
@@ -2607,7 +2740,9 @@
             "kills": 32
           }
         },
-        "points_per_ehb": 88.89
+        "points_per_ehb": 88.89,
+        "coins_per_ehb": 30045197.3,
+        "drops_per_ehb": 0.78
       }
     }
   },
@@ -2635,6 +2770,8 @@
       },
       "total_xp": 379583855,
       "best_points_per_ehb": "demonbat (6824.86)",
+      "best_coins_per_ehb": "demonbat (572,966,705.17)",
+      "best_drops_per_ehb": "demonbat (42.00)",
       "most_killed_boss": {
         "boss": "king_black_dragon",
         "kills": 4282
@@ -2679,7 +2816,9 @@
             "kills": 160
           }
         },
-        "points_per_ehb": 166.42
+        "points_per_ehb": 166.42,
+        "coins_per_ehb": 16887596.62,
+        "drops_per_ehb": 0.59
       },
       "ironasshole": {
         "total_drops": 15,
@@ -2719,7 +2858,9 @@
             "kills": 110
           }
         },
-        "points_per_ehb": 50.0
+        "points_per_ehb": 50.0,
+        "coins_per_ehb": 5781786.35,
+        "drops_per_ehb": 0.44
       },
       "maxxlevell": {
         "total_drops": 9,
@@ -2759,7 +2900,9 @@
             "boss": "vardorvis",
             "kills": 494
           }
-        }
+        },
+        "coins_per_ehb": 4143835.45,
+        "drops_per_ehb": 0.29
       },
       "zenaax": {
         "total_drops": 26,
@@ -2799,7 +2942,9 @@
             "kills": 427
           }
         },
-        "points_per_ehb": 22.88
+        "points_per_ehb": 22.88,
+        "coins_per_ehb": 2629120.52,
+        "drops_per_ehb": 0.55
       },
       "curse of rng": {
         "total_drops": 36,
@@ -2839,7 +2984,9 @@
             "kills": 3737
           }
         },
-        "points_per_ehb": 21.03
+        "points_per_ehb": 21.03,
+        "coins_per_ehb": 188592.4,
+        "drops_per_ehb": 0.83
       },
       "goldwi": {
         "total_drops": 23,
@@ -2878,7 +3025,9 @@
             "boss": "thermonuclear_smoke_devil",
             "kills": 174
           }
-        }
+        },
+        "coins_per_ehb": 0.0,
+        "drops_per_ehb": 0.0
       },
       "faith dushku": {
         "total_drops": 25,
@@ -2918,7 +3067,9 @@
             "boss": "sarachnis",
             "kills": 804
           }
-        }
+        },
+        "coins_per_ehb": 1079218.32,
+        "drops_per_ehb": 0.4
       },
       "comicae": {
         "total_drops": 12,
@@ -2958,7 +3109,9 @@
             "kills": 301
           }
         },
-        "points_per_ehb": 13.79
+        "points_per_ehb": 13.79,
+        "coins_per_ehb": 1831126.26,
+        "drops_per_ehb": 0.5
       },
       "bigbloor": {
         "total_drops": 26,
@@ -2998,7 +3151,9 @@
             "kills": 554
           }
         },
-        "points_per_ehb": 43.48
+        "points_per_ehb": 43.48,
+        "coins_per_ehb": 3967091.81,
+        "drops_per_ehb": 0.44
       },
       "fireman sam": {
         "total_drops": 9,
@@ -3034,7 +3189,9 @@
           },
           "xp_gained": 441
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 0.0,
+        "coins_per_ehb": 0.0,
+        "drops_per_ehb": 0.0
       },
       "dobbysranarr": {
         "total_drops": 28,
@@ -3074,7 +3231,9 @@
             "kills": 263
           }
         },
-        "points_per_ehb": 32.16
+        "points_per_ehb": 32.16,
+        "coins_per_ehb": 3157018.22,
+        "drops_per_ehb": 0.68
       },
       "grumpy bear": {
         "total_drops": 39,
@@ -3114,7 +3273,9 @@
             "kills": 862
           }
         },
-        "points_per_ehb": 54.93
+        "points_per_ehb": 54.93,
+        "coins_per_ehb": 3157904.16,
+        "drops_per_ehb": 0.49
       },
       "syncopy": {
         "total_drops": 20,
@@ -3154,7 +3315,9 @@
             "kills": 198
           }
         },
-        "points_per_ehb": 59.6
+        "points_per_ehb": 59.6,
+        "coins_per_ehb": 3294567.87,
+        "drops_per_ehb": 1.14
       },
       "apple dough": {
         "total_drops": 18,
@@ -3194,7 +3357,9 @@
             "kills": 173
           }
         },
-        "points_per_ehb": 30.35
+        "points_per_ehb": 30.35,
+        "coins_per_ehb": 9668572.62,
+        "drops_per_ehb": 0.41
       },
       "annexer": {
         "total_drops": 11,
@@ -3234,7 +3399,9 @@
             "boss": "callisto",
             "kills": 368
           }
-        }
+        },
+        "coins_per_ehb": 1381074.11,
+        "drops_per_ehb": 0.35
       },
       "iron demboo": {
         "total_drops": 1,
@@ -3274,7 +3441,9 @@
             "kills": 13
           }
         },
-        "points_per_ehb": 24.56
+        "points_per_ehb": 24.56,
+        "coins_per_ehb": 284715.81,
+        "drops_per_ehb": 1.23
       },
       "iulz": {
         "total_drops": 11,
@@ -3313,7 +3482,9 @@
             "boss": "araxxor",
             "kills": 204
           }
-        }
+        },
+        "coins_per_ehb": 0.0,
+        "drops_per_ehb": 0.0
       },
       "vitamin died": {
         "total_drops": 7,
@@ -3352,7 +3523,9 @@
             "boss": "cerberus",
             "kills": 199
           }
-        }
+        },
+        "coins_per_ehb": 0.0,
+        "drops_per_ehb": 0.0
       },
       "jhosani": {
         "total_drops": 15,
@@ -3392,7 +3565,9 @@
             "kills": 143
           }
         },
-        "points_per_ehb": 32.76
+        "points_per_ehb": 32.76,
+        "coins_per_ehb": 4925694.24,
+        "drops_per_ehb": 0.41
       },
       "mazzel": {
         "total_drops": 19,
@@ -3432,7 +3607,9 @@
             "kills": 195
           }
         },
-        "points_per_ehb": 76.34
+        "points_per_ehb": 76.34,
+        "coins_per_ehb": 36601917.4,
+        "drops_per_ehb": 0.47
       },
       "fe danke": {
         "total_drops": 13,
@@ -3472,7 +3649,9 @@
             "boss": "calvarion",
             "kills": 208
           }
-        }
+        },
+        "coins_per_ehb": 698366.51,
+        "drops_per_ehb": 0.41
       },
       "miracle sun": {
         "total_drops": 8,
@@ -3512,7 +3691,9 @@
             "kills": 188
           }
         },
-        "points_per_ehb": 26.64
+        "points_per_ehb": 26.64,
+        "coins_per_ehb": 5144891.98,
+        "drops_per_ehb": 0.46
       },
       "listerr1": {
         "total_drops": 10,
@@ -3552,7 +3733,9 @@
             "kills": 284
           }
         },
-        "points_per_ehb": 6.82
+        "points_per_ehb": 6.82,
+        "coins_per_ehb": 531894.13,
+        "drops_per_ehb": 0.29
       },
       "c e j a s": {
         "total_drops": 3,
@@ -3592,7 +3775,9 @@
             "kills": 160
           }
         },
-        "points_per_ehb": 17.92
+        "points_per_ehb": 17.92,
+        "coins_per_ehb": 8243212.37,
+        "drops_per_ehb": 0.21
       },
       "shadowof war": {
         "total_drops": 22,
@@ -3632,7 +3817,9 @@
             "kills": 140
           }
         },
-        "points_per_ehb": 44.89
+        "points_per_ehb": 44.89,
+        "coins_per_ehb": 4697570.81,
+        "drops_per_ehb": 2.28
       },
       "bayley g": {
         "total_drops": 14,
@@ -3672,7 +3859,9 @@
             "boss": "cerberus",
             "kills": 319
           }
-        }
+        },
+        "coins_per_ehb": 4520791.74,
+        "drops_per_ehb": 0.69
       },
       "iistoontz": {
         "total_drops": 4,
@@ -3712,7 +3901,9 @@
             "boss": "callisto",
             "kills": 214
           }
-        }
+        },
+        "coins_per_ehb": 260098.78,
+        "drops_per_ehb": 0.17
       },
       "sosly28": {
         "total_drops": 8,
@@ -3752,7 +3943,9 @@
             "kills": 91
           }
         },
-        "points_per_ehb": 50.25
+        "points_per_ehb": 50.25,
+        "coins_per_ehb": 2359627.03,
+        "drops_per_ehb": 0.45
       },
       "timthelegend": {
         "total_drops": 13,
@@ -3792,7 +3985,9 @@
             "kills": 409
           }
         },
-        "points_per_ehb": 34.66
+        "points_per_ehb": 34.66,
+        "coins_per_ehb": 1356183.13,
+        "drops_per_ehb": 0.78
       },
       "kudosss": {
         "total_drops": 10,
@@ -3832,7 +4027,9 @@
             "boss": "zulrah",
             "kills": 169
           }
-        }
+        },
+        "coins_per_ehb": 4210375.37,
+        "drops_per_ehb": 0.32
       },
       "poop slidous": {
         "total_drops": 2,
@@ -3872,7 +4069,9 @@
             "kills": 58
           }
         },
-        "points_per_ehb": 5.7
+        "points_per_ehb": 5.7,
+        "coins_per_ehb": 1126511.1,
+        "drops_per_ehb": 0.33
       },
       "plankalot": {
         "total_drops": 4,
@@ -3912,7 +4111,9 @@
             "kills": 47
           }
         },
-        "points_per_ehb": 6.2
+        "points_per_ehb": 6.2,
+        "coins_per_ehb": 5173436.93,
+        "drops_per_ehb": 0.14
       },
       "theowner91": {
         "total_drops": 4,
@@ -3951,7 +4152,9 @@
             "boss": "alchemical_hydra",
             "kills": 236
           }
-        }
+        },
+        "coins_per_ehb": 0.0,
+        "drops_per_ehb": 0.0
       },
       "og dilbert26": {
         "total_drops": 6,
@@ -3991,7 +4194,9 @@
             "boss": "barrows_chests",
             "kills": 41
           }
-        }
+        },
+        "coins_per_ehb": 1224776.16,
+        "drops_per_ehb": 2.82
       },
       "watova": {
         "total_drops": 21,
@@ -4030,7 +4235,9 @@
             "boss": "thermonuclear_smoke_devil",
             "kills": 435
           }
-        }
+        },
+        "coins_per_ehb": 0.0,
+        "drops_per_ehb": 0.0
       },
       "iron az": {
         "total_drops": 6,
@@ -4070,7 +4277,9 @@
             "kills": 230
           }
         },
-        "points_per_ehb": 22.15
+        "points_per_ehb": 22.15,
+        "coins_per_ehb": 3754666.9,
+        "drops_per_ehb": 0.65
       },
       "maddedede": {
         "total_drops": 7,
@@ -4110,7 +4319,9 @@
             "kills": 167
           }
         },
-        "points_per_ehb": 14.86
+        "points_per_ehb": 14.86,
+        "coins_per_ehb": 2136721.92,
+        "drops_per_ehb": 0.32
       },
       "con academy": {
         "total_drops": 8,
@@ -4150,7 +4361,9 @@
             "kills": 83
           }
         },
-        "points_per_ehb": 65.31
+        "points_per_ehb": 65.31,
+        "coins_per_ehb": 8187314.67,
+        "drops_per_ehb": 0.34
       },
       "btxr4ge123": {
         "total_drops": 5,
@@ -4190,7 +4403,9 @@
             "boss": "abyssal_sire",
             "kills": 136
           }
-        }
+        },
+        "coins_per_ehb": 2786532.44,
+        "drops_per_ehb": 1.19
       },
       "airxrs": {
         "total_drops": 16,
@@ -4230,7 +4445,9 @@
             "kills": 1
           }
         },
-        "points_per_ehb": 42.12
+        "points_per_ehb": 42.12,
+        "coins_per_ehb": 27396813.78,
+        "drops_per_ehb": 0.27
       },
       "rod man": {
         "total_drops": 5,
@@ -4270,7 +4487,9 @@
             "kills": 101
           }
         },
-        "points_per_ehb": 19.36
+        "points_per_ehb": 19.36,
+        "coins_per_ehb": 9329538.21,
+        "drops_per_ehb": 0.28
       },
       "chief haqua": {
         "total_drops": 8,
@@ -4310,7 +4529,9 @@
             "kills": 81
           }
         },
-        "points_per_ehb": 51.74
+        "points_per_ehb": 51.74,
+        "coins_per_ehb": 308532.09,
+        "drops_per_ehb": 1.11
       },
       "unlucky acc": {
         "total_drops": 13,
@@ -4350,7 +4571,9 @@
             "kills": 42
           }
         },
-        "points_per_ehb": 260.48
+        "points_per_ehb": 260.48,
+        "coins_per_ehb": 31396867.25,
+        "drops_per_ehb": 1.79
       },
       "seescotttv2": {
         "total_drops": 9,
@@ -4390,7 +4613,9 @@
             "kills": 332
           }
         },
-        "points_per_ehb": 62.43
+        "points_per_ehb": 62.43,
+        "coins_per_ehb": 11193768.91,
+        "drops_per_ehb": 0.32
       },
       "pudum": {
         "total_drops": 8,
@@ -4430,7 +4655,9 @@
             "kills": 13
           }
         },
-        "points_per_ehb": 680.94
+        "points_per_ehb": 680.94,
+        "coins_per_ehb": 34999888.95,
+        "drops_per_ehb": 6.0
       },
       "small bwana": {
         "total_drops": 3,
@@ -4470,7 +4697,9 @@
             "kills": 8
           }
         },
-        "points_per_ehb": 105.88
+        "points_per_ehb": 105.88,
+        "coins_per_ehb": 11682564.81,
+        "drops_per_ehb": 5.29
       },
       "zarchelaus": {
         "total_drops": 5,
@@ -4510,7 +4739,9 @@
             "kills": 310
           }
         },
-        "points_per_ehb": 13.05
+        "points_per_ehb": 13.05,
+        "coins_per_ehb": 395238.91,
+        "drops_per_ehb": 0.33
       },
       "ryan pasta": {
         "total_drops": 1,
@@ -4550,7 +4781,9 @@
             "boss": "yama",
             "kills": 22
           }
-        }
+        },
+        "coins_per_ehb": 11706651.38,
+        "drops_per_ehb": 0.13
       },
       "snd": {
         "total_drops": 8,
@@ -4590,7 +4823,9 @@
             "kills": 98
           }
         },
-        "points_per_ehb": 16.26
+        "points_per_ehb": 16.26,
+        "coins_per_ehb": 5127614.89,
+        "drops_per_ehb": 0.66
       },
       "smooth draft": {
         "total_drops": 18,
@@ -4630,7 +4865,9 @@
             "kills": 456
           }
         },
-        "points_per_ehb": 9.95
+        "points_per_ehb": 9.95,
+        "coins_per_ehb": 3905945.33,
+        "drops_per_ehb": 0.63
       },
       "danimal": {
         "total_drops": 4,
@@ -4666,7 +4903,9 @@
           },
           "xp_gained": 3640
         },
-        "points_per_ehb": 0.0
+        "points_per_ehb": 0.0,
+        "coins_per_ehb": 0.0,
+        "drops_per_ehb": 0.0
       },
       "razenoh": {
         "total_drops": 11,
@@ -4706,7 +4945,9 @@
             "kills": 115
           }
         },
-        "points_per_ehb": 32.3
+        "points_per_ehb": 32.3,
+        "coins_per_ehb": 4036258.83,
+        "drops_per_ehb": 0.58
       },
       "b i g bwana": {
         "total_drops": 18,
@@ -4746,7 +4987,9 @@
             "kills": 388
           }
         },
-        "points_per_ehb": 50.02
+        "points_per_ehb": 50.02,
+        "coins_per_ehb": 6474692.11,
+        "drops_per_ehb": 0.57
       },
       "jimmb0": {
         "total_drops": 4,
@@ -4786,7 +5029,9 @@
             "kills": 162
           }
         },
-        "points_per_ehb": 14.01
+        "points_per_ehb": 14.01,
+        "coins_per_ehb": 5579766.86,
+        "drops_per_ehb": 0.35
       },
       "squirtnotgim": {
         "total_drops": 14,
@@ -4826,7 +5071,9 @@
             "kills": 315
           }
         },
-        "points_per_ehb": 50.02
+        "points_per_ehb": 50.02,
+        "coins_per_ehb": 24622519.13,
+        "drops_per_ehb": 0.36
       },
       "ollie 01": {
         "total_drops": 9,
@@ -4866,7 +5113,9 @@
             "kills": 145
           }
         },
-        "points_per_ehb": 10.66
+        "points_per_ehb": 10.66,
+        "coins_per_ehb": 2033536.03,
+        "drops_per_ehb": 0.38
       },
       "darkest kind": {
         "total_drops": 2,
@@ -4906,7 +5155,9 @@
             "kills": 185
           }
         },
-        "points_per_ehb": 4.66
+        "points_per_ehb": 4.66,
+        "coins_per_ehb": 544538.55,
+        "drops_per_ehb": 0.31
       },
       "3rd eyes": {
         "total_drops": 3,
@@ -4945,7 +5196,9 @@
             "boss": "vardorvis",
             "kills": 229
           }
-        }
+        },
+        "coins_per_ehb": 0.0,
+        "drops_per_ehb": 0.0
       },
       "bull medic": {
         "total_drops": 3,
@@ -4985,7 +5238,9 @@
             "boss": "kraken",
             "kills": 194
           }
-        }
+        },
+        "coins_per_ehb": 227926.25,
+        "drops_per_ehb": 0.72
       },
       "demonbat": {
         "total_drops": 12,
@@ -5025,7 +5280,9 @@
             "boss": "chambers_of_xeric",
             "kills": 1
           }
-        }
+        },
+        "coins_per_ehb": 572966705.17,
+        "drops_per_ehb": 42.0
       },
       "322scape": {
         "total_drops": 2,
@@ -5065,7 +5322,9 @@
             "kills": 49
           }
         },
-        "points_per_ehb": 1.57
+        "points_per_ehb": 1.57,
+        "coins_per_ehb": 41043.9,
+        "drops_per_ehb": 0.42
       },
       "derivxtive": {
         "total_drops": 6,
@@ -5105,7 +5364,9 @@
             "kills": 142
           }
         },
-        "points_per_ehb": 44.84
+        "points_per_ehb": 44.84,
+        "coins_per_ehb": 2618087.49,
+        "drops_per_ehb": 0.32
       },
       "abysswalkerr": {
         "total_drops": 1,
@@ -5145,7 +5406,9 @@
             "kills": 88
           }
         },
-        "points_per_ehb": 30.41
+        "points_per_ehb": 30.41,
+        "coins_per_ehb": 20420188.63,
+        "drops_per_ehb": 0.14
       },
       "legohawkeye": {
         "total_drops": 6,
@@ -5185,7 +5448,9 @@
             "boss": "vetion",
             "kills": 63
           }
-        }
+        },
+        "coins_per_ehb": 1594753.8,
+        "drops_per_ehb": 1.07
       },
       "refugy": {
         "total_drops": 12,
@@ -5225,7 +5490,9 @@
             "boss": "kraken",
             "kills": 189
           }
-        }
+        },
+        "coins_per_ehb": 4814862.77,
+        "drops_per_ehb": 0.93
       },
       "dupsi": {
         "total_drops": 1,
@@ -5265,7 +5532,9 @@
             "kills": 78
           }
         },
-        "points_per_ehb": 2.32
+        "points_per_ehb": 2.32,
+        "coins_per_ehb": 1915142.62,
+        "drops_per_ehb": 0.13
       },
       "ninjakiituri": {
         "total_drops": 3,
@@ -5305,7 +5574,9 @@
             "kills": 97
           }
         },
-        "points_per_ehb": 21.84
+        "points_per_ehb": 21.84,
+        "coins_per_ehb": 201287.55,
+        "drops_per_ehb": 0.2
       },
       "goinindrai": {
         "total_drops": 4,
@@ -5345,7 +5616,9 @@
             "boss": "thermonuclear_smoke_devil",
             "kills": 136
           }
-        }
+        },
+        "coins_per_ehb": 1446835.54,
+        "drops_per_ehb": 1.45
       },
       "kennykennn": {
         "total_drops": 2,
@@ -5385,7 +5658,9 @@
             "boss": "vardorvis",
             "kills": 121
           }
-        }
+        },
+        "coins_per_ehb": 29989.34,
+        "drops_per_ehb": 0.1
       },
       "jonny btw": {
         "total_drops": 3,
@@ -5424,7 +5699,9 @@
             "boss": "kraken",
             "kills": 116
           }
-        }
+        },
+        "coins_per_ehb": 0.0,
+        "drops_per_ehb": 0.0
       },
       "stoneybloney": {
         "total_drops": 5,
@@ -5464,7 +5741,9 @@
             "boss": "king_black_dragon",
             "kills": 23
           }
-        }
+        },
+        "coins_per_ehb": 1422315.53,
+        "drops_per_ehb": 4.3
       },
       "n oco": {
         "total_drops": 4,
@@ -5504,7 +5783,9 @@
             "kills": 175
           }
         },
-        "points_per_ehb": 25.13
+        "points_per_ehb": 25.13,
+        "coins_per_ehb": 6070912.27,
+        "drops_per_ehb": 0.17
       },
       "tinmer": {
         "total_drops": 1,
@@ -5544,7 +5825,9 @@
             "kills": 28
           }
         },
-        "points_per_ehb": 17.5
+        "points_per_ehb": 17.5,
+        "coins_per_ehb": 14448555.14,
+        "drops_per_ehb": 1.0
       }
     }
   }
