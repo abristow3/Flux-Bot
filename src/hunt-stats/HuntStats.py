@@ -17,12 +17,12 @@ class HuntStats:
 
     def run(self) -> None:
         # Fetch GDoc Data
-        gdoc_data = GDocDataRetriever(sheet_id=self.gdoc_sheet_id)
-        gdoc_parser = GDocDataParser(gdoc=gdoc_data, hunt_edition=self.hunt_edition)
-        gdoc_parser.run()
+        # gdoc_data = GDocDataRetriever(sheet_id=self.gdoc_sheet_id)
+        # gdoc_parser = GDocDataParser(gdoc=gdoc_data, hunt_edition=self.hunt_edition)
+        # gdoc_parser.run()
 
         # Fetch WoM Data
-        wom_data = WOMDataRetriever(comp_id=self.wom_comp_id, hunt_edition=self.hunt_edition)
+        # wom_data = WOMDataRetriever(comp_id=self.wom_comp_id, hunt_edition=self.hunt_edition)
         # wom_data.run()  # Uncomment if fetching from API
 
         wom_parser = WOMDataParser(hunt_edition=self.hunt_edition)
@@ -30,8 +30,16 @@ class HuntStats:
 
         # Load JSON data
         self.load_json()
+
         # Calculate totals
         self.calculate_team_totals()
+
+        # Calculate points per EHB
+        self.calculate_player_points_per_ehb()
+
+        # Calc team best point per EHB
+        self.calculate_team_best_avg_points_per_ehb()
+
         # Save JSON back
         self.save_json()
 
@@ -110,6 +118,51 @@ class HuntStats:
                 "clues_breakdown": totals["clues_breakdown"],
                 "total_xp": totals["total_xp"]
             }
+
+    def calculate_player_points_per_ehb(self) -> None:
+        for team_data in self.data.values():
+            players = team_data.get("players", {})
+
+            for player_data in players.values():
+                # Get total points (string -> float)
+                points_str = player_data.get("total_points", "0")
+                total_points = float(points_str.replace(",", ""))
+
+                # Get EHB
+                ehb = player_data.get("wom", {}).get("ehb", 0)
+
+                # Calculate average points per EHB
+                if ehb > 0:
+                    points_per_ehb = total_points / ehb
+                else:
+                    points_per_ehb = 0.0
+
+                # Store result (rounded if you want)
+                player_data["points_per_ehb"] = round(points_per_ehb, 2)
+
+    def calculate_team_best_avg_points_per_ehb(self) -> None:
+        for team_data in self.data.values():
+            players = team_data.get("players", {})
+
+            best_player = None
+            best_value = -1
+
+            for player_name, player_data in players.items():
+                value = player_data.get("points_per_ehb")
+
+                if value is None:
+                    continue
+
+                if value > best_value:
+                    best_value = value
+                    best_player = player_name
+
+            if best_player is not None:
+                team_data.setdefault("team_totals", {})
+                team_data["team_totals"]["best_points_per_ehb"] = (
+                    f"{best_player} ({best_value})"
+                )
+
 
 if __name__ == "__main__":
     gdoc_sheet_id = "1uQYTIZz6szfp4yyHkVPlPzCcEK042Kb-lFUx2gmCOlg"
