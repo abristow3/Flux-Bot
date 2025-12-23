@@ -7,6 +7,7 @@ import os
 
 from commands.role_commands import register_role_commands
 from commands.message_commands import register_message_commands
+from commands.bingo_commands import register_bingo_commands
 
 logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)  # Capture all logs
@@ -74,6 +75,7 @@ async def on_ready():
 
     register_role_commands(tree=bot.tree, discord_bot=bot)
     register_message_commands(tree=bot.tree, discord_bot=bot)
+    register_bingo_commands(tree=bot.tree, discord_bot=bot)
 
     # Sync and List all commands
     await sync_commands(test=True)
