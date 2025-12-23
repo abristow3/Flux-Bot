@@ -28,7 +28,7 @@ User Role Assignments:
 {user_roles}
 """
 
-async def send_bingo_verify_message(discord_bot, parser, interaction: Interaction) -> bool:
+async def send_bingo_verify_message(discord_bot, parser, interaction: Interaction, channels: bool) -> bool:
     """
     Sends an ephemeral verification message showing roles/channels from the parser.
     Lets the user react with ✅ to confirm or ❌ to cancel.
@@ -41,6 +41,11 @@ async def send_bingo_verify_message(discord_bot, parser, interaction: Interactio
     user_roles_str = "\n".join(
         f"- {username} ({data['team_name']})" for username, data in parser.config.items()
     )
+
+    # if command called with channels flag as False, don't display them
+    if not channels:
+        text_channels_str = "None"
+        voice_channels_str = "None"
 
     summary_message = DISCORD_SETUP_SUMMARY_TEMPLATE.format(
         roles=roles_str,
@@ -91,7 +96,7 @@ async def check_user_roles(interaction: discord.Interaction, authorized_roles: l
         await interaction.followup.send("You do not have permission to use this command.", ephemeral=True)
         return False
 
-async def bingo_setup(interaction: discord.Interaction, discord_bot: Bot, sheet_id: str) -> None:
+async def bingo_setup(interaction: discord.Interaction, discord_bot: Bot, sheet_id: str, channels: bool) -> None:
     '''
     - generate a list of the channels and roles / roles being assigned to which users being created, and ask user to verify it is correct by reacting with a checkmark?
     - if reacted with an X, then terminate the process
@@ -123,9 +128,10 @@ async def bingo_setup(interaction: discord.Interaction, discord_bot: Bot, sheet_
         logger.error(f"[BingoCommands Setup] Error retrieving and parsing GDoc config", exc_info=e)
         interaction.followup.send(f"Unable to access the Google Sheet with sheet ID: {sheet_id}", ephemeral=True)
 
-    # Generate and send verification message
-    confirmed = await send_bingo_verify_message(discord_bot=discord_bot, parser=parser, interaction=interaction)
-    
+    if channels:
+        # Generate and send verification message
+        confirmed = await send_bingo_verify_message(discord_bot=discord_bot, parser=parser, interaction=interaction, channels=channels)
+        
     if confirmed:
         # If verified, create channels and roles
         ...
@@ -153,11 +159,11 @@ async def bingo_cleanup(interaction: discord.Interaction, discord_bot: Bot) -> N
 
 def register_bingo_commands(tree: app_commands.CommandTree, discord_bot: Bot) -> None:
     @tree.command(name="bingo_setup", description="Sets up roles, team channels, and permissions for the bingo event")
-    @app_commands.describe(sheet_id="The GDoc sheet ID for the event configuration")
-    async def bingo_setup_cmd(interaction: discord.Interaction, sheet_id: str):
+    @app_commands.describe(sheet_id="The GDoc sheet ID for the event configuration", channels="Flag for event text/voice channel creation. Defaults to False.")
+    async def bingo_setup_cmd(interaction: discord.Interaction, sheet_id: str, channels: bool = False):
         logger.info("[Bingo Commands] /bingo_setup command called")
         await interaction.response.defer()
-        await bingo_setup(interaction, discord_bot=discord_bot, sheet_id=sheet_id)
+        await bingo_setup(interaction, discord_bot=discord_bot, sheet_id=sheet_id, channels=channels)
     
     @tree.command(name="bingo_cleanup", description="Removes bingo roles, and team channels from the server.")
     async def bingo_cleanup_cmd(interaction: discord.Interaction):

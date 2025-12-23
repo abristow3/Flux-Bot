@@ -189,11 +189,23 @@ if __name__ == "__main__":
     # Generate user-role assignments (username (role_name))
     user_roles_str = "\n".join(f"{username} ({data['role_name']})" for username, data in parser.config.items())
 
-    # Fill the template
+    roles_str = "\n".join(f"- {r}" for r in parser.roles)
+    text_channels_str = "\n".join(f"- {c}" for c in parser.text_channels)
+    voice_channels_str = "\n".join(f"- {v}" for v in parser.voice_channels)
+    user_roles_str = "\n".join(
+        f"- {username} ({data['team_name']})" for username, data in parser.config.items()
+    )
+
+    channels = True
+    # if command called with channels flag as False, don't display them
+    if not channels:
+        text_channels_str = "None"
+        voice_channels_str = "None"
+
     summary_message = DISCORD_SETUP_SUMMARY_TEMPLATE.format(
-        roles="\n".join(parser.roles),
-        text_channels="\n".join(parser.text_channels),
-        voice_channels="\n".join(parser.voice_channels),
+        roles=roles_str,
+        text_channels=text_channels_str,
+        voice_channels=voice_channels_str,
         user_roles=user_roles_str
     )
 
