@@ -5,9 +5,11 @@ from typing import Dict
 import logging
 from discord.ext.commands import Bot
 from src.hunt_stats.parsers.GDoc.GDocDataRetriever import GDocDataRetriever
-
+import json
+from pathlib import Path
 
 logger = logging.getLogger(__name__)
+
 
 class BingoConfigParser:
     def __init__(self, discord_bot: Bot, gdoc_retriever: GDocDataRetriever) -> None:
@@ -60,7 +62,7 @@ class BingoConfigParser:
                 }
 
             logger.info(f"Loaded {len(self.config)} bingo config entries.")
-
+            self.save_config_as_json(fp="src/conf/bingo_config.json")
         except Exception as e:
             logger.error("Error parsing Bingo Config Sheet", exc_info=e)
 
@@ -145,6 +147,21 @@ class BingoConfigParser:
                 logger.info(f"Assigned role '{role_name}' to {username}")
             except Exception as e:
                 logger.error(f"Failed to assign role '{role_name}' to {username}: {e}", exc_info=e)
+
+    def save_config_as_json(self, fp: str) -> None:
+        """
+        Saves self.config as a JSON file.
+        If no file path is provided, saves to 'bingo_config.json' in the current directory.
+        """
+        path = Path(fp)
+
+        try:
+            with path.open("w", encoding="utf-8") as f:
+                json.dump(self.config, f, indent=4)
+            print(f"Config successfully saved to {path.resolve()}")
+        except Exception as e:
+            print(f"Failed to save config to {path}: {e}")
+
 
 DISCORD_SETUP_SUMMARY_TEMPLATE = """\
 Discord Setup Summary
