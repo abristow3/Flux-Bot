@@ -210,7 +210,7 @@ if __name__ == "__main__":
     text_channels_str = "\n".join(f"- {c}" for c in parser.text_channels)
     voice_channels_str = "\n".join(f"- {v}" for v in parser.voice_channels)
     user_roles_str = "\n".join(
-        f"- {username} ({data['team_name']})" for username, data in parser.config.items()
+        f"- {username} ({data['role_name']})" for username, data in parser.config.items()
     )
 
     channels = True

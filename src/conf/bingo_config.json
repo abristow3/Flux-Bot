@@ -4,5 +4,23 @@
         "team_name": "1",
         "color": "#32CD32",
         "role_name": "team-1"
+    },
+    "Druid Ras": {
+        "discord_id": "298092735489900554",
+        "team_name": "2",
+        "color": "#FF1586",
+        "role_name": "team-2"
+    },
+    "Unlucky Acc": {
+        "discord_id": "121075759010938880",
+        "team_name": "3",
+        "color": "#FFFFFF",
+        "role_name": "team-3"
+    },
+    "Frank Donner": {
+        "discord_id": "127692829391716352",
+        "team_name": "1",
+        "color": "#000000",
+        "role_name": "team-1"
     }
 }
