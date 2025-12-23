@@ -10,7 +10,15 @@ from pathlib import Path
 
 logger = logging.getLogger(__name__)
 
-
+'''
+TODO - add logic to make channel creation idempotent
+TODO - write channel and role IDs created to the config dict and file
+TODO - write channel cleanup logic
+TODO - write role cleanup logic
+TODO - make GDoc config a bit more robust (add second table for team name
+ and color, map participants table via team name)
+TODO - update team role color command
+'''
 class BingoConfigParser:
     def __init__(self, discord_bot: Bot, gdoc_retriever: GDocDataRetriever) -> None:
         self.discord_bot = discord_bot
