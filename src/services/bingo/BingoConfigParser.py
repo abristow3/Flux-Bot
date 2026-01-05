@@ -17,8 +17,7 @@ class InvalidConfig(Exception):
 
 
 class BingoConfigParser:
-    def __init__(self, discord_bot, gdoc_retriever):
-        self.discord_bot = discord_bot
+    def __init__(self, gdoc_retriever):
         self.gdoc = gdoc_retriever
         self.config_table_name = "Config"
         self.participants_table_name = "Participants"
@@ -29,6 +28,7 @@ class BingoConfigParser:
 
         # Raw sheet data
         self.sheet_data: pd.DataFrame = pd.DataFrame()
+
         # Maps table_name -> {start_col, end_col}
         self.table_map: Dict[str, Dict[str, int]] = {}
 
@@ -36,15 +36,11 @@ class BingoConfigParser:
         self.participants_table_data: pd.DataFrame = pd.DataFrame()
         self.config_table_data: pd.DataFrame = pd.DataFrame()
 
-        # Parsed config
-        self.config: Dict[str, Dict] = {}
-        self.team_names: Set[str] = set()
-
         # Channels and roles to create
-        self.text_channels: List[str] = []
-        self.voice_channels: List[str] = []
-        self.roles: List[str] = ["Bingo"]
-        self.team_name_prefix = "team"
+        self.team_names: Set[str] = set()
+        self.text_channels: Set[str] = set()
+        self.voice_channels: Set[str] = set()
+        self.roles: Set[str] = set({"Bingo!"})
 
         # Define required config keys
         self.required_config_keys = [
@@ -191,8 +187,11 @@ class BingoConfigParser:
             logger.debug(f"Participants data converted to dict: {self.participants_dict}")
 
             # Extract unique team names and log them
-            self.team_names = set(participants_data['Team Name'].dropna().unique())
             logger.info(f"Teams found: {', '.join(self.team_names)}")
+            self._build_team_names()
+            self._build_text_channel_names()
+            self._build_voice_channel_names()
+            self._build_role_names()
             self._save_dict_as_json(fp=self.participants_fp, data=self.participants_dict)
         except Exception as e:
             logger.exception("Failed to load participants table.")
@@ -209,16 +208,38 @@ class BingoConfigParser:
         except Exception as e:
             print(f"Failed to save data to {path}: {e}")
 
+    def _build_team_names(self) -> None:
+        # Iterates over the list of participants and extracts the team name
+        for participant in self.participants_dict["Participants"]:
+            team_name = participant.get("Team Name", "")
+            self.team_names.add(team_name)
+    
+    def _build_text_channel_names(self) -> None:
+        # Create a text channel name for each unique team name
+        for name in self.team_names:
+            channel_name = f"{name}-text"
+            self.text_channels.add(channel_name)
+
+    def _build_voice_channel_names(self) -> None:
+        # Create a voice channel name for each unique team name
+        for name in self.team_names:
+            channel_name = f"{name}-voice"
+            self.voice_channels.add(channel_name)
+
+    def _build_role_names(self) -> None:
+        # Create a role name for each unique team name
+        for name in self.team_names:
+            self.roles.add(name)
+
 
 # ==== TEST SCRIPT ====
 if __name__ == "__main__":
     # Initialize mock bot and GDoc retriever
-    bot = None
     gdoc = GDoc()
     gdoc.set_sheet_id("1EMxj1y49C31AU2LXXEdpM2tyVUqOfqABH7TVAu3Fcqk")
 
     # Initialize BingoConfigParser
-    parser = BingoConfigParser(discord_bot=bot, gdoc_retriever=gdoc)
+    parser = BingoConfigParser(gdoc_retriever=gdoc)
     parser.set_sheet_name("Bot Config")
 
     # Retrieve and set sheet data
@@ -239,5 +260,9 @@ if __name__ == "__main__":
     parser.load_participants_table(parser.participants_table_data)
     logger.info("Participants data loaded successfully!\n")
     print(parser.participants_dict)
+    print(f"TEAM NAMES: {parser.team_names}\n")
+    print(f"TCS: {parser.text_channels}\n")
+    print(f"VCS: {parser.voice_channels}\n")
+    print(f"ROLES: {parser.roles}\n")
 
 
