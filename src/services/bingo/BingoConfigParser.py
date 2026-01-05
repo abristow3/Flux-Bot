@@ -57,10 +57,10 @@ class BingoConfigParser:
             "SIGNUP_END_TIME",
         ]
 
-    def set_sheet_name(self, sheet_name: str):
+    def set_sheet_name(self, sheet_name: str) -> None:
         self.sheet_name = sheet_name
 
-    def set_sheet_data(self, data):
+    def set_sheet_data(self, data) -> None:
         try:
             df = pd.DataFrame(data)
             df.iloc[0] = df.iloc[0].replace({"": None})
@@ -70,7 +70,7 @@ class BingoConfigParser:
             logger.error("Error creating Dataframe")
             self.sheet_data = pd.DataFrame()
 
-    def build_table_map(self):
+    def build_table_map(self) -> None:
         logger.info("Building table map...")
         start_col = None
         end_col = None
@@ -95,7 +95,7 @@ class BingoConfigParser:
             logger.error("Error building table map")
             self.table_map = {}
 
-    def pull_table_data(self, table_name: str):
+    def pull_table_data(self, table_name: str) -> None:
         logger.info("Pulling Table Data...")
         table_metadata = self.table_map.get(table_name, {})
         if not table_metadata:
@@ -124,7 +124,7 @@ class BingoConfigParser:
 
         return df
 
-    def load_config_table(self, df: pd.DataFrame):
+    def load_config_table(self, df: pd.DataFrame) -> None:
         try:
             # Convert DF into dict
             self.config_dict = dict(zip(df["Key"], df["Value"]))
@@ -161,7 +161,7 @@ class BingoConfigParser:
         self._save_dict_as_json(fp=self.config_fp, data=self.config_dict)
         logger.info("Bingo configuration loaded successfully.")
 
-    def load_participants_table(self, df: pd.DataFrame):
+    def load_participants_table(self, df: pd.DataFrame) -> None:
         """
         Load participants from the 'Participants' table dataframe.
         Expects a table with columns: 'Participant', 'Discord ID', 'Team Name', and 'Color'.
