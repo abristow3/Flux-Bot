@@ -55,6 +55,7 @@ class BingoConfigParser:
             "END_MESSAGE",
             "SIGNUP_END_DATE",
             "SIGNUP_END_TIME",
+            "EVENT_PASSWORD"
         ]
 
     def set_sheet_name(self, sheet_name: str) -> None:
