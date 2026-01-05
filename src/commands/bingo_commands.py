@@ -7,7 +7,7 @@ from discord.ext.commands import Bot
 import asyncio
 from discord import Interaction
 from src.hunt_stats.parsers.GDoc.GDocDataRetriever import GDocDataRetriever
-from src.commands.BingoConfigParser import BingoConfigParser
+from src.services.bingo.BingoConfigParser import BingoConfigParser
 
 logger = logging.getLogger(__name__)
 
