@@ -134,29 +134,34 @@ jobs:
             fi
           fi
 
-          ########## BUILD JSON SAFELY WITH jq ##########
-          payload=$(jq -n \
-            --arg actor "$ACTOR" \
-            --arg avatar "$ACTOR_AVATAR" \
-            --arg title "$EMBED_TITLE" \
-            --arg desc "$EMBED_DESCRIPTION" \
-            --arg url "$EMBED_URL" \
-            --argjson color "$EMBED_COLOR" \
-            '{
-              embeds: [{
-                author: { name: $actor, icon_url: $avatar },
-                title: $title,
-                description: $desc,
-                url: $url,
-                color: $color
-              }]
-            }'
-          )
+          ########## ONLY SEND IF EMBED IS NOT EMPTY ##########
+          if [ -n "$EMBED_TITLE" ] && [ -n "$EMBED_DESCRIPTION" ]; then
+            ########## BUILD JSON SAFELY WITH jq ##########
+            payload=$(jq -n \
+              --arg actor "$ACTOR" \
+              --arg avatar "$ACTOR_AVATAR" \
+              --arg title "$EMBED_TITLE" \
+              --arg desc "$EMBED_DESCRIPTION" \
+              --arg url "$EMBED_URL" \
+              --argjson color "$EMBED_COLOR" \
+              '{
+                embeds: [{
+                  author: { name: $actor, icon_url: $avatar },
+                  title: $title,
+                  description: $desc,
+                  url: $url,
+                  color: $color
+                }]
+              }'
+            )
 
-          echo "Final JSON payload:"
-          echo "$payload"
+            echo "Final JSON payload:"
+            echo "$payload"
 
-          curl -H "Content-Type: application/json" \
-               -X POST \
-               -d "$payload" \
-               "$DISCORD_WEBHOOK"
+            curl -H "Content-Type: application/json" \
+                 -X POST \
+                 -d "$payload" \
+                 "$DISCORD_WEBHOOK"
+          else
+            echo "No event to notify. Skipping Discord notification."
+          fi
