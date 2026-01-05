@@ -9,6 +9,8 @@ on:
     types: [created]
   create:
   push:   # <-- NEW: triggers on commits to all branches
+  release:
+    types: [published]   # <-- NEW: triggers on release publications
 
 jobs:
   notify:
@@ -114,6 +116,21 @@ jobs:
               EMBED_DESCRIPTION="**${COMMIT_AUTHOR}:** ${COMMIT_MSG}"
               EMBED_URL="$COMMIT_URL"
               EMBED_COLOR=3447003
+            fi
+          fi
+
+          ########## NEW RELEASE PUBLISHED ##########
+          if [ "$EVENT_NAME" = "release" ]; then
+            ACTION=$(jq -r '.action' "$EVENT_PATH")
+            TAG_NAME=$(jq -r '.release.tag_name // "No tag"' "$EVENT_PATH")
+            URL=$(jq -r '.release.html_url // "No URL"' "$EVENT_PATH")
+            BODY=$(jq -r '.release.body // ""' "$EVENT_PATH")
+
+            if [ "$ACTION" = "published" ]; then
+              EMBED_TITLE="[${REPO_NAME}] New release published: ${TAG_NAME}"
+              EMBED_DESCRIPTION="$BODY"
+              EMBED_URL="$URL"
+              EMBED_COLOR=65280  # Green color for releases
             fi
           fi
 
