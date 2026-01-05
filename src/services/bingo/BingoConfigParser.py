@@ -1,6 +1,6 @@
 import pandas as pd
 import logging
-from typing import List, Dict, Set
+from typing import Dict, Set
 from src.services.GDoc.GDoc import GDoc
 from datetime import datetime, timedelta
 import pytz
@@ -17,12 +17,11 @@ class InvalidConfig(Exception):
 
 
 class BingoConfigParser:
-    def __init__(self, gdoc_retriever):
-        self.gdoc = gdoc_retriever
+    def __init__(self):
         self.config_table_name = "Config"
         self.participants_table_name = "Participants"
-        self.config_fp = "src/conf/bingo_config.json"
-        self.participants_fp = "src/conf/bingo_participants.json"
+        self.config_fp = "src/conf/bingo/bingo_config.json"
+        self.participants_fp = "src/conf/bingo/bingo_participants.json"
         self.participants_dict = {}
         self.config_dict = {}
 
@@ -55,7 +54,7 @@ class BingoConfigParser:
             "END_MESSAGE",
             "SIGNUP_END_DATE",
             "SIGNUP_END_TIME",
-            "EVENT_PASSWORD"
+            "MASTER_PASSWORD"
         ]
 
     def set_sheet_name(self, sheet_name: str) -> None:
@@ -240,7 +239,7 @@ if __name__ == "__main__":
     gdoc.set_sheet_id("1EMxj1y49C31AU2LXXEdpM2tyVUqOfqABH7TVAu3Fcqk")
 
     # Initialize BingoConfigParser
-    parser = BingoConfigParser(gdoc_retriever=gdoc)
+    parser = BingoConfigParser()
     parser.set_sheet_name("Bot Config")
 
     # Retrieve and set sheet data

@@ -33,14 +33,14 @@ class DiscordUtils:
         ...
 
     # ---------- HELPERS ----------
-    def _get_voice_channel_list(self) -> list:
+    def _get_guild_voice_channel_list(self) -> list:
         ...
 
-    def _get_text_channel_list(self) -> list:
+    def _get_guild_text_channel_list(self) -> list:
         ...
 
-    def _get_role_list(self) -> list:
+    def _get_guild_role_list(self) -> list:
         ...
 
-    async def _get_member_by_id(self, user_id: str) -> Member:
+    async def _get_guild_member_by_id(self, user_id: str) -> Member:
         ...
