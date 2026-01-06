@@ -5,6 +5,12 @@ import logging
 
 
 '''
+DESIGN OVERVIEW:
+
+in the bingo commands, when setup is run, at the end we want it to start the bingo cog
+
+MAYBE MOVE ALL thiS LOGIC INTO THE BINGOCOG and HAVE JUST 1 SUPERCLASS
+
 Create the object
 Set the sheet idea via Bingo.config_parser.set_sheet_id
 load the config
