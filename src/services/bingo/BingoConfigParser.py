@@ -17,7 +17,8 @@ class InvalidConfig(Exception):
 
 
 class BingoConfigParser:
-    def __init__(self):
+    def __init__(self, sheet_name: str = "Bot Config"):
+        self.sheet_name = sheet_name
         self.config_table_name = "Config"
         self.participants_table_name = "Participants"
         self.config_fp = "src/conf/bingo/bingo_config.json"
@@ -56,9 +57,6 @@ class BingoConfigParser:
             "SIGNUP_END_TIME",
             "MASTER_PASSWORD"
         ]
-
-    def set_sheet_name(self, sheet_name: str) -> None:
-        self.sheet_name = sheet_name
 
     def set_sheet_data(self, data) -> None:
         try:
@@ -230,39 +228,3 @@ class BingoConfigParser:
         # Create a role name for each unique team name
         for name in self.team_names:
             self.roles.add(name)
-
-
-# ==== TEST SCRIPT ====
-if __name__ == "__main__":
-    # Initialize mock bot and GDoc retriever
-    gdoc = GDoc()
-    gdoc.set_sheet_id("1EMxj1y49C31AU2LXXEdpM2tyVUqOfqABH7TVAu3Fcqk")
-
-    # Initialize BingoConfigParser
-    parser = BingoConfigParser()
-    parser.set_sheet_name("Bot Config")
-
-    # Retrieve and set sheet data
-    sheet_data = gdoc.get_data_from_sheet(parser.sheet_name)
-    parser.set_sheet_data(sheet_data)
-
-    # Build table map and pull table data
-    parser.build_table_map()
-    parser.config_table_data = parser.pull_table_data(parser.config_table_name)
-    
-    # Load configuration table
-    parser.load_config_table(parser.config_table_data)
-    logger.info("Bingo configuration loaded successfully!\n")
-    print(parser.config_dict)
-
-    # Load participants table
-    parser.participants_table_data = parser.pull_table_data(parser.participants_table_name)
-    parser.load_participants_table(parser.participants_table_data)
-    logger.info("Participants data loaded successfully!\n")
-    print(parser.participants_dict)
-    print(f"TEAM NAMES: {parser.team_names}\n")
-    print(f"TCS: {parser.text_channels}\n")
-    print(f"VCS: {parser.voice_channels}\n")
-    print(f"ROLES: {parser.roles}\n")
-
-

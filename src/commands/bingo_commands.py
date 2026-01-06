@@ -6,8 +6,7 @@ from discord import Interaction, utils
 from discord.ext.commands import Bot
 import asyncio
 from discord import Interaction
-from src.hunt_stats.parsers.GDoc.GDocDataRetriever import GDocDataRetriever
-from src.services.bingo.BingoConfigParser import BingoConfigParser
+from src.services.bingo.Bingo import Bingo
 
 logger = logging.getLogger(__name__)
 
@@ -121,9 +120,7 @@ async def bingo_setup(interaction: discord.Interaction, discord_bot: Bot, sheet_
     
     # First checks if it can pull the GDoc data
     try:
-        retriever = GDocDataRetriever(sheet_id=SHEET_ID)
-        parser = BingoConfigParser(retriever)
-        parser.load_bingo_config()
+        bingo_event = Bingo()
     except Exception as e:
         logger.error(f"[BingoCommands Setup] Error retrieving and parsing GDoc config", exc_info=e)
         interaction.followup.send(f"Unable to access the Google Sheet with sheet ID: {sheet_id}", ephemeral=True)
