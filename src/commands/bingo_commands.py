@@ -150,6 +150,7 @@ async def bingo_setup(interaction: discord.Interaction, discord_bot: BotClient, 
     bingo_cog.load_config()
     await interaction.followup.send("Bingo setup loaded successfully.", ephemeral=True)
 
+    # TODO wrap this an in 'if verified == True:' block
     # Create the bingo roles
     colors = generate_distinct_colors(len(bingo_cog.config_parser.roles))
     for role_name, color in zip(bingo_cog.config_parser.roles, colors):
