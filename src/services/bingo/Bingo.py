@@ -12,7 +12,7 @@ in the bingo commands, when setup is run, at the end we want it to start the bin
 MAYBE MOVE ALL thiS LOGIC INTO THE BINGOCOG and HAVE JUST 1 SUPERCLASS
 
 Create the object
-Set the sheet idea via Bingo.config_parser.set_sheet_id
+Set the sheet id via Bingo.config_parser.set_sheet_id
 load the config
 load the participants
 
@@ -25,6 +25,7 @@ class Bingo:
         self.config_parser = BingoConfigParser(sheet_name=self.sheet_name)
         self.gdoc = GDoc()
         self.sheet_id = "1EMxj1y49C31AU2LXXEdpM2tyVUqOfqABH7TVAu3Fcqk"
+        self.bingo_discord_category_id = 1063433446321565796
         
     def startup(self) -> None:
         self.gdoc.set_sheet_id(self.sheet_id)
