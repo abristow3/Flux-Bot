@@ -1,12 +1,13 @@
-import discord
-from discord import app_commands
+import asyncio
 import logging
-import asyncio
-from discord import Interaction, utils
-from discord.ext.commands import Bot
-import asyncio
-from discord import Interaction
-from src.services.bingo.Bingo import Bingo
+from typing import Optional
+
+import discord
+from discord import app_commands, Interaction
+from discord.ext import commands
+
+from src.main import BotClient
+from src.cogs.BingoCog import BingoCog
 
 logger = logging.getLogger(__name__)
 
@@ -26,6 +27,24 @@ Voice Channels to be Created:
 User Role Assignments:
 {user_roles}
 """
+
+def generate_distinct_colors(n: int, saturation: float = 0.8, value: float = 0.9):
+    """
+    Generate n visually distinct colors as discord.Color objects.
+
+    :param n: Number of colors to generate
+    :param saturation: Saturation for the colors (0-1)
+    :param value: Brightness for the colors (0-1)
+    :return: List of discord.Color
+    """
+    colors = []
+    for i in range(n):
+        # distribute evenly around the color wheel
+        hue = i / n
+        r, g, b = colorsys.hsv_to_rgb(hue, saturation, value)
+        r, g, b = int(r * 255), int(g * 255), int(b * 255)
+        colors.append(discord.Color.from_rgb(r, g, b))
+    return colors
 
 async def send_bingo_verify_message(discord_bot, parser, interaction: Interaction, channels: bool) -> bool:
     """
@@ -95,7 +114,7 @@ async def check_user_roles(interaction: discord.Interaction, authorized_roles: l
         await interaction.followup.send("You do not have permission to use this command.", ephemeral=True)
         return False
 
-async def bingo_setup(interaction: discord.Interaction, discord_bot: Bot, sheet_id: str, channels: bool) -> None:
+async def bingo_setup(interaction: discord.Interaction, discord_bot: BotClient, sheet_id: str, channels: bool) -> None:
     '''
     - generate a list of the channels and roles / roles being assigned to which users being created, and ask user to verify it is correct by reacting with a checkmark?
     - if reacted with an X, then terminate the process
@@ -104,39 +123,51 @@ async def bingo_setup(interaction: discord.Interaction, discord_bot: Bot, sheet_
         - set up the correct channel permissions so all staff, event host, and the corresponding role can see and use the channels
     - Assign roles to all participants using discord ID from dict
     - send success message
-
     '''
     guild = interaction.guild
-    
     if not guild:
         await interaction.followup.send("This command can only be used in a server.", ephemeral=True)
         return
 
     authorized_roles = ["General", "Captain", "Lieutenant"]
     authorized = await check_user_roles(interaction=interaction, authorized_roles=authorized_roles)
-
     if not authorized:
         return
-    
-    # First checks if it can pull the GDoc data
-    try:
-        bingo_event = Bingo()
-    except Exception as e:
-        logger.error(f"[BingoCommands Setup] Error retrieving and parsing GDoc config", exc_info=e)
-        interaction.followup.send(f"Unable to access the Google Sheet with sheet ID: {sheet_id}", ephemeral=True)
 
+    # Attempt to get the BingoCog
+    bingo_cog: Optional[BingoCog] = discord_bot.get_cog("BingoCog")
+
+    # If cog is not loaded, dynamically load it
+    if bingo_cog is None:
+        try:
+            bingo_cog = BingoCog(discord_bot)
+            await discord_bot.add_cog(bingo_cog)
+            await interaction.followup.send("BingoCog was not loaded, but has now been initialized.", ephemeral=True)
+        except Exception as e:
+            await interaction.followup.send(f"Failed to load BingoCog: {e}", ephemeral=True)
+            return
+
+    bingo_cog.load_config()
+    await interaction.followup.send("Bingo setup loaded successfully.", ephemeral=True)
+
+    # Create the bingo roles
+    colors = generate_distinct_colors(len(bingo_cog.config_parser.roles))
+    for role_name, color in zip(bingo_cog.config_parser.roles, colors):
+        await discord_bot.utils.create_role(role_name=role_name, color=color, mentionable=True)
+
+    # if command was invoked with channels=True, create voice and text channels
+    # TODO setup channel permissions to match the roles? maybe need a role to channel map
     if channels:
-        # Generate and send verification message
-        confirmed = await send_bingo_verify_message(discord_bot=discord_bot, parser=parser, interaction=interaction, channels=channels)
-        
-    if confirmed:
-        # If verified, create channels and roles
-        ...
-    else:
-        # abort
-        ...
+        for text_channel in bingo_cog.config_parser.text_channels:
+            await discord_bot.utils.create_text_channel(channel_name=text_channel, category_id=bingo_cog.bingo_discord_category_id)
 
-async def bingo_cleanup(interaction: discord.Interaction, discord_bot: Bot) -> None:
+        for voice_channel in bingo_cog.config_parser.voice_channels:
+            await discord_bot.utils.create_voice_channel(channel_name=voice_channel, category_id=bingo_cog.bingo_discord_category_id)
+
+    # Assign users their roles
+
+
+async def bingo_cleanup(interaction: discord.Interaction, discord_bot: commands.Bot) -> None:
     '''
     - Generates a list of the bingo channels and roles that it will be deleting
     - Asks the user to verify
@@ -154,7 +185,7 @@ async def bingo_cleanup(interaction: discord.Interaction, discord_bot: Bot) -> N
     if not authorized:
         return
 
-def register_bingo_commands(tree: app_commands.CommandTree, discord_bot: Bot) -> None:
+def register_bingo_commands(tree: app_commands.CommandTree, discord_bot: commands.Bot) -> None:
     @tree.command(name="bingo_setup", description="Sets up roles, team channels, and permissions for the bingo event")
     @app_commands.describe(sheet_id="The GDoc sheet ID for the event configuration", channels="Flag for event text/voice channel creation. Defaults to False.")
     async def bingo_setup_cmd(interaction: discord.Interaction, sheet_id: str, channels: bool = False):
