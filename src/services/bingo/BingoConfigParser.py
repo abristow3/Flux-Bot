@@ -1,7 +1,6 @@
 import pandas as pd
 import logging
 from typing import Dict, Set
-from src.services.GDoc.GDoc import GDoc
 from datetime import datetime, timedelta
 import pytz
 from pathlib import Path
@@ -40,7 +39,7 @@ class BingoConfigParser:
         self.team_names: Set[str] = set()
         self.text_channels: Set[str] = set()
         self.voice_channels: Set[str] = set()
-        self.roles: Set[str] = set({"Bingo!"})
+        self.roles: Set[str] = {"Bingo!"}
 
         # Define required config keys
         self.required_config_keys = [
@@ -93,7 +92,7 @@ class BingoConfigParser:
             logger.error("Error building table map")
             self.table_map = {}
 
-    def pull_table_data(self, table_name: str) -> None:
+    def pull_table_data(self, table_name: str):
         logger.info("Pulling Table Data...")
         table_metadata = self.table_map.get(table_name, {})
         if not table_metadata:
@@ -167,21 +166,21 @@ class BingoConfigParser:
         """
         # Define required participants table columns
         required_columns = ['Participant', 'Discord ID', 'Team Name', 'Color']
-        
+
         try:
             # Check for missing required columns
             missing_columns = [col for col in required_columns if col not in df.columns]
             if missing_columns:
                 logger.error(f"Participants table missing required columns: {', '.join(missing_columns)}")
                 raise InvalidConfig(f"Participants table missing required columns: {', '.join(missing_columns)}")
-            
+
             # Clean and convert the DataFrame into a list of dictionaries
             participants_data = df[['Participant', 'Discord ID', 'Team Name', 'Color']].dropna()
             participants_list = participants_data.to_dict(orient="records")
-            
+
             # Store participants data as a dictionary
             self.participants_dict = {"Participants": participants_list}
-            
+
             logger.debug(f"Participants data converted to dict: {self.participants_dict}")
 
             # Extract unique team names and log them
@@ -201,7 +200,7 @@ class BingoConfigParser:
             path.parent.mkdir(parents=True, exist_ok=True)
             with path.open("w", encoding="utf-8") as f:
                 json.dump(data, f, indent=4)
-            
+
             print(f"Data successfully saved to {path.resolve()}")
         except Exception as e:
             print(f"Failed to save data to {path}: {e}")
@@ -211,7 +210,7 @@ class BingoConfigParser:
         for participant in self.participants_dict["Participants"]:
             team_name = participant.get("Team Name", "")
             self.team_names.add(team_name)
-    
+
     def _build_text_channel_names(self) -> None:
         # Create a text channel name for each unique team name
         for name in self.team_names:
