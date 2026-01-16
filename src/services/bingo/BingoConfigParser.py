@@ -1,7 +1,6 @@
 import pandas as pd
 import logging
 from typing import Dict, Set
-from src.services.GDoc.GDoc import GDoc
 from datetime import datetime, timedelta
 import pytz
 from pathlib import Path
@@ -81,7 +80,7 @@ class BingoConfigParser:
             logger.error("Error building table map")
             self.table_map = {}
 
-    def pull_table_data(self, table_name: str) -> None:
+    def pull_table_data(self, table_name: str):
         logger.info("Pulling Table Data...")
         table_metadata = self.table_map.get(table_name, {})
         if not table_metadata:
@@ -153,7 +152,7 @@ class BingoConfigParser:
             path.parent.mkdir(parents=True, exist_ok=True)
             with path.open("w", encoding="utf-8") as f:
                 json.dump(data, f, indent=4)
-            
+
             print(f"Data successfully saved to {path.resolve()}")
         except Exception as e:
             print(f"Failed to save data to {path}: {e}")

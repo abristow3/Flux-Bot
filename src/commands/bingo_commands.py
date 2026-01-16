@@ -1,9 +1,8 @@
+import colorsys
 import logging
 from typing import Optional
 import discord
 from discord import app_commands
-from discord.ext import commands
-
 from src.main import BotClient
 from src.cogs.BingoCog import BingoCog
 
@@ -19,6 +18,7 @@ async def bingo_setup(interaction: discord.Interaction, discord_bot: BotClient, 
     authorized = await discord_bot.utils.check_user_roles(user=interaction.user, authorized_roles=authorized_roles)
     
     if not authorized:
+        await interaction.followup.send("You do not have permission to use this command.", ephemeral=True)
         return
 
     # Attempt to get the BingoCog
@@ -36,9 +36,10 @@ async def bingo_setup(interaction: discord.Interaction, discord_bot: BotClient, 
     await interaction.followup.send("Bingo setup loaded successfully.", ephemeral=True)
 
 
-def register_bingo_commands(tree: app_commands.CommandTree, discord_bot: commands.Bot) -> None:
+def register_bingo_commands(tree: app_commands.CommandTree, discord_bot: BotClient) -> None:
     @tree.command(name="bingo_setup", description="Sets up roles, team channels, and permissions for the bingo event")
-    @app_commands.describe(sheet_id="The GDoc sheet ID for the event configuration", channels="Flag for event text/voice channel creation. Defaults to False.")
+    @app_commands.describe(sheet_id="The GDoc sheet ID for the event configuration",
+                           channels="Flag for event text/voice channel creation. Defaults to False.")
     async def bingo_setup_cmd(interaction: discord.Interaction, sheet_id: str, channels: bool = False):
         logger.info("[Bingo Commands] /bingo_setup command called")
         await interaction.response.defer()

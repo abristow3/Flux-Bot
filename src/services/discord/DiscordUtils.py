@@ -1,6 +1,6 @@
+from __future__ import annotations
 import logging
-from typing import TypeVar, Type, Optional
-
+from typing import TypeVar, Optional
 import discord
 from discord import Color
 from discord.ext import commands
@@ -9,6 +9,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 T = TypeVar("T", bound=commands.Cog)
+
 
 class DiscordUtils:
     def __init__(self, bot: commands.Bot, guild_id: int):
@@ -144,6 +145,15 @@ class DiscordUtils:
             logger.error(f"Failed to delete role '{role_name}': {e}")
             return False
 
+    async def check_user_roles(user: discord.Member, authorized_roles: list) -> bool:
+        user_roles = [role.name.lower() for role in user.roles]
+        authorized_roles = [role.lower() for role in authorized_roles]
+
+        if any(role in user_roles for role in authorized_roles):
+            return True
+        else:
+            return False
+
     async def assign_user_role(self, user: discord.Member, role_name: str) -> bool:
         """
         Assigns a role to a user if they don't already have it.
@@ -206,7 +216,7 @@ class DiscordUtils:
         return cog
 
     # ---------- HELPERS ----------
-    async def _get_guild_member_by_id(self, user_id: int) -> discord.Member | None:
+    async def get_guild_member_by_id(self, user_id: int) -> discord.Member | None:
         if not self.guild:
             logger.error("Guild not found.")
             return None
