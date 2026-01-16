@@ -20,27 +20,15 @@ class BingoConfigParser:
     def __init__(self, sheet_name: str = "Bot Config"):
         self.sheet_name = sheet_name
         self.config_table_name = "Config"
-        self.participants_table_name = "Participants"
         self.config_fp = "src/conf/bingo/bingo_config.json"
-        self.participants_fp = "src/conf/bingo/bingo_participants.json"
-        self.participants_dict = {}
         self.config_dict = {}
 
         # Raw sheet data
         self.sheet_data: pd.DataFrame = pd.DataFrame()
-
-        # Maps table_name -> {start_col, end_col}
         self.table_map: Dict[str, Dict[str, int]] = {}
 
         # Extracted tables
-        self.participants_table_data: pd.DataFrame = pd.DataFrame()
         self.config_table_data: pd.DataFrame = pd.DataFrame()
-
-        # Channels and roles to create
-        self.team_names: Set[str] = set()
-        self.text_channels: Set[str] = set()
-        self.voice_channels: Set[str] = set()
-        self.roles: Set[str] = set({"Bingo!"})
 
         # Define required config keys
         self.required_config_keys = [
@@ -159,42 +147,6 @@ class BingoConfigParser:
         self._save_dict_as_json(fp=self.config_fp, data=self.config_dict)
         logger.info("Bingo configuration loaded successfully.")
 
-    def load_participants_table(self, df: pd.DataFrame) -> None:
-        """
-        Load participants from the 'Participants' table dataframe.
-        Expects a table with columns: 'Participant', 'Discord ID', 'Team Name', and 'Color'.
-        Converts the DataFrame into a dictionary and stores it in the class attribute.
-        """
-        # Define required participants table columns
-        required_columns = ['Participant', 'Discord ID', 'Team Name', 'Color']
-        
-        try:
-            # Check for missing required columns
-            missing_columns = [col for col in required_columns if col not in df.columns]
-            if missing_columns:
-                logger.error(f"Participants table missing required columns: {', '.join(missing_columns)}")
-                raise InvalidConfig(f"Participants table missing required columns: {', '.join(missing_columns)}")
-            
-            # Clean and convert the DataFrame into a list of dictionaries
-            participants_data = df[['Participant', 'Discord ID', 'Team Name', 'Color']].dropna()
-            participants_list = participants_data.to_dict(orient="records")
-            
-            # Store participants data as a dictionary
-            self.participants_dict = {"Participants": participants_list}
-            
-            logger.debug(f"Participants data converted to dict: {self.participants_dict}")
-
-            # Extract unique team names and log them
-            logger.info(f"Teams found: {', '.join(self.team_names)}")
-            self._build_team_names()
-            self._build_text_channel_names()
-            self._build_voice_channel_names()
-            self._build_role_names()
-            self._save_dict_as_json(fp=self.participants_fp, data=self.participants_dict)
-        except Exception as e:
-            logger.exception("Failed to load participants table.")
-            raise InvalidConfig("Failed to load participants table.")
-
     def _save_dict_as_json(self, fp: str, data: dict) -> None:
         path = Path(fp)
         try:
@@ -205,26 +157,3 @@ class BingoConfigParser:
             print(f"Data successfully saved to {path.resolve()}")
         except Exception as e:
             print(f"Failed to save data to {path}: {e}")
-
-    def _build_team_names(self) -> None:
-        # Iterates over the list of participants and extracts the team name
-        for participant in self.participants_dict["Participants"]:
-            team_name = participant.get("Team Name", "")
-            self.team_names.add(team_name)
-    
-    def _build_text_channel_names(self) -> None:
-        # Create a text channel name for each unique team name
-        for name in self.team_names:
-            channel_name = f"{name}-text"
-            self.text_channels.add(channel_name)
-
-    def _build_voice_channel_names(self) -> None:
-        # Create a voice channel name for each unique team name
-        for name in self.team_names:
-            channel_name = f"{name}-voice"
-            self.voice_channels.add(channel_name)
-
-    def _build_role_names(self) -> None:
-        # Create a role name for each unique team name
-        for name in self.team_names:
-            self.roles.add(name)

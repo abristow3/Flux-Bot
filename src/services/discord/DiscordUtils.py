@@ -186,6 +186,15 @@ class DiscordUtils:
             logger.error(f"Failed to revoke '{role_name}' role from user '{user.name}': {e}")
             return False
 
+    async def check_user_roles(user: discord.Member, authorized_roles: list) -> bool:
+        user_roles = [role.name.lower() for role in user.roles]
+        authorized_roles = [role.lower() for role in authorized_roles]
+
+        if any(role in user_roles for role in authorized_roles):
+            return True
+        else:
+            return False
+        
     # ---------- COGS ----------
     def fetch_cog(self, cog_name: str, cog_type: type[T]) -> T:
         """
