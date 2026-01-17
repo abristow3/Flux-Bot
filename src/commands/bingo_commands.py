@@ -104,7 +104,7 @@ async def bingo_setup(interaction: discord.Interaction, discord_bot) -> None:
 # Task loop to send reminders at the right time (includes start/end messages)
 @tasks.loop(seconds=20)
 async def bingo_reminder_loop(bingo_times, discord_bot):
-    print("[Bingo Loop] beep")
+    logger.info("[Bingo Loop] beep")
     now = datetime.now(GMT)
     channel = discord_bot.get_channel(config["EVENTS_CHANNEL_ID"])
     if not channel:
