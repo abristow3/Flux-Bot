@@ -90,11 +90,19 @@ async def bingo_setup(interaction: discord.Interaction, discord_bot) -> None:
         gmt_str, eastern_str = format_datetime_both_timezones(dt_gmt)
         print(f"{key}:\n  GMT: {gmt_str}\n  US Eastern: {eastern_str}\n  Message: {msg}\n")
 
-    bingo_reminder_loop.start(bingo_times, discord_bot)
+    # Start the reminder loop
+    if not bingo_reminder_loop.is_running():
+        bingo_reminder_loop.start(bingo_times, discord_bot)
+
+    # Send ephemeral follow-up to the user confirming the loop has started
+    await interaction.followup.send(
+        "✅ Bingo reminder loop has been started. All reminders are scheduled.",
+        ephemeral=True
+    )
 
 
 # Task loop to send reminders at the right time (includes start/end messages)
-@tasks.loop(seconds=30)  # check every minute
+@tasks.loop(seconds=20)
 async def bingo_reminder_loop(bingo_times, discord_bot):
     print("[Bingo Loop] beep")
     now = datetime.now(GMT)
@@ -106,9 +114,7 @@ async def bingo_reminder_loop(bingo_times, discord_bot):
     for key, value in list(bingo_times["reminders"].items()):
         dt_gmt, msg = value
         if now >= dt_gmt:
-            # Build message with both timezones
             gmt_str, eastern_str = format_datetime_both_timezones(dt_gmt)
-            # For exact start/end messages, we don't include "24hr" text
             if key in ["bingo_start_message", "bingo_end_message"]:
                 message = f"{msg}\n**Time:** GMT {gmt_str} / US Eastern {eastern_str}"
             else:
@@ -116,8 +122,12 @@ async def bingo_reminder_loop(bingo_times, discord_bot):
 
             await channel.send(message)
             logger.info(f"Sent reminder: {key}")
-            # Remove the reminder once sent
             del bingo_times["reminders"][key]
+
+    # Stop the loop if no reminders remain
+    if not bingo_times["reminders"]:
+        logger.info("All reminders sent. Stopping reminder loop.")
+        bingo_reminder_loop.stop()
 
 
 # Register the command
