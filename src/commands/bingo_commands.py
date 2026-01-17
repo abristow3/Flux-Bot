@@ -20,7 +20,7 @@ config = {
     "REMINDER_START_24HR": "@Bingo Bingo starts in 24 hours, please make sure you've read all the rules carefully.",
     "REMINDER_END_24HR": "@Bingo 24 hours left in the bingo!",
     "REMINDER_SIGNUP_24HR": "Bingo sign-ups close in 24 hours, last chance to sign up, make sure you've paid your buy-ins!",
-    "EVENTS_CHANNEL_ID": 1452696803706408980,
+    "EVENTS_CHANNEL_ID": 414458243499425792,
     "START_MESSAGE": "@Bingo! Bingo starts now!",
     "END_MESSAGE": "@Bingo! Bingo is now over."
 }
