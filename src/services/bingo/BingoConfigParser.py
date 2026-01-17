@@ -84,7 +84,7 @@ class BingoConfigParser:
         logger.info("Pulling Table Data...")
         table_metadata = self.table_map.get(table_name, {})
         if not table_metadata:
-            return []
+            return pd.DataFrame()
 
         logger.info(f"Data located between columns {table_metadata['start_col']} and {table_metadata['end_col']}")
 
@@ -110,6 +110,14 @@ class BingoConfigParser:
         return df
 
     def load_config_table(self, df: pd.DataFrame) -> None:
+        if not isinstance(df, pd.DataFrame):
+            raise InvalidConfig(
+                f"Expected DataFrame for config table, got {type(df).__name__}"
+            )
+
+        if df.empty:
+            raise InvalidConfig("Configuration table is empty.")
+
         try:
             # Convert DF into dict
             self.config_dict = dict(zip(df["Key"], df["Value"]))
@@ -132,21 +140,11 @@ class BingoConfigParser:
             logger.error(f"Missing or empty configuration fields: {', '.join(missing_fields)}")
             raise InvalidConfig(f"Missing or empty configuration fields: {', '.join(missing_fields)}")
 
-        # Combine Bingo start date/time into a datetime object
-        start_datetime_str = f"{self.config_dict.get('BINGO_START_DATE', '')} {self.config_dict.get('BINGO_START_TIME_GMT', '')}"
-        try:
-            self.start_datetime = datetime.strptime(start_datetime_str, "%d/%m/%Y %H:%M")
-            self.start_datetime = pytz.timezone("Europe/London").localize(self.start_datetime)
-            self.end_datetime = self.start_datetime + timedelta(days=3)
-        except ValueError:
-            logger.exception(f"Invalid Bingo start date/time format: {start_datetime_str}")
-            raise InvalidConfig("Invalid date/time format. Expected format: DD/MM/YYYY HH:MM")
-
-        self.configured = True
         self._save_dict_as_json(fp=self.config_fp, data=self.config_dict)
         logger.info("Bingo configuration loaded successfully.")
 
-    def _save_dict_as_json(self, fp: str, data: dict) -> None:
+    @staticmethod
+    def _save_dict_as_json(fp: str, data: dict) -> None:
         path = Path(fp)
         try:
             path.parent.mkdir(parents=True, exist_ok=True)

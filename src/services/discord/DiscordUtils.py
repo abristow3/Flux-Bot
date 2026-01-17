@@ -145,6 +145,7 @@ class DiscordUtils:
             logger.error(f"Failed to delete role '{role_name}': {e}")
             return False
 
+    @staticmethod
     async def check_user_roles(user: discord.Member, authorized_roles: list) -> bool:
         user_roles = [role.name.lower() for role in user.roles]
         authorized_roles = [role.lower() for role in authorized_roles]
@@ -194,15 +195,6 @@ class DiscordUtils:
             return True
         except discord.DiscordException as e:
             logger.error(f"Failed to revoke '{role_name}' role from user '{user.name}': {e}")
-            return False
-
-    async def check_user_roles(user: discord.Member, authorized_roles: list) -> bool:
-        user_roles = [role.name.lower() for role in user.roles]
-        authorized_roles = [role.lower() for role in authorized_roles]
-
-        if any(role in user_roles for role in authorized_roles):
-            return True
-        else:
             return False
         
     # ---------- COGS ----------
