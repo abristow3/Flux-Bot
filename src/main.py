@@ -83,8 +83,7 @@ class BotClient(commands.Bot):
 # Entry Point
 # -------------------
 def run():
-    # TOKEN = os.getenv("DISCORD_TOKEN")
-    TOKEN = "MTQ0Njk4NzU5NTgxMTkxNzg2Ng.Gvz4_r.8MVoOMh9zHzFI8VGpAGza5H7DC9EsNZ3BWsQtE"
+    TOKEN = os.getenv("DISCORD_TOKEN")
     if not TOKEN:
         logger.error("No Discord API token found in environment")
         exit()
