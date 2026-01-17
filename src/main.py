@@ -5,9 +5,9 @@ from discord.ext import commands, tasks
 import logging
 import os
 
-from commands.role_commands import register_role_commands
-from commands.message_commands import register_message_commands
-from commands.bingo_commands import register_bingo_commands
+from src.commands.role_commands import register_role_commands
+from src.commands.message_commands import register_message_commands
+from src.commands.bingo_commands import register_bingo_commands
 from src.services.discord.DiscordUtils import DiscordUtils
 
 logger = logging.getLogger()
