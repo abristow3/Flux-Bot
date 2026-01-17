@@ -8,86 +8,90 @@ import os
 from commands.role_commands import register_role_commands
 from commands.message_commands import register_message_commands
 from commands.bingo_commands import register_bingo_commands
+from src.services.discord.DiscordUtils import DiscordUtils
 
 logger = logging.getLogger()
-logger.setLevel(logging.DEBUG)  # Capture all logs
+logger.setLevel(logging.INFO)
 
-# Common formatter
 formatter = logging.Formatter(
     '[%(asctime)s] [%(levelname)s] %(message)s',
     datefmt='%Y-%m-%d %H:%M:%S'
 )
 
-# Console handler (prints to terminal)
-console_handler = logging.StreamHandler()
-console_handler.setLevel(logging.INFO)  # Change to DEBUG if you want more verbose logs
-console_handler.setFormatter(formatter)
 
-# Add console handler to the root logger
-logger.addHandler(console_handler)
+class BotClient(commands.Bot):
+    def __init__(self, token: str, guild_id: int):
+        intents = discord.Intents.default()
+        intents.message_content = True
+        intents.guilds = True
+        intents.members = True
 
-TOKEN = os.getenv("DISCORD_TOKEN")
-if not TOKEN:
-    logger.error("[Main Task Loop] No Discord API token found.")
-    exit()
+        super().__init__(command_prefix='!', intents=intents)
 
-logger.info("[Main Task Loop] Discord API token found successfully.")
+        self.token = token
+        self.guild_id = guild_id
+        self.utils = DiscordUtils(bot=self, guild_id=guild_id)
 
-intents = discord.Intents.default()
-intents.message_content = True
-intents.guilds = True
-intents.members = True
+    async def setup_hook(self):
+        """
+        Called when the bot is starting. Use it to register cogs, commands, etc.
+        """
+        logger.info("[BotClient] Registering slash commands...")
+        register_role_commands(tree=self.tree, discord_bot=self)
+        register_message_commands(tree=self.tree, discord_bot=self)
+        register_bingo_commands(tree=self.tree, discord_bot=self)
 
-bot = commands.Bot(command_prefix='!', intents=intents)
+        await self.sync_commands(test=True)
+        await self.list_commands()
 
+    async def on_ready(self):
+        logger.info(f"[BotClient] Logged in as {self.user} (ID: {self.user.id})")
+        logger.info("[BotClient] Loading assets...")
 
-async def sync_commands(test: bool = False):
-    try:
-        # Optional: force sync for a specific guild
-        if test:
-            guild = discord.Object(id=414435426007384075)
-            await bot.tree.sync(guild=guild)
-            logger.info("[Main Task Loop] Slash commands have been synced to guild.")
+        # Load avatar
+        try:
+            with open("assets/avatar.png", "rb") as avatar_file:
+                image = avatar_file.read()
+                await self.user.edit(avatar=image)
+            logger.info("[BotClient] Assets loaded successfully")
+        except Exception as e:
+            logger.error(f"[BotClient] Failed to load avatar: {e}")
 
-        # Also sync globally (optional but safe to include)
-        await bot.tree.sync()
-        logger.info("[Main Task Loop] Global slash commands have been successfully refreshed!")
-    except Exception as e:
-        logger.error(f"[Main Task Loop] Error refreshing commands: {e}")
+    async def sync_commands(self, test: bool = False):
+        """Sync slash commands either to a test guild or globally."""
+        try:
+            if test:
+                guild = discord.Object(id=self.guild_id)
+                await self.tree.sync(guild=guild)
+                logger.info("[BotClient] Slash commands synced to test guild")
+            await self.tree.sync()
+            logger.info("[BotClient] Global slash commands synced")
+        except Exception as e:
+            logger.error(f"[BotClient] Error syncing commands: {e}")
 
+    async def list_commands(self):
+        logger.info("[BotClient] Listing all registered slash commands:")
+        for command in self.tree.get_commands():
+            logger.info(f"Command: {command.name}, Description: {command.description}")
 
-async def list_commands():
-    # List all global commands
-    logger.info("[Main Task Loop] Listing all registered commands:")
-    for command in bot.tree.get_commands():
-        logger.info(f"[Main Task Loop] Command Name: {command.name}, Description: {command.description}")
-
-
-@bot.event
-async def on_ready():
-    logger.info("[Main Task Loop] Loading Assets...")
-    with open("assets/avatar.png", "rb") as avatar_file:
-        # Update the bot's avatar
-        image = avatar_file.read()
-        await bot.user.edit(avatar=image)
-
-    logger.info("[Main Task Loop] Assets Loaded")
-
-    register_role_commands(tree=bot.tree, discord_bot=bot)
-    register_message_commands(tree=bot.tree, discord_bot=bot)
-    register_bingo_commands(tree=bot.tree, discord_bot=bot)
-
-    # Sync and List all commands
-    await sync_commands(test=True)
-    await list_commands()
+    async def start_bot(self):
+        """Wrapper to start the bot."""
+        await self.start(self.token)
 
 
-async def main():
-    await bot.start(TOKEN)
-
-
+# -------------------
+# Entry Point
+# -------------------
 def run():
-    asyncio.run(main())
+    TOKEN = os.getenv("DISCORD_TOKEN")
+    if not TOKEN:
+        logger.error("No Discord API token found in environment")
+        exit()
+
+    GUILD_ID = 414435426007384075
+    bot = BotClient(token=TOKEN, guild_id=GUILD_ID)
+
+    asyncio.run(bot.start_bot())
 
 
 if __name__ == "__main__":

@@ -1,175 +1,133 @@
+from datetime import datetime, timedelta
+import pytz
 import discord
+from discord.ext import tasks
 from discord import app_commands
 import logging
-import asyncio
-from discord import Interaction, utils
-from discord.ext.commands import Bot
-import asyncio
-from discord import Interaction
-from src.hunt_stats.parsers.GDoc.GDocDataRetriever import GDocDataRetriever
-from src.commands.BingoConfigParser import BingoConfigParser
 
 logger = logging.getLogger(__name__)
+UTC = pytz.utc
+US_EASTERN = pytz.timezone("US/Eastern")
+GMT = pytz.timezone("GMT")
 
-DISCORD_SETUP_SUMMARY_TEMPLATE = """\
-Discord Setup Summary
-=====================
+config = {
+    "BINGO_START_DATE": "23/01/2026",
+    "BINGO_START_TIME_GMT": "14:00",
+    "BINGO_END_DATE": "26/01/2026",
+    "BINGO_END_TIME_GMT": "14:00",
+    "SIGNUP_END_DATE": "18/01/2026",
+    "SIGNUP_END_TIME_GMT": "14:00",
+    "REMINDER_START_24HR": "@Bingo Bingo starts in 24 hours, please make sure you've read all the rules carefully.",
+    "REMINDER_END_24HR": "@Bingo 24 hours left in the bingo!",
+    "REMINDER_SIGNUP_24HR": "Bingo sign-ups close in 24 hours, last chance to sign up, make sure you've paid your buy-ins!",
+    "EVENTS_CHANNEL_ID": 1452696803706408980,
+    "START_MESSAGE": "@Bingo! Bingo starts now!",
+    "END_MESSAGE": "@Bingo! Bingo is now over."
+}
 
-Roles to be Created:
-{roles}
 
-Text Channels to be Created:
-{text_channels}
+# Build timezone-aware datetime objects, including start/end message reminders
+def build_bingo_datetimes(config):
+    bingo_start_dt = GMT.localize(datetime.strptime(
+        f"{config['BINGO_START_DATE']} {config['BINGO_START_TIME_GMT']}",
+        "%d/%m/%Y %H:%M"
+    ))
 
-Voice Channels to be Created:
-{voice_channels}
+    bingo_end_dt = GMT.localize(datetime.strptime(
+        f"{config['BINGO_END_DATE']} {config['BINGO_END_TIME_GMT']}",
+        "%d/%m/%Y %H:%M"
+    ))
 
-User Role Assignments:
-{user_roles}
-"""
+    signup_end_dt = GMT.localize(datetime.strptime(
+        f"{config['SIGNUP_END_DATE']} {config['SIGNUP_END_TIME_GMT']}",
+        "%d/%m/%Y %H:%M"
+    ))
 
-async def send_bingo_verify_message(discord_bot, parser, interaction: Interaction, channels: bool) -> bool:
-    """
-    Sends an ephemeral verification message showing roles/channels from the parser.
-    Lets the user react with ✅ to confirm or ❌ to cancel.
-    """
-    timeout = 120.0
-    # Format the summary
-    roles_str = "\n".join(f"- {r}" for r in parser.roles)
-    text_channels_str = "\n".join(f"- {c}" for c in parser.text_channels)
-    voice_channels_str = "\n".join(f"- {v}" for v in parser.voice_channels)
-    user_roles_str = "\n".join(
-        f"- {username} ({data['team_name']})" for username, data in parser.config.items()
-    )
+    reminders = {
+        # 24hr reminders
+        "reminder_bingo_start": (bingo_start_dt - timedelta(days=1), config["REMINDER_START_24HR"]),
+        "reminder_bingo_end": (bingo_end_dt - timedelta(days=1), config["REMINDER_END_24HR"]),
+        "reminder_signup_end": (signup_end_dt - timedelta(days=1), config["REMINDER_SIGNUP_24HR"]),
+        # Exact start/end messages
+        "bingo_start_message": (bingo_start_dt, config["START_MESSAGE"]),
+        "bingo_end_message": (bingo_end_dt, config["END_MESSAGE"])
+    }
 
-    # if command called with channels flag as False, don't display them
-    if not channels:
-        text_channels_str = "None"
-        voice_channels_str = "None"
+    return {
+        "bingo_start_dt": bingo_start_dt,
+        "bingo_end_dt": bingo_end_dt,
+        "signup_end_dt": signup_end_dt,
+        "reminders": reminders
+    }
 
-    summary_message = DISCORD_SETUP_SUMMARY_TEMPLATE.format(
-        roles=roles_str,
-        text_channels=text_channels_str,
-        voice_channels=voice_channels_str,
-        user_roles=user_roles_str
-    )
 
-    # Send ephemeral message
-    await interaction.response.send_message(
-        f"```{summary_message}```\nReact with ✅ to confirm, ❌ to cancel.",
-        ephemeral=True
-    )
+# Format a datetime in both GMT and US Eastern
+def format_datetime_both_timezones(dt_gmt):
+    dt_eastern = dt_gmt.astimezone(US_EASTERN)
+    return dt_gmt.strftime("%d/%m/%Y %H:%M %Z"), dt_eastern.strftime("%d/%m/%Y %H:%M %Z")
 
-    msg = await interaction.original_message()
-    await msg.add_reaction("✅")
-    await msg.add_reaction("❌")
 
-    # Define reaction check
-    def check(reaction, user):
-        return (
-            user == interaction.user
-            and str(reaction.emoji) in ["✅", "❌"]
-            and reaction.message.id == msg.id
-        )
+# Main setup command
+async def bingo_setup(interaction: discord.Interaction, discord_bot) -> None:
+    guild = interaction.guild
+    if not guild:
+        await interaction.followup.send("This command can only be used in a server.", ephemeral=True)
+        return
 
-    try:
-        reaction, user = await discord_bot.wait_for("reaction_add", timeout=timeout, check=check)
+    authorized_roles = ["General", "Captain", "Lieutenant"]
+    authorized = await discord_bot.utils.check_user_roles(interaction.user, authorized_roles)
 
-        if str(reaction.emoji) == "✅":
-            await interaction.followup.send("✅ You confirmed the config!", ephemeral=True)
-            return True
-        elif str(reaction.emoji) == "❌":
-            await interaction.followup.send("❌ Setup canceled by user.", ephemeral=True)
-            return False
-
-    except asyncio.TimeoutError:
-        await interaction.followup.send("⏱ No reaction received in time. Setup canceled.", ephemeral=True)
-        return False
-
-async def check_user_roles(interaction: discord.Interaction, authorized_roles: list) -> bool:
-    user_roles = [role.name.lower() for role in getattr(interaction.user, "roles", [])]
-    authorized_roles = [role.lower() for role in authorized_roles]
-
-    if any(role in user_roles for role in authorized_roles):
-        return True
-    else:
+    if not authorized:
         await interaction.followup.send("You do not have permission to use this command.", ephemeral=True)
-        return False
-
-async def bingo_setup(interaction: discord.Interaction, discord_bot: Bot, sheet_id: str, channels: bool) -> None:
-    '''
-    - generate a list of the channels and roles / roles being assigned to which users being created, and ask user to verify it is correct by reacting with a checkmark?
-    - if reacted with an X, then terminate the process
-    - if reacted, then proceed to making them if they don't exist yet. 
-    - Create role, voice channel, and text channel for team name in the set
-        - set up the correct channel permissions so all staff, event host, and the corresponding role can see and use the channels
-    - Assign roles to all participants using discord ID from dict
-    - send success message
-
-    '''
-    guild = interaction.guild
-    
-    if not guild:
-        await interaction.followup.send("This command can only be used in a server.", ephemeral=True)
         return
 
-    authorized_roles = ["General", "Captain", "Lieutenant"]
-    authorized = await check_user_roles(interaction=interaction, authorized_roles=authorized_roles)
+    # Build the datetimes
+    bingo_times = build_bingo_datetimes(config)
 
-    if not authorized:
-        return
-    
-    # First checks if it can pull the GDoc data
-    try:
-        retriever = GDocDataRetriever(sheet_id=SHEET_ID)
-        parser = BingoConfigParser(retriever)
-        parser.load_bingo_config()
-    except Exception as e:
-        logger.error(f"[BingoCommands Setup] Error retrieving and parsing GDoc config", exc_info=e)
-        interaction.followup.send(f"Unable to access the Google Sheet with sheet ID: {sheet_id}", ephemeral=True)
+    # Print reminders (for verification)
+    for key, value in bingo_times["reminders"].items():
+        dt_gmt, msg = value
+        gmt_str, eastern_str = format_datetime_both_timezones(dt_gmt)
+        print(f"{key}:\n  GMT: {gmt_str}\n  US Eastern: {eastern_str}\n  Message: {msg}\n")
 
-    if channels:
-        # Generate and send verification message
-        confirmed = await send_bingo_verify_message(discord_bot=discord_bot, parser=parser, interaction=interaction, channels=channels)
-        
-    if confirmed:
-        # If verified, create channels and roles
-        ...
-    else:
-        # abort
-        ...
+    bingo_reminder_loop.start(bingo_times, discord_bot)
 
-async def bingo_cleanup(interaction: discord.Interaction, discord_bot: Bot) -> None:
-    '''
-    - Generates a list of the bingo channels and roles that it will be deleting
-    - Asks the user to verify
-    - If yes, delete channels and roles
-    - If No, terminate
-    '''
-    guild = interaction.guild
-    if not guild:
-        await interaction.followup.send("This command can only be used in a server.", ephemeral=True)
+
+# Task loop to send reminders at the right time (includes start/end messages)
+@tasks.loop(seconds=30)  # check every minute
+async def bingo_reminder_loop(bingo_times, discord_bot):
+    print("[Bingo Loop] beep")
+    now = datetime.now(GMT)
+    channel = discord_bot.get_channel(config["EVENTS_CHANNEL_ID"])
+    if not channel:
+        logger.warning("Events channel not found")
         return
 
-    authorized_roles = ["General", "Captain", "Lieutenant"]
-    authorized = await check_user_roles(interaction=interaction, authorized_roles=authorized_roles)
+    for key, value in list(bingo_times["reminders"].items()):
+        dt_gmt, msg = value
+        if now >= dt_gmt:
+            # Build message with both timezones
+            gmt_str, eastern_str = format_datetime_both_timezones(dt_gmt)
+            # For exact start/end messages, we don't include "24hr" text
+            if key in ["bingo_start_message", "bingo_end_message"]:
+                message = f"{msg}\n**Time:** GMT {gmt_str} / US Eastern {eastern_str}"
+            else:
+                message = f"{msg}\n**Reminder Time:** GMT {gmt_str} / US Eastern {eastern_str}"
 
-    if not authorized:
-        return
+            await channel.send(message)
+            logger.info(f"Sent reminder: {key}")
+            # Remove the reminder once sent
+            del bingo_times["reminders"][key]
 
-def register_bingo_commands(tree: app_commands.CommandTree, discord_bot: Bot) -> None:
-    @tree.command(name="bingo_setup", description="Sets up roles, team channels, and permissions for the bingo event")
-    @app_commands.describe(sheet_id="The GDoc sheet ID for the event configuration", channels="Flag for event text/voice channel creation. Defaults to False.")
-    async def bingo_setup_cmd(interaction: discord.Interaction, sheet_id: str, channels: bool = False):
+
+# Register the command
+def register_bingo_commands(tree: app_commands.CommandTree, discord_bot) -> None:
+    @tree.command(name="bingo_setup", description="Sets up announcement messages for the bingo event.")
+    async def bingo_setup_cmd(interaction: discord.Interaction):
         logger.info("[Bingo Commands] /bingo_setup command called")
         await interaction.response.defer()
-        await bingo_setup(interaction, discord_bot=discord_bot, sheet_id=sheet_id, channels=channels)
-    
-    @tree.command(name="bingo_cleanup", description="Removes bingo roles, and team channels from the server.")
-    async def bingo_cleanup_cmd(interaction: discord.Interaction):
-        logger.info("[Bingo Commands] /bingo_cleanup command called")
-        await interaction.response.defer()
-        await bingo_cleanup(interaction, discord_bot=discord_bot)
+        await bingo_setup(interaction, discord_bot=discord_bot)
+
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
