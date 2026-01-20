@@ -63,7 +63,7 @@ def register_role_commands(tree: app_commands.CommandTree, discord_bot: Bot) -> 
                            new_role_name="The name of the new role.")
     async def clone_cmd(interaction: discord.Interaction, source_role_name: str, new_role_name: str):
         logger.info("[Role Commands] /clone_role command called")
-        await interaction.response.defer()
+        await interaction.response.defer(ephemeral=True)
         await clone_role(interaction, discord_bot=discord_bot, source_role_name=source_role_name,
                          new_role_name=new_role_name)
         await interaction.followup.send(f"Role '{new_role_name}' cloned from '{source_role_name}'!")

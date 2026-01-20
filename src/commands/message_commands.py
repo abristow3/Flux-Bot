@@ -44,5 +44,5 @@ def register_message_commands(tree: app_commands.CommandTree, discord_bot: Bot) 
     @app_commands.describe(message_content="The message you want to send.")
     async def send_msg_cmd(interaction: discord.Interaction, message_content: str):
         logger.info("[Message Commands] /send_message command called")
-        await interaction.response.defer()
+        await interaction.response.defer(ephemeral=True)
         await send_message(interaction, discord_bot=discord_bot, message_content=message_content)

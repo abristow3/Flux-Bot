@@ -15,11 +15,11 @@ config = {
     "BINGO_START_TIME_GMT": "14:00",
     "BINGO_END_DATE": "26/01/2026",
     "BINGO_END_TIME_GMT": "14:00",
-    "SIGNUP_END_DATE": "18/01/2026",
-    "SIGNUP_END_TIME_GMT": "14:00",
+    # "SIGNUP_END_DATE": "18/01/2026",
+    # "SIGNUP_END_TIME_GMT": "14:00",
     "REMINDER_START_24HR": "@Bingo Bingo starts in 24 hours, please make sure you've read all the rules carefully.",
     "REMINDER_END_24HR": "@Bingo 24 hours left in the bingo!",
-    "REMINDER_SIGNUP_24HR": "Bingo sign-ups close in 24 hours, last chance to sign up, make sure you've paid your buy-ins!",
+    # "REMINDER_SIGNUP_24HR": "Bingo sign-ups close in 24 hours, last chance to sign up, make sure you've paid your buy-ins!",
     "EVENTS_CHANNEL_ID": 414458243499425792,
     "START_MESSAGE": "@Bingo! Bingo starts now!",
     "END_MESSAGE": "@Bingo! Bingo is now over."
@@ -38,16 +38,16 @@ def build_bingo_datetimes(config):
         "%d/%m/%Y %H:%M"
     ))
 
-    signup_end_dt = GMT.localize(datetime.strptime(
-        f"{config['SIGNUP_END_DATE']} {config['SIGNUP_END_TIME_GMT']}",
-        "%d/%m/%Y %H:%M"
-    ))
+    # signup_end_dt = GMT.localize(datetime.strptime(
+    #     f"{config['SIGNUP_END_DATE']} {config['SIGNUP_END_TIME_GMT']}",
+    #     "%d/%m/%Y %H:%M"
+    # ))
 
     reminders = {
         # 24hr reminders
         "reminder_bingo_start": (bingo_start_dt - timedelta(days=1), config["REMINDER_START_24HR"]),
         "reminder_bingo_end": (bingo_end_dt - timedelta(days=1), config["REMINDER_END_24HR"]),
-        "reminder_signup_end": (signup_end_dt - timedelta(days=1), config["REMINDER_SIGNUP_24HR"]),
+        # "reminder_signup_end": (signup_end_dt - timedelta(days=1), config["REMINDER_SIGNUP_24HR"]),
         # Exact start/end messages
         "bingo_start_message": (bingo_start_dt, config["START_MESSAGE"]),
         "bingo_end_message": (bingo_end_dt, config["END_MESSAGE"])
@@ -56,7 +56,7 @@ def build_bingo_datetimes(config):
     return {
         "bingo_start_dt": bingo_start_dt,
         "bingo_end_dt": bingo_end_dt,
-        "signup_end_dt": signup_end_dt,
+        # "signup_end_dt": signup_end_dt,
         "reminders": reminders
     }
 
@@ -114,11 +114,10 @@ async def bingo_reminder_loop(bingo_times, discord_bot):
     for key, value in list(bingo_times["reminders"].items()):
         dt_gmt, msg = value
         if now >= dt_gmt:
-            gmt_str, eastern_str = format_datetime_both_timezones(dt_gmt)
             if key in ["bingo_start_message", "bingo_end_message"]:
-                message = f"{msg}\n**Time:** GMT {gmt_str} / US Eastern {eastern_str}"
+                message = f"{msg}"
             else:
-                message = f"{msg}\n**Reminder Time:** GMT {gmt_str} / US Eastern {eastern_str}"
+                message = f"{msg}"
 
             await channel.send(message)
             logger.info(f"Sent reminder: {key}")
@@ -135,7 +134,7 @@ def register_bingo_commands(tree: app_commands.CommandTree, discord_bot) -> None
     @tree.command(name="bingo_setup", description="Sets up announcement messages for the bingo event.")
     async def bingo_setup_cmd(interaction: discord.Interaction):
         logger.info("[Bingo Commands] /bingo_setup command called")
-        await interaction.response.defer()
+        await interaction.response.defer(ephemeral=True)
         await bingo_setup(interaction, discord_bot=discord_bot)
 
 
