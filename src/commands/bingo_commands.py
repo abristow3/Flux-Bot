@@ -17,12 +17,12 @@ config = {
     "BINGO_END_TIME_GMT": "14:00",
     # "SIGNUP_END_DATE": "18/01/2026",
     # "SIGNUP_END_TIME_GMT": "14:00",
-    "REMINDER_START_24HR": "@Bingo Bingo starts in 24 hours, please make sure you've read all the rules carefully.",
+    # "REMINDER_START_24HR": "@Bingo Bingo starts in 24 hours, please make sure you've read all the rules carefully.",
     "REMINDER_END_24HR": "@Bingo 24 hours left in the bingo!",
     # "REMINDER_SIGNUP_24HR": "Bingo sign-ups close in 24 hours, last chance to sign up, make sure you've paid your buy-ins!",
     "EVENTS_CHANNEL_ID": 414458243499425792,
-    "START_MESSAGE": "@Bingo! Bingo starts now!",
-    "END_MESSAGE": "@Bingo! Bingo is now over."
+    "START_MESSAGE": "<@&1462448029624832162> Bingo starts now!\nThe event password is: **RNGRace**",
+    "END_MESSAGE": "@Bingo! Bingo is now over.",
 }
 
 
@@ -45,7 +45,7 @@ def build_bingo_datetimes(config):
 
     reminders = {
         # 24hr reminders
-        "reminder_bingo_start": (bingo_start_dt - timedelta(days=1), config["REMINDER_START_24HR"]),
+        # "reminder_bingo_start": (bingo_start_dt - timedelta(days=1), config["REMINDER_START_24HR"]),
         "reminder_bingo_end": (bingo_end_dt - timedelta(days=1), config["REMINDER_END_24HR"]),
         # "reminder_signup_end": (signup_end_dt - timedelta(days=1), config["REMINDER_SIGNUP_24HR"]),
         # Exact start/end messages
