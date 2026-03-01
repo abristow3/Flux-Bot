@@ -9,6 +9,7 @@ from src.commands.role_commands import register_role_commands
 from src.commands.message_commands import register_message_commands
 from src.commands.bingo_commands import register_bingo_commands
 from src.services.discord.DiscordUtils import DiscordUtils
+from src.cogs.MessageJanitorCog import MessageJanitorCog
 
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
@@ -40,6 +41,9 @@ class BotClient(commands.Bot):
         register_role_commands(tree=self.tree, discord_bot=self)
         register_message_commands(tree=self.tree, discord_bot=self)
         register_bingo_commands(tree=self.tree, discord_bot=self)
+
+        await self.add_cog(MessageJanitorCog(self))
+        logger.info("[BotClient] MessageJanitorCog loaded")
 
         await self.sync_commands(test=True)
         await self.list_commands()
