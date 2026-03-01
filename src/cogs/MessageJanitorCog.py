@@ -2,13 +2,12 @@ import logging
 
 import discord
 from discord.ext import tasks, commands
-from src.main import BotClient
 
 logger = logging.getLogger(__name__)
 
 
 class MessageJanitorCog(commands.Cog):
-    def __init__(self, bot: BotClient):
+    def __init__(self, bot):
         self.bot = bot
         self.osrs_news_channel_id = 414442125577682974
         self.string_to_sweep = "[Original Message Deleted]"
