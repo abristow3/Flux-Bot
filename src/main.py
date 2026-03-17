@@ -54,7 +54,7 @@ class BotClient(commands.Bot):
 
         # Load avatar
         try:
-            with open("assets/avatar.png", "rb") as avatar_file:
+            with open("src/assets/avatar.png", "rb") as avatar_file:
                 image = avatar_file.read()
                 await self.user.edit(avatar=image)
             logger.info("[BotClient] Assets loaded successfully")

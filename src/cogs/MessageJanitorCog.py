@@ -41,7 +41,10 @@ class MessageJanitorCog(commands.Cog):
 
     @tasks.loop(seconds=15)
     async def start_message_janitor(self) -> None:
-        await self._delete_message()
+        try:
+            await self._delete_message()
+        except Exception as e:
+            logger.error(f"[Message Janitor Cog] Error when sweeping messages", exc_info=e)
 
     @start_message_janitor.before_loop
     async def before_message_janitor(self):
